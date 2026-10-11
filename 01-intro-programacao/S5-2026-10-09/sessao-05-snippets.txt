@@ -1,0 +1,69 @@
+SESSÃO 5 · ARQUITETURA DA WEB · comandos para seguir a sessão
+Introdução à Programação e Desenvolvimento Web · joaogoncalves.net
+Terminal: macOS → app Terminal · Windows → PowerShell (tecla Windows, escrever "powershell")
+As linhas que começam por # são comentários: não é preciso escrevê-las.
+
+────────────────────────────────────────────────────────
+DEMO 1 · Ver a rede no terminal (slide "Ver a rede no terminal")
+────────────────────────────────────────────────────────
+
+# 1. Está lá alguém? Quanto tempo demora a ida e volta?
+ping google.pt
+# macOS: o ping não para sozinho → ctrl+C
+# Windows: faz 4 tentativas e para
+# Reparem no time= (milissegundos)
+
+# Experimentem um site de outro continente.
+# Tempo baixo? Há uma cópia perto de vocês (CDN).
+# Alguns servidores não respondem a ping: não é erro vosso.
+
+# 2. O caminho dos pacotes: cada linha é um router
+traceroute google.pt      # macOS / Linux
+tracert google.pt         # Windows
+# Em redes de empresa ou VPN podem aparecer * * * (bloqueado)
+
+# 3. O meu IP privado (dentro de casa)
+ipconfig                  # Windows → "Endereço IPv4"
+ifconfig | grep inet      # macOS
+
+# 4. O meu IP público (lá fora): no browser, pesquisar
+#    what is my ip
+
+────────────────────────────────────────────────────────
+DEMO 2 · Perguntar ao DNS (slide "Perguntar ao DNS")
+────────────────────────────────────────────────────────
+
+# Que IP tem a flag.pt?
+nslookup flag.pt
+
+# E o email da Gmail, quem o recebe? (registos MX)
+nslookup -type=mx gmail.com
+
+# Perguntar a um resolver específico (o 1.1.1.1 é da Cloudflare)
+nslookup flag.pt 1.1.1.1
+
+# No browser: dnschecker.org → a mesma pergunta feita de vários países
+
+────────────────────────────────────────────────────────
+DEMO 3 · DevTools › Network (slide "Ver a Web a acontecer")
+────────────────────────────────────────────────────────
+
+1. Abrir www.flag.pt
+2. F12 (Windows) ou ⌥⌘I (macOS) → separador Network
+3. Ligar "Disable cache" e recarregar a página
+4. Clicar no primeiro pedido (o documento) → Headers: pedido e resposta
+5. Filtrar por tipo: Doc · CSS · JS · Img · Font
+6. Clique direito nos títulos das colunas → ativar "Protocol"
+7. Throttling → "Slow 4G" → recarregar. O que muda?
+8. Comparar com info.cern.ch (o primeiro site da Web)
+
+Na barra de baixo: N requests · X transferred · Finish: tempo total
+
+────────────────────────────────────────────────────────
+LINKS DA SESSÃO
+────────────────────────────────────────────────────────
+Primeiro site da Web ........ https://info.cern.ch
+Mapa dos cabos submarinos ... https://www.submarinecablemap.com
+Propagação de DNS ........... https://dnschecker.org
+Registo de domínios .pt ..... https://www.pt.pt
+MDN · How the web works ..... https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works
