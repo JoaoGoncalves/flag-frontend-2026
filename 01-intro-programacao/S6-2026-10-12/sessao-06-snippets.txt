@@ -1,0 +1,81 @@
+SESSÃO 6 · FRONT-END E BACK-END · código para seguir a sessão
+Introdução à Programação e Desenvolvimento Web · joaogoncalves.net
+Hoje o código é para LER e experimentar na consola. Escrevê-lo é para os módulos 2 e 4.
+
+────────────────────────────────────────────────────────
+DEMO 1 · Ver o que o servidor enviou
+────────────────────────────────────────────────────────
+Ver o código-fonte .......... Ctrl+U  (macOS: ⌥⌘U)
+Inspecionar ................. clique direito › Inspecionar
+Desligar o JavaScript ....... DevTools aberto › Ctrl+Shift+P (macOS: ⌘⇧P)
+                              › escrever "Disable JavaScript" › Enter › recarregar
+Voltar a ligar .............. a mesma coisa, "Enable JavaScript"
+
+────────────────────────────────────────────────────────
+DEMO 2 · Mexer numa página que não é nossa (Consola do DevTools)
+────────────────────────────────────────────────────────
+// escolher o primeiro h1 da página
+const titulo = document.querySelector("h1");
+
+// mudar o texto e a cor
+titulo.textContent = "Olá, FLAG!";
+titulo.style.color = "green";
+
+// recarreguem a página: tudo volta ao original. Porquê?
+
+────────────────────────────────────────────────────────
+DEMO 3 · Pedir dados a uma API (Consola, em jsonplaceholder.typicode.com)
+────────────────────────────────────────────────────────
+const url = "https://jsonplaceholder.typicode.com/users/1";
+
+const res = await fetch(url);    // pedido GET
+const user = await res.json();   // texto JSON → objeto
+
+console.log(user.name);          // "Leanne Graham"
+console.log(user);               // o objeto todo
+
+// Depois: separador Network › Fetch/XHR → o mesmo pedido (GET, 200, application/json)
+
+────────────────────────────────────────────────────────
+EXERCÍCIO 3.3 · Para os mais expeditos (tentem antes de ver a solução no slide)
+────────────────────────────────────────────────────────
+// A · /todos/1 → mostrar title e completed
+// B · /users  → quantos utilizadores vêm na lista? (pista: .length)
+// C · /users/1 → mostrar só a cidade (está dentro de address)
+
+────────────────────────────────────────────────────────
+SETUP · Confirmar que está tudo instalado (terminal)
+────────────────────────────────────────────────────────
+node -v            # v24.x ou mais recente (versão LTS)
+npm -v
+git --version
+code --version     # macOS: no VS Code, ⌘⇧P › "Shell Command: Install 'code' command in PATH"
+
+# a pasta do curso (sem espaços nem acentos)
+mkdir flag-frontend
+cd flag-frontend
+mkdir 02-html-css
+code .
+
+────────────────────────────────────────────────────────
+TERMINAL · o mínimo
+────────────────────────────────────────────────────────
+pwd                onde estou
+ls                 o que está nesta pasta   (Windows: também dir)
+cd pasta           entrar numa pasta
+cd ..              voltar uma pasta acima
+mkdir nome         criar uma pasta
+code .             abrir a pasta atual no VS Code
+clear              limpar o ecrã            (Windows: também cls)
+Tab                completa nomes de pastas e ficheiros
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+VS Code ..................... https://code.visualstudio.com
+  extensões: Live Server (ou Live Preview) · Prettier
+Node.js (LTS) ............... https://nodejs.org
+Git ......................... https://git-scm.com   (macOS: xcode-select --install)
+GitHub ...................... https://github.com
+API para treinar ............ https://jsonplaceholder.typicode.com
+MDN · How the web works ..... https://developer.mozilla.org/en-US/docs/Learn_web_development/Getting_started/Web_standards/How_the_web_works
