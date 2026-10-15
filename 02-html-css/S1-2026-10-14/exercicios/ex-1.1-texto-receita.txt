@@ -1,0 +1,19 @@
+EXERCÍCIO 1.1 · Marcar um texto à mão
+Para cada linha, escrevam o que ela É: título, subtítulo, parágrafo, lista (numerada ou não), item, ligação.
+Ainda sem tags: só o "rótulo". (Este texto volta no trabalho de casa 4.2.)
+
+Bolo de bolacha
+Uma sobremesa portuguesa clássica, sem forno. Fica pronta em 30 minutos, mais umas horas no frigorífico.
+Ingredientes
+200 g de bolacha Maria
+250 g de manteiga sem sal, à temperatura ambiente
+200 g de açúcar
+2 gemas
+1 chávena de café forte, frio
+Preparação
+Bater a manteiga com o açúcar até ficar um creme claro.
+Juntar as gemas, uma a uma, sem parar de bater.
+Passar as bolachas pelo café e fazer uma camada no prato.
+Cobrir com creme e repetir até acabarem as bolachas.
+Guardar no frigorífico pelo menos 4 horas.
+Mais doces portugueses na Wikipédia

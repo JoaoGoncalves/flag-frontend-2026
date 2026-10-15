@@ -1,0 +1,86 @@
+SESSÃO 1 · INTRODUÇÃO AO HTML · código para seguir a sessão
+HTML e CSS · joaogoncalves.net
+Os ficheiros completos estão na pasta codigo-ao-vivo/. Escrevam-nos vocês: copiar não conta.
+
+────────────────────────────────────────────────────────
+ANTES DA SESSÃO · preparar o computador (15 min)
+────────────────────────────────────────────────────────
+1. Browser atualizado: Chrome, Edge ou Firefox.
+2. VS Code ............... https://code.visualstudio.com  › Download
+                           (Windows: deixar ativo "Add to PATH" e "Open with Code")
+3. Extensões no VS Code .. ícone dos quadrados (Ctrl/⌘+Shift+X) › procurar e instalar:
+                           · Live Server  (Ritwick Dey)
+                           · Prettier - Code formatter
+4. Format On Save ........ Settings (Ctrl/⌘ + ,) › procurar "format on save" › ✓
+                           Settings › procurar "default formatter" › Prettier
+5. A vossa pasta ......... criar flag-frontend/02-html-css/ (nos Documentos)
+                           VS Code › File › Open Folder › 02-html-css
+
+Sem permissões para instalar (portátil da empresa)? Hoje usem https://vscode.dev
+no browser e resolvam até à sessão 2.
+
+────────────────────────────────────────────────────────
+DEMO · O esqueleto de um site (Consola do DevTools)
+────────────────────────────────────────────────────────
+Abrir a consola ........... F12 › Console   (macOS: ⌥⌘J)
+Se o Chrome pedir, escrever: allow pasting  (e Enter) antes de colar.
+
+// tira todas as folhas de estilo da página
+document.querySelectorAll('link[rel="stylesheet"], style').forEach(el => el.remove());
+
+// recarreguem a página: tudo volta. O que ficou sem CSS foi o HTML.
+
+────────────────────────────────────────────────────────
+STOP 1 · O primeiro ficheiro (s01/index.html)
+────────────────────────────────────────────────────────
+Olá, FLAG!
+Esta é a minha primeira página.
+
+Escrevi isto em três linhas...
+      e com muitos      espaços.
+
+→ clique direito no ficheiro › Open with Live Server
+→ porque é que aparece tudo numa linha só?
+
+────────────────────────────────────────────────────────
+EMMET · escrevem a abreviatura e carregam em Tab
+────────────────────────────────────────────────────────
+!                                  estrutura base completa
+h1                                 <h1></h1>
+h1{Olá}                            <h1>Olá</h1>
+p*3                                três <p></p>
+p>lorem10                          um <p> com 10 palavras de texto falso
+h1+p                               <h1></h1> seguido de <p></p>
+a[href=https://flag.pt]{FLAG}      <a href="https://flag.pt">FLAG</a>
+
+  >  dentro de      +  a seguir a      *  repetir
+  {} texto          [] atributos
+
+Pôr o lang em português de vez: Settings › procurar "emmet.variables"
+› Add Item › lang = pt-PT
+
+────────────────────────────────────────────────────────
+EXERCÍCIO 2.1 · Desafio Emmet (s01/emmet.html)
+────────────────────────────────────────────────────────
+Que abreviatura dá cada resultado?
+1   <h1>Receitas</h1>
+2   <p></p> <p></p> <p></p> <p></p>
+3   <h1>Ana</h1> seguido de <p>Lorem ipsum dolor sit amet…</p>
+4   <a href="mailto:ana@exemplo.pt">Email</a>
+
+────────────────────────────────────────────────────────
+O RESTO DA SESSÃO 1
+────────────────────────────────────────────────────────
+A sintaxe (parte 3) e a estrutura base (parte 4) foram dadas no início da
+sessão 2: o código está em ../S2-2026-10-16/sessao-02-snippets.txt
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+Validador ................... https://validator.w3.org/nu/
+MDN (HTML) .................. https://developer.mozilla.org/pt-BR/docs/Web/HTML
+Norma (Living Standard) ..... https://html.spec.whatwg.org
+Compatibilidade ............. https://caniuse.com
+Emmet (cheat sheet) ......... https://docs.emmet.io/cheat-sheet/
+A primeira página da Web .... https://info.cern.ch
+Material do curso ........... https://github.com/JoaoGoncalves/flag-frontend-2026
