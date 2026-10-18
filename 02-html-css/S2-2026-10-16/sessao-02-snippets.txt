@@ -1,0 +1,100 @@
+SESSÃO 2 · SINTAXE, ESTRUTURA BASE E TEXTO · código para seguir a sessão
+HTML e CSS · joaogoncalves.net
+Os ficheiros completos estão na pasta codigo-ao-vivo/. Escrevam-nos vocês: copiar não conta.
+
+Nesta sessão acabámos a sessão 1 (sintaxe e estrutura base, na pasta s01/) e começámos
+o mini-site Receitas (pasta s02/). O texto e as listas continuam na sessão 3.
+
+AS PASTAS NO FIM DO DIA
+02-html-css/
+├── s01/
+│   ├── index.html              o primeiro ficheiro (sessão 1)
+│   ├── sintaxe.html            stop 2
+│   ├── estrutura.html          stop 3, à mão
+│   ├── emmet.html              stop 3, com ! + Tab
+│   └── primeira.html           exercício 4.1
+└── s02/
+    └── textos.html             início da página Sobre (h1, p com abbr)
+
+────────────────────────────────────────────────────────
+STOP 2 · A sintaxe (s01/sintaxe.html)
+────────────────────────────────────────────────────────
+<!-- 1. elemento = abertura + conteúdo + fecho -->
+<p>Esta é a minha primeira página.</p>
+
+<!-- 2. atributo: nome="valor", na tag de abertura (passem o rato) -->
+<p title="Uma dica escondida">Passem o rato aqui.</p>
+
+<!-- 3. void element: o br não tem fecho -->
+<p>Linha 1<br>Linha 2</p>
+
+<!-- 4. atributo booleano: basta estar lá -->
+<p hidden>Não apareço.</p>
+
+<!-- 5. atributos globais: em qualquer elemento -->
+<p id="intro" class="destaque" lang="en">Hello!</p>
+
+<!-- 6. espaços seguidos valem um -->
+<p>Muitos         espaços     viram um só.</p>
+
+<!-- 7. entidades -->
+<p>A tag &lt;p&gt; · &copy; 2026 · Tom &amp; Jerry</p>
+
+────────────────────────────────────────────────────────
+VALIDAR
+────────────────────────────────────────────────────────
+https://validator.w3.org/nu/  ›  Check by: text input  ›  colar  ›  Check
+Objetivo: "Document checking completed. No errors found."
+Corrijam sempre o PRIMEIRO erro e validem outra vez: um erro pode gerar vários.
+
+Exercício 3.1 ... exercicios/ex-3.1-encontrar-erros.html (6 erros e 1 armadilha)
+                   As 3 mensagens de sempre (DOCTYPE, title, lang) não contam: são a parte 4.
+                   Solução: solucoes/sol-3.1-corrigido.html
+
+────────────────────────────────────────────────────────
+STOP 3 · A estrutura base (s01/estrutura.html), à mão
+────────────────────────────────────────────────────────
+<!DOCTYPE html>
+<html lang="pt-PT">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A minha primeira página com a estrutura completa.">
+    <title>A minha primeira página · FLAG</title>
+  </head>
+  <body>
+    <p>Olá, FLAG!</p>
+    <p>Esta página tem a estrutura completa de um documento HTML.</p>
+  </body>
+</html>
+
+Depois: s01/emmet.html  ›  !  + Tab  ›  mudar lang="en" para lang="pt-PT"
+Modo telemóvel no DevTools ... Ctrl+Shift+M   (macOS: ⌘⇧M)
+
+────────────────────────────────────────────────────────
+EXERCÍCIO 4.1 · A vossa primeira página completa (s01/primeira.html)
+────────────────────────────────────────────────────────
+□ escrita de raiz, sem Emmet
+□ DOCTYPE · lang="pt-PT" · charset · viewport · title
+□ meta description com uma frase sobre a página
+□ dois ou três parágrafos sobre vocês (só p)
+□ um br num dos parágrafos
+□ um comentário a dizer quem escreveu a página
+□ validador: No errors · o title aparece no separador
+Uma solução possível: solucoes/sol-4.1-primeira-pagina.html
+
+────────────────────────────────────────────────────────
+ELEMENTOS DE BLOCO E DE LINHA (o fim da sessão)
+────────────────────────────────────────────────────────
+Bloco ..... começa numa linha nova e ocupa a largura toda: h1…h6, p
+Linha ..... fica dentro do texto, ao lado do resto: abbr, strong, em
+
+A página Sobre (s02/textos.html) continua na sessão 3.
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+Validador ................... https://validator.w3.org/nu/
+MDN (HTML) .................. https://developer.mozilla.org/pt-BR/docs/Web/HTML
+Norma (Living Standard) ..... https://html.spec.whatwg.org
+Material do curso ........... https://github.com/JoaoGoncalves/flag-frontend-2026
