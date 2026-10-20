@@ -1,0 +1,189 @@
+SESSÃO 3 · TEXTO, LISTAS E O INÍCIO DOS LINKS · código para seguir a sessão
+HTML e CSS · joaogoncalves.net
+O código que escrevemos na sessão está nas pastas ../s02/ e ../s03/. Escrevam-no vocês: copiar não conta.
+
+Continuámos a sessão 2 onde ficámos: a página Sobre (s02/textos.html), o cartão de visita,
+as listas e a receita com listas. No fim começámos os links, numa pasta nova: s03/site/.
+
+AS PASTAS NO FIM DO DIA
+s02/
+├── textos.html                 a página Sobre: texto e formatação
+├── sobre.html                  o cartão de visita (exercício 1.3)
+├── listas.html                 ul, ol (com atributos) e dl
+└── receitas/
+    └── bolo-de-bolacha.html    a receita com listas
+s03/
+└── site/
+    ├── index.html              os primeiros links
+    ├── sobre.html              com um link de volta
+    └── receitas/
+        └── bolo-de-bolacha.html    (cópia da s02)
+
+────────────────────────────────────────────────────────
+LEMBRETE · elementos de bloco e de linha
+────────────────────────────────────────────────────────
+Bloco ..... começa numa linha nova e ocupa a largura toda: h1…h6, p, ul, ol, blockquote, hr
+Linha ..... fica dentro do texto, ao lado do resto: abbr, strong, em, mark, small, sup, sub, a
+
+────────────────────────────────────────────────────────
+STOP · A página Sobre (s02/textos.html) · dentro do <body>
+────────────────────────────────────────────────────────
+Antes de continuar, no <head>: lang="pt-PT" (o Emmet põe "en") e o title "Sobre · Receitas".
+O h1 e o primeiro p já estão escritos; continuem a partir do h2.
+
+  <h1>Sobre este site</h1>
+  <p>Este site junta as receitas da família, escritas em <abbr title="HyperText Markup Language">HTML</abbr> durante a formação da FLAG.</p>
+
+  <h2>Como testamos as receitas</h2>
+  <p>Cada receita é feita <strong>pelo menos duas vezes</strong> antes de ser publicada.
+    O forno é sempre pré-aquecido, e a farinha é <em>peneirada</em>, nunca despejada.</p>
+  <p>Quando uma receita leva menos açúcar do que o original, está <mark>assinalada a amarelo</mark>.</p>
+
+  <h3>Medidas</h3>
+  <p>Usamos gramas e mililitros: uma chávena tem cerca de 250&nbsp;ml e o forno vai a 180&nbsp;°C. Uma forma de 20&nbsp;cm tem cerca de 314&nbsp;cm<sup>2</sup>.
+    A água é H<sub>2</sub>O, mas o fermento é que faz o bolo crescer.</p>
+
+  <h2>Uma frase de que gostamos</h2>
+  <blockquote>
+    <p>A cozinha é o sítio onde a química se come.</p>
+  </blockquote>
+  <p>Morada para provas:<br>
+    Rua das Bolachas, 12<br>
+    1000-001 Lisboa</p>
+
+  <hr>
+  <p><small>© 2026 Receitas</small></p>
+
+  
+
+Teste: troquem o h3 por h4 e validem. O validador dá erro (nível saltado).
+
+────────────────────────────────────────────────────────
+EXERCÍCIO 1.3 · O vosso cartão de visita (s02/cartao.html)
+────────────────────────────────────────────────────────
+Ponto de partida: a vossa s01/primeira.html (exercício 4.1)
+□ o vosso nome em h1
+□ duas secções em h2: "Sobre mim" e "Contactos"
+□ parágrafos com strong ou em onde fizer sentido
+□ uma sigla com abbr (ex.: <abbr title="HyperText Markup Language">HTML</abbr>)
+□ contactos em texto (email, telefone), separados com br
+□ um hr e um rodapé com small
+□ validador: No errors · um só h1
+Os links (email, LinkedIn) entram no cartão quando chegarmos aos links.
+
+────────────────────────────────────────────────────────
+LISTAS · os atributos do ol (para experimentar)
+────────────────────────────────────────────────────────
+<ol start="6">
+  <li>Cascata e seletores</li>
+  <li>Unidades, cores e tipografia</li>
+</ol>
+
+<ol reversed>
+  <li>Bronze</li>
+  <li>Prata</li>
+  <li>Ouro</li>
+</ol>
+
+<ol type="a">
+  <li>Base</li>
+  <li>Creme</li>
+</ol>
+
+<ol>
+  <li value="10">Dez</li>
+  <li>Onze</li>
+</ol>
+
+────────────────────────────────────────────────────────
+STOP · A receita com listas (s02/receitas/bolo-de-bolacha.html)
+────────────────────────────────────────────────────────
+Criem a pasta receitas/ dentro de s02/. Ponto de partida: sol-4.2-receita.html (colada
+no chat: o texto do exercício 1.1 da sessão 1, com a estrutura completa, mas sem listas).
+No fim, o <body> fica assim:
+
+  <h1>Bolo de bolacha</h1>
+  <p>Uma sobremesa portuguesa clássica, <strong>sem forno</strong>. Fica pronta em 30 minutos, mais umas horas no frigorífico.</p>
+
+  <h2>Ingredientes</h2>
+  <ul>
+    <li>200 g de bolacha Maria</li>
+    <li>250 g de manteiga sem sal, à temperatura ambiente</li>
+    <li>200 g de açúcar</li>
+    <li>2 gemas</li>
+    <li>1 chávena de café forte, frio</li>
+  </ul>
+
+  <h2 id="preparacao">Preparação</h2>
+  <ol>
+    <li>Bater a manteiga com o açúcar até ficar um creme claro.</li>
+    <li>Juntar as gemas, uma a uma, sem parar de bater.</li>
+    <li>Passar as bolachas pelo café e fazer uma camada no prato.</li>
+    <li>Cobrir com creme e repetir:
+      <ul>
+        <li>bolacha</li>
+        <li>creme</li>
+        <li>bolacha… até acabarem.</li>
+      </ul>
+    </li>
+    <li>Guardar no frigorífico pelo menos 4 horas.</li>
+  </ol>
+
+  <h2>Dicas</h2>
+  <dl>
+    <dt>Bolacha Maria</dt>
+    <dd>Bolacha seca e redonda; qualquer bolacha de água e sal não serve.</dd>
+    <dt>Café</dt>
+    <dd>Frio, senão a bolacha desfaz-se.</dd>
+  </dl>
+
+O id="preparacao" vai servir na sessão 4, nos links (saltar para uma secção da página).
+
+Exercício 2.1 ... exercicios/S2/ex-2.1-listas-erros.html (5 erros e 1 armadilha)
+
+────────────────────────────────────────────────────────
+TRABALHO DE CASA 2.3 · O cartão de visita, com listas
+────────────────────────────────────────────────────────
+Enunciado: exercicios/S2/ex-2.3-cartao-completo.md
+□ ponto de partida: s02/cartao.html (exercício 1.3)
+□ h2 "O que sei fazer" + ul (pelo menos três itens)
+□ h2 "O que quero aprender" + ol (por prioridade)
+□ strong ou em onde fizer sentido
+□ um só h1 (o vosso nome) · validador: No errors
+Entrega: fórum do Moodle, tópico "S2 · Cartão de visita", até 4.ª, 21 out, 9:30
+
+────────────────────────────────────────────────────────
+LINKS · COMEÇÁMOS (s03/site/index.html)
+────────────────────────────────────────────────────────
+O a é um elemento de LINHA: fica dentro de um p, de um li…
+
+  <!-- outra página do site (mesma pasta) -->
+  <p>Ver a página <a href="sobre.html">Sobre</a></p>
+
+  <!-- outro site: abre num separador novo -->
+  <p><a href="https://flag.pt/curso/react-foundations/" target="_blank">Ver o curso de React da FLAG</a></p>
+
+  <!-- email e telefone -->
+  <p><a href="mailto:joao@exemplo.pt">Enviar email</a></p>
+  <p><a href="tel:+351123456789">Ligar para 123&nbsp;456&nbsp;789</a></p>
+
+E no sobre.html, o caminho de volta:
+  <p><a href="index.html">Voltar ao início</a></p>
+
+Na sessão 4: caminhos com ../, âncoras (#), link ou botão, menus com nav.
+
+────────────────────────────────────────────────────────
+VALIDAR
+────────────────────────────────────────────────────────
+https://validator.w3.org/nu/  ›  Check by: text input  ›  colar  ›  Check
+Objetivo: "Document checking completed. No errors found."
+Corrijam sempre o PRIMEIRO erro e validem outra vez: um erro pode gerar vários.
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+Validador ................... https://validator.w3.org/nu/
+MDN (HTML) .................. https://developer.mozilla.org/pt-BR/docs/Web/HTML
+MDN · elemento ol ........... https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/ol
+MDN · elemento a ............ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a
+Material do curso ........... https://github.com/JoaoGoncalves/flag-frontend-2026

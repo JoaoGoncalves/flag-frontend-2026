@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de compras</title>
+</head>
+<body>
+  <h1>Lista de compras</h1>
+
+  <h2>Mercearia</h2>
+  <ul>
+    <!-- armadilha: o </li> é opcional, mas escrevemo-lo sempre -->
+    <li>Bolacha Maria</li>
+    <li>Açúcar</li>
+    <!-- 1. dentro de ul/ol só pode haver li -->
+    <li>Manteiga sem sal</li>
+  </ul>
+
+  <h2>Fruta</h2>
+  <!-- 2. li sem lista à volta -->
+  <ul>
+    <li>Limões</li>
+    <li>Laranjas</li>
+  </ul>
+
+  <h2>Por esta ordem</h2>
+  <!-- 3. o ol já numera: os números no texto saem -->
+  <ol>
+    <li>Ir ao mercado</li>
+    <li>Ir à padaria</li>
+  </ol>
+
+  <h2>Para o bolo</h2>
+  <ul>
+    <!-- 4. a sublista vai DENTRO do li a que pertence -->
+    <li>Base
+      <ul>
+        <li>bolacha</li>
+        <li>café</li>
+      </ul>
+    </li>
+    <li>Creme</li>
+  </ul>
+
+  <h2>Glossário</h2>
+  <dl>
+    <dt>Posset</dt>
+    <!-- 5. numa dl, a definição é dd -->
+    <dd>Creme inglês de natas e limão.</dd>
+  </dl>
+</body>
+</html>
