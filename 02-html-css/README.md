@@ -26,7 +26,7 @@ Daqui em diante os exercícios são numerados pela **parte** (o tema) e ficam em
 | 3 | Texto | 3.1 · 3.2 · 3.3 |
 | 4 | Listas | 4.1 · 4.2 · 4.3 |
 | 5 | Links | 5.1 · 5.2 |
-| 6 | Imagens | 6.1 · 6.2 · **6.3 o meu mini-site** ([enunciado](exercicios/06-imagens/ex-6.3-mini-site-tema.md)) |
+| 6 | Imagens | 6.1 · **6.2 posset de limão** ([enunciado](exercicios/06-imagens/ex-6.2-posset-de-limao.md), até 2.ª 26 out) · **6.3 o meu mini-site** ([enunciado](exercicios/06-imagens/ex-6.3-mini-site-tema.md), até 4.ª 28 out) |
 | 7 | Tabelas | 7.1 · 7.2 |
 | 8 | Multimédia e iframes | |
 | 9 | Formulários | |
