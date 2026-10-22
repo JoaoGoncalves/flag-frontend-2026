@@ -32,6 +32,6 @@ cd flag-frontend-2026
 git pull        # no início de cada sessão, para receber o que é novo
 ```
 
-Os materiais oficiais também ficam no Moodle da FLAG. Dúvidas: chat do Teams ou fórum da turma no Moodle. Outros assuntos: WhatsApp +351 926 543 854.
+Os materiais oficiais também ficam no Moodle da FLAG. Dúvidas: chat do Teams ou fórum da turma no Moodle. Outros assuntos: WhatsApp +351 910 346 437.
 
 **Para instalar o Portugol (sessão 2):** ver [recursos/](recursos/).

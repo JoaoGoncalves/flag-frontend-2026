@@ -7,4 +7,4 @@
 
 Java: [Eclipse Temurin LTS](https://adoptium.net/temurin/releases/). Mac com chip Apple: aarch64 · Mac Intel e Windows: x64.
 
-Problemas na instalação? Chat da formação no Teams, ou WhatsApp +351 926 543 854.
+Problemas na instalação? Chat da formação no Teams, ou WhatsApp +351 910 346 437.
