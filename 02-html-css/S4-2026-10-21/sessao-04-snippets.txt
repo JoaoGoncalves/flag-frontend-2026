@@ -1,0 +1,205 @@
+SESSÃO 4 · LINKS E IMAGENS · código para seguir a sessão
+HTML e CSS · joaogoncalves.net
+O que escrevemos na sessão está em ../s04/. Escrevam-nos vocês: copiar não conta.
+
+Na sessão 3 começámos os links na s03/site/: um link para outra página (sobre.html),
+para outro site (target="_blank"), para email (mailto:) e para telefone (tel:).
+Hoje: caminhos com ../, âncoras e o menu; depois imagens.
+
+ANTES DE COMEÇAR
+Copiem a pasta s03/site/ para s04/site/ (no VS Code: copiar, colar, mudar o nome).
+Abram o Live Server na pasta s04/site/ (ou em 02-html-css/).
+
+A PASTA s04 NO FIM DO DIA
+s04/
+└── site/
+    ├── index.html              página inicial: menu, receitas com imagem, figure
+    ├── sobre.html              menu + o texto do s02/textos.html
+    ├── img/
+    │   ├── bolo-de-bolacha.svg
+    │   └── chocolate-islands.webp
+    └── receitas/
+        └── bolo-de-bolacha.html    menu com ../, âncora, figure, links
+
+────────────────────────────────────────────────────────
+JÁ VIMOS NA SESSÃO 3 · o elemento a
+────────────────────────────────────────────────────────
+<a href="sobre.html">Sobre</a>                                    outra página do site
+<a href="https://flag.pt" target="_blank">FLAG</a>                outro site, separador novo
+<a href="mailto:joao@exemplo.pt">Email</a>                        email
+<a href="tel:+351123456789">Ligar</a>                             telefone
+O a é um elemento de LINHA: fica dentro de um p, de um li…
+
+────────────────────────────────────────────────────────
+CAMINHOS · a partir de receitas/bolo-de-bolacha.html
+────────────────────────────────────────────────────────
+../index.html             sobe uma pasta e abre index.html
+../sobre.html             sobe uma pasta e abre sobre.html
+bolo-de-bolacha.html      mesma pasta
+#preparacao               o elemento com id="preparacao", nesta página
+https://pt.wikipedia.org/wiki/Bolo_de_bolacha     absoluto: outro site
+Barras sempre /. Nunca C:\Users\… (só funciona no vosso computador).
+
+────────────────────────────────────────────────────────
+ÂNCORAS
+────────────────────────────────────────────────────────
+<!-- 1. o destino tem um id -->
+<h2 id="preparacao">Preparação</h2>
+
+<!-- 2. o link aponta para #id -->
+<a href="#preparacao">Saltar para a preparação</a>
+
+<!-- noutra página: página + #id -->
+<a href="receitas/bolo-de-bolacha.html#preparacao">Ir direto à preparação</a>
+
+────────────────────────────────────────────────────────
+STOP · A página inicial e o menu (s04/site/index.html) · dentro do <body>
+────────────────────────────────────────────────────────
+O index.html da sessão 3 tinha os exemplos dos links: passa a ser a página inicial.
+(O mailto vai para o rodapé, o tel para o Sobre e o link externo para a receita.)
+No <head>: lang="pt-PT" e o title "Receitas da Avó · Início".
+
+  <!-- menu: uma lista de links dentro de nav -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Início</a></li>
+      <li><a href="receitas/bolo-de-bolacha.html">Bolo de bolacha</a></li>
+      <li><a href="sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <h1>Receitas da Avó</h1>
+  <p>Sobremesas simples, testadas em casa e explicadas <em>passo a passo</em>.</p>
+
+  <h2>As receitas</h2>
+  <ul>
+    <li><a href="receitas/bolo-de-bolacha.html">Bolo de bolacha</a>: sem forno, pronto em 30 minutos.</li>
+    <li>Posset de limão: em breve.</li>
+  </ul>
+
+  <hr>
+  <p><small>© 2026 Receitas da Avó · Escrevam-nos: <a href="mailto:receitas@exemplo.pt">receitas@exemplo.pt</a></small></p>
+
+────────────────────────────────────────────────────────
+O SOBRE (s04/site/sobre.html)
+────────────────────────────────────────────────────────
+1. No <head>: lang="pt-PT" e o title "Sobre · Receitas da Avó".
+2. No <body>: o mesmo nav do index (igual, mesma pasta).
+3. Por baixo do nav: copiem o texto do s02/textos.html (do h1 até ao small).
+   O h1 passa a "Sobre este site".
+4. Na morada, o telefone como link:
+
+  <p>Morada para provas:<br>
+    Rua das Bolachas, 12<br>
+    1000-001 Lisboa<br>
+    Telefone: <a href="tel:+351123456789">123&nbsp;456&nbsp;789</a></p>
+
+────────────────────────────────────────────────────────
+A RECEITA (s04/site/receitas/bolo-de-bolacha.html)
+────────────────────────────────────────────────────────
+O mesmo menu, mas com ../ (estamos dentro de receitas/):
+
+  <nav>
+    <ul>
+      <!-- estamos dentro de receitas/: ../ sobe uma pasta -->
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="bolo-de-bolacha.html">Bolo de bolacha</a></li>
+      <li><a href="../sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+
+E ainda na receita:
+  no h2 da preparação .............  <h2 id="preparacao">Preparação</h2>
+  depois do primeiro parágrafo ....  <p><a href="#preparacao">Saltar para a preparação</a></p>
+  no fim da página ................  <p><a href="https://pt.wikipedia.org/wiki/Bolo_de_bolacha" target="_blank">O bolo de bolacha na Wikipédia</a> (abre num separador novo)</p>
+                                     <p><a href="../index.html">← Voltar às receitas</a></p>
+
+Cliquem em todos os links no Live Server, página a página. Validem as três páginas.
+
+Exercício 3.1 ... exercicios/ex-3.1-caminhos.md + ex-3.1-caminhos.zip
+                   Descompactem, abram ex-3.1-caminhos/site/ no Live Server,
+                   escrevam os 6 href (estão vazios) e cliquem para testar.
+Exercício 3.2 ... no slide: link ou botão? (respostas no chat)
+
+────────────────────────────────────────────────────────
+STOP · Imagens no mini-site
+────────────────────────────────────────────────────────
+Criem a pasta s04/site/img/ e copiem para lá bolo-de-bolacha.svg e chocolate-islands.webp
+(estão no GitHub, na pasta 02-html-css/S4-2026-10-21/img/).
+
+index.html · na lista de receitas, o item do bolo fica assim:
+
+    <li>
+      <!-- link com imagem: o alt diz para onde vamos -->
+      <a href="receitas/bolo-de-bolacha.html">
+        <img src="img/bolo-de-bolacha.svg" alt="Bolo de bolacha" width="200" height="150">
+      </a>
+      <p><a href="receitas/bolo-de-bolacha.html">Bolo de bolacha</a>: sem forno, pronto em 30 minutos.</p>
+    </li>
+
+index.html · antes do hr:
+
+  <h2>Para a semana</h2>
+  <figure>
+    <img src="img/chocolate-islands.webp" alt="Pequenas ilhas de chocolate num prato branco" width="458" height="348" loading="lazy">
+    <figcaption>Ilhas de chocolate: a receita chega na próxima semana.</figcaption>
+  </figure>
+
+receitas/bolo-de-bolacha.html · depois do "Saltar para a preparação":
+
+  <figure>
+    <img src="../img/bolo-de-bolacha.svg" alt="Bolo de bolacha às camadas, com cobertura de chocolate" width="400" height="300">
+    <figcaption>Camadas de bolacha e creme de manteiga.</figcaption>
+  </figure>
+
+Imagem partida? Quase sempre é o caminho: falta o ../ na receita, ou o nome tem maiúsculas.
+F12 › Network › recarregar: quantos KB tem cada imagem?
+
+────────────────────────────────────────────────────────
+PICTURE · formatos modernos com plano B (para quando precisarem)
+────────────────────────────────────────────────────────
+<picture>
+  <source srcset="img/chocolate-islands.avif" type="image/avif">
+  <source srcset="img/chocolate-islands.webp" type="image/webp">
+  <img src="img/chocolate-islands.jpg" alt="Pequenas ilhas de chocolate num prato branco"
+       width="458" height="348" loading="lazy">
+</picture>
+
+Os mesmos 458 × 348 px, em KB:  PNG 271 · GIF 96 · JPEG 74 · WebP 18 · AVIF 15
+
+────────────────────────────────────────────────────────
+TRABALHO DE CASA 4.2 · Posset de limão
+────────────────────────────────────────────────────────
+Enunciado e texto: exercicios/ex-4.2-posset-de-limao.md · imagem: exercicios/lemon-posset.jpg
+□ s04/site/receitas/posset-de-limao.html com a estrutura completa
+□ figure + img (alt, width="150", height="150") + figcaption
+□ ingredientes em ul, preparação em ol
+□ o mesmo menu (nav) com a receita nova, também em index, sobre e bolo-de-bolacha
+□ "← Voltar às receitas" para ../index.html
+□ todos os links funcionam · todas as páginas: No errors
+Entrega: s04/site em .zip, fórum do Moodle, tópico "S2 · Posset de limão", até 2.ª, 26 out, 9:30
+
+────────────────────────────────────────────────────────
+LEITOR DE ECRÃ · para experimentarem em casa
+────────────────────────────────────────────────────────
+macOS ...... VoiceOver: ⌘F5 para ligar/desligar · ⌃⌥U abre a lista de títulos e de links
+Windows .... Narrador: Ctrl + Win + Enter · H salta de título em título
+
+Na lista de links, "clique aqui" × 3 não diz nada: o texto do link diz o destino.
+
+────────────────────────────────────────────────────────
+VALIDAR
+────────────────────────────────────────────────────────
+https://validator.w3.org/nu/  ›  Check by: text input  ›  colar  ›  Check
+Objetivo: "Document checking completed. No errors found."
+Corrijam sempre o PRIMEIRO erro e validem outra vez: um erro pode gerar vários.
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+Validador ................... https://validator.w3.org/nu/
+MDN · elemento a ............ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/a
+MDN · elemento img .......... https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/img
+Escrever um bom alt (W3C) .... https://www.w3.org/WAI/tutorials/images/decision-tree/
+Squoosh (converter imagens) .. https://squoosh.app
+Material do curso ........... https://github.com/JoaoGoncalves/flag-frontend-2026
