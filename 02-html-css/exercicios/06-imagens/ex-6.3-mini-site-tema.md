@@ -57,4 +57,4 @@ O site vai crescer ao longo do módulo: quando chegarmos às tabelas, à multim�
 
 ## Entrega
 
-Pasta `meu-site` em `.zip` no Moodle, no fórum do módulo 2, tópico "6.3 · O meu mini-site", até **4.ª, 28 out, às 9:30**.
+Pasta `meu-site` em `.zip` no Moodle, no fórum do **módulo 2**, tópico "6.3 · O meu mini-site", até **6.ª, 30 out, às 9:30**.
