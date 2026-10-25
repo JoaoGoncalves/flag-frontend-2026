@@ -26,7 +26,7 @@ Daqui em diante os exercícios são numerados pela **parte** (o tema) e ficam em
 | 3 | Texto | 3.1 · 3.2 · 3.3 |
 | 4 | Listas | 4.1 · 4.2 · 4.3 |
 | 5 | Links | 5.1 · 5.2 |
-| 6 | Imagens | 6.1 · **6.2 posset de limão** ([enunciado](exercicios/06-imagens/ex-6.2-posset-de-limao.md), resolvido na sessão 5) · **6.3 o meu mini-site** ([enunciado](exercicios/06-imagens/ex-6.3-mini-site-tema.md), até 6.ª 30 out) |
+| 6 | Imagens | 6.1 · **6.2 posset de limão** ([enunciado](exercicios/06-imagens/ex-6.2-posset-de-limao.md), resolvido na sessão 5) · **6.3 o meu mini-site** ([enunciado](exercicios/06-imagens/ex-6.3-mini-site-tema.md), para treinar, sem entrega obrigatória) |
 | 7 | Tabelas | 7.1 ([ficheiro](exercicios/07-tabelas/ex-7.1-tabela-erros.html)) · 7.2 ([enunciado](exercicios/07-tabelas/ex-7.2-plano-tabela.md)) |
 | 8 | Multimédia e iframes | |
 | 9 | Formulários | |
