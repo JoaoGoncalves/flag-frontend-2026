@@ -8,7 +8,7 @@
 
 **A partir de hoje, os exercícios estão por tema** (ver o [README do módulo](../README.md)):
 - `../exercicios/06-imagens/`: 6.2 posset de limão (resolvido hoje) · 6.3 o meu mini-site (para treinar)
-- `../exercicios/07-tabelas/`: 7.1 encontrar os erros na tabela · 7.2 o plano do módulo numa tabela (para treinar)
+- `../exercicios/07-tabelas/`: 7.1 o plano do módulo numa tabela (na sessão) · 7.2 encontrar os erros numa tabela (para treinar)
 - As soluções ficam em `../solucoes/` com a mesma organização, no fim da sessão.
 
 **O código que escrevemos hoje:** `../s05/`, no fim da sessão.
