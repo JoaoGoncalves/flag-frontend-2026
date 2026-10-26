@@ -1,15 +1,12 @@
-# S5 · 2.ª 26 out · Imagens na prática, tabelas e multimédia
+# S5 · 2.ª 26 out · Imagens na prática e tabelas
 
-**Antes de começar:** descarreguem o `../s04/site/` (agora completo: menu, imagens, bolo e pudim) e copiem-no para `s05/site/`.
+- `S5-Imagens-tabelas.pdf` — slides 1–23: a numeração por tema, o posset (6.2) resolvido em conjunto, o mini-site (6.3) e as tabelas (linha a linha, caption, thead, tbody, tfoot, colspan, rowspan, scope)
+- `sessao-05-snippets.txt` — o código do posset, do menu, da imagem-link, da tabela de medidas e dos exercícios de tabelas
+- o que escrevemos na sessão está em [`../s05/`](../s05/)
+- `video/` e `audio/` — os ficheiros da multimédia, que **passou para a sessão 6** (4.ª, 28 out)
 
-**Nesta pasta:**
-- `video/`: o vídeo do posset (`posset.mp4`, `posset.webm`), as legendas (`posset.pt.vtt`) e a imagem de capa (`posset-poster.jpg`). Vão para `s05/site/video/`; o `posset-poster.jpg` vai para `s05/site/img/`.
-- `audio/`: o som do temporizador (`temporizador.ogg`, `temporizador.mp3`). Vão para `s05/site/audio/`.
-- **No fim da sessão:** o PDF dos slides e os snippets (`sessao-05-snippets.txt`).
+**Exercícios e soluções, por tema:**
+- `../exercicios/06-imagens/` · `../solucoes/06-imagens/`: 6.2 posset (resolvido) e 6.3 mini-site (para treinar; a solução "Serras de Portugal" é só um exemplo)
+- `../exercicios/07-tabelas/` · `../solucoes/07-tabelas/`: 7.1 plano do módulo (com o extra) e 7.2 encontrar os erros (para treinar)
 
-**A partir de hoje, os exercícios estão por tema** (ver o [README do módulo](../README.md)):
-- `../exercicios/06-imagens/`: 6.2 posset de limão (resolvido hoje) · 6.3 o meu mini-site (para treinar)
-- `../exercicios/07-tabelas/`: 7.1 o plano do módulo numa tabela (na sessão) · 7.2 encontrar os erros numa tabela (para treinar)
-- As soluções ficam em `../solucoes/` com a mesma organização, no fim da sessão.
-
-**O código que escrevemos hoje:** `../s05/`, no fim da sessão.
+**Atenção:** no menu do `s05/site/receitas/doces/pudim.html`, o link do posset deve ser `../posset-de-limao.html`. Corrigimos no início da sessão 6.

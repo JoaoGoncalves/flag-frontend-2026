@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tempos das receitas</title>
+</head>
+<body>
+  <table>
+    <!-- 1. o caption é sempre o primeiro filho da table -->
+    <caption>Tempos das receitas</caption>
+    <thead>
+      <tr><th>Receita</th><th>Tempo</th><th>Forno</th></tr>
+    </thead>
+    <tbody>
+      <!-- armadilha: o </td> é opcional, mas escrevemo-lo sempre -->
+      <tr><td>Bolo de bolacha</td><td>30 min</td><td>Não</td></tr>
+      <!-- 2. todas as células vivem dentro de um tr -->
+      <tr><td>Posset de limão</td><td>15 min</td><td>Não</td></tr>
+      <!-- 3. fecha-se o que se abriu: td com </td> · 4. três colunas, três células -->
+      <tr><td>Bolo de laranja</td><td>50 min</td><td>Sim</td></tr>
+      <!-- 5. rowspan="3" pedia 3 linhas, mas só há esta: sai -->
+      <tr><td>Arroz doce</td><td>40 min</td><td>Não</td></tr>
+    </tbody>
+  </table>
+</body>
+</html>

@@ -1,0 +1,218 @@
+SESSÃO 5 · IMAGENS NA PRÁTICA E TABELAS · código para seguir a sessão
+HTML e CSS · joaogoncalves.net
+O que escrevemos fica em s05/ no GitHub. Escrevam-no vocês: copiar não conta.
+
+A partir de hoje, os exercícios são numerados pelo tema:
+5 links · 6 imagens · 7 tabelas. O posset (era o 4.2) é o 6.2; o mini-site é o 6.3.
+Estão em 02-html-css/exercicios/, uma pasta por parte.
+
+ANTES DE COMEÇAR
+No GitHub, a pasta 02-html-css/s04/site/ está agora completa: menu, imagens, bolo e pudim.
+Descarreguem-na (Code › Download ZIP, ou git pull) e copiem-na para s05/site/.
+Abram o Live Server na pasta s05/site/ (ou em 02-html-css/).
+
+A PASTA s05 NO FIM DO DIA
+s05/
+├── plano.html                  exercício 7.1 (tabelas)
+└── site/
+    ├── index.html              menu com o posset, receitas com imagem-link
+    ├── sobre.html              menu + tabela de medidas
+    ├── img/
+    │   ├── bolo-de-bolacha.svg
+    │   ├── chocolate-islands.webp
+    │   └── lemon-posset.jpg
+    └── receitas/
+        ├── bolo-de-bolacha.html
+        ├── posset-de-limao.html    a receita nova (6.2)
+        └── doces/
+            └── pudim.html          o exemplo dos ../../
+
+────────────────────────────────────────────────────────
+O QUE MUDOU NO s04/site (como devia ter ficado no fim da sessão 4)
+────────────────────────────────────────────────────────
+index.html ............ lang="pt-PT", title certo, imagem-link do bolo, figure "Para a semana"
+bolo-de-bolacha.html .. um só h1, figure com ../img/, #preparacao, Wikipédia, link para o pudim
+doces/pudim.html ...... menu com ../../ (sobe duas pastas) e ../ (sobe uma)
+sobre.html ............ lang="pt-PT", title certo, telefone com tel:
+
+────────────────────────────────────────────────────────
+6.2 · RESOLVER JUNTOS · receitas/posset-de-limao.html
+────────────────────────────────────────────────────────
+Imagem: lemon-posset.jpg  →  s05/site/img/
+
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Receita de posset de limão: três ingredientes, sem forno e sem gelatina.">
+  <title>Posset de limão · Receitas da Avó</title>
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="../index.html">Início</a></li>
+      <li><a href="bolo-de-bolacha.html">Bolo de bolacha</a></li>
+      <li><a href="doces/pudim.html">Pudim</a></li>
+      <li><strong>Posset de limão</strong></li>
+      <li><a href="../sobre.html">Sobre</a></li>
+    </ul>
+  </nav>
+
+  <h1>Posset de limão</h1>
+  <p>Um creme inglês com <strong>só três ingredientes</strong>. Não leva gelatina: é o ácido do limão que faz as natas ganhar corpo.</p>
+
+  <figure>
+    <img src="../img/lemon-posset.jpg" alt="Duas taças de posset de limão com lascas de amêndoa torrada" width="150" height="150">
+    <figcaption>Serve-se frio, em copos pequenos.</figcaption>
+  </figure>
+
+  <h2>Ingredientes</h2>
+  <ul>
+    <li>500&nbsp;ml de natas</li>
+    <li>130&nbsp;g de açúcar</li>
+    <li>2 limões (sumo e raspa)</li>
+  </ul>
+
+  <h2>Preparação</h2>
+  <ol>
+    <li>Levar as natas e o açúcar ao lume até ferver.</li>
+    <li>Deixar ferver 3 minutos, mexendo sempre.</li>
+    <li>Tirar do lume e juntar o sumo e a raspa dos limões.</li>
+    <li>Distribuir por copos e levar ao frigorífico pelo menos 3 horas.</li>
+  </ol>
+
+  <p><a href="../index.html">← Voltar às receitas</a></p>
+</body>
+</html>
+
+────────────────────────────────────────────────────────
+6.2 · O MENU EM TODAS AS PÁGINAS
+────────────────────────────────────────────────────────
+index.html e sobre.html (na raiz):
+      <li><a href="receitas/posset-de-limao.html">Posset de limão</a></li>
+receitas/bolo-de-bolacha.html (mesma pasta que o posset):
+      <li><a href="posset-de-limao.html">Posset de limão</a></li>
+receitas/doces/pudim.html (uma pasta abaixo do posset):
+      <li><a href="../posset-de-limao.html">Posset de limão</a></li>
+A página onde estamos fica em <strong>, sem link.
+
+────────────────────────────────────────────────────────
+6.2 · A IMAGEM QUE É UM LINK (index.html, na lista das receitas)
+────────────────────────────────────────────────────────
+    <li>
+      <a href="receitas/posset-de-limao.html">
+        <img src="img/lemon-posset.jpg" alt="Posset de limão" width="150" height="150">
+      </a>
+      <p><a href="receitas/posset-de-limao.html">Posset de limão</a>: três ingredientes, sem forno.</p>
+    </li>
+O alt de uma imagem que é um link diz o DESTINO, não descreve a fotografia.
+
+Imagem partida? Quase sempre é o caminho: falta o ../ na receita, ou o nome tem maiúsculas.
+Validem as cinco páginas: https://validator.w3.org/nu/
+
+────────────────────────────────────────────────────────
+6.3 · O MEU MINI-SITE (tema à escolha) · para treinar, sem entrega obrigatória
+────────────────────────────────────────────────────────
+meu-site/
+├── index.html        h1 + hr, menu (nav), "Sobre este site", uma imagem-link por tópico, rodapé
+├── topico1.html      menu + Início, h1, h2, uma lista, figure, link externo, rodapé
+├── topico2.html
+├── topico3.html
+└── img/              imagens leves (JPEG ou WebP, menos de 300 KB): https://squoosh.app
+Enunciado: 02-html-css/exercicios/06-imagens/ex-6.3-mini-site-tema.md
+Querem comentários? meu-site em .zip no fórum do MÓDULO 2, tópico "6.3 · O meu mini-site"
+Exemplo: https://joaogoncalves.net/site-xpto/
+
+────────────────────────────────────────────────────────
+TABELAS · linha a linha
+────────────────────────────────────────────────────────
+<table>
+  <tr>
+    <th>Receita</th><th>Tempo</th><th>Forno</th>
+  </tr>
+  <tr>
+    <td>Bolo de bolacha</td><td>30 min</td><td>Não</td>
+  </tr>
+</table>
+tr = uma linha · th = célula de cabeçalho · td = célula de dados
+
+────────────────────────────────────────────────────────
+STOP · Uma tabela de medidas (s05/site/sobre.html, secção Medidas)
+────────────────────────────────────────────────────────
+  <table>
+    <caption>Conversões para a cozinha</caption>
+    <thead>
+      <tr>
+        <th scope="col">Ingrediente</th>
+        <th scope="col">1 chávena</th>
+        <th scope="col">1 colher de sopa</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><th scope="row">Farinha</th><td>120&nbsp;g</td><td>8&nbsp;g</td></tr>
+      <tr><th scope="row">Açúcar</th><td>200&nbsp;g</td><td>12&nbsp;g</td></tr>
+      <tr><th scope="row">Manteiga</th><td>225&nbsp;g</td><td>14&nbsp;g</td></tr>
+    </tbody>
+    <tfoot>
+      <tr><td colspan="3">Valores aproximados: sempre que puderem, pesem.</td></tr>
+    </tfoot>
+  </table>
+
+Sem CSS, a tabela não tem linhas: é normal. O aspeto vem com o CSS.
+
+────────────────────────────────────────────────────────
+COLSPAN E ROWSPAN
+────────────────────────────────────────────────────────
+colspan="3"   a célula ocupa 3 colunas (junta para o lado)
+rowspan="2"   a célula ocupa 2 linhas  (junta para baixo)
+
+Na linha a seguir a um rowspan escreve-se UMA CÉLULA A MENOS.
+Regra de ouro: contem as colunas de cada linha. Têm de dar todas o mesmo.
+
+<tr>
+  <th>9:30</th><td>Links</td>
+  <td rowspan="2">Formulários</td><td>Semântica</td>
+</tr>
+<tr>
+  <th>10:30</th><td>Imagens</td>
+  <!-- a célula do rowspan já cá está -->
+  <td>Layout</td>
+</tr>
+<tr>
+  <th>11:05</th><td colspan="3">Pausa</td>
+</tr>
+
+────────────────────────────────────────────────────────
+EXERCÍCIOS DE TABELAS
+────────────────────────────────────────────────────────
+7.1 · s05/plano.html · enunciado: exercicios/07-tabelas/ex-7.1-plano-tabela.md (8 min)
+      □ caption "Módulo HTML e CSS: as primeiras sessões"
+      □ thead com Sessão, Data, Tema (th scope="col")
+      □ tbody com S1 a S7; a sessão em th scope="row"
+      □ tfoot com uma célula colspan="3"
+      □ validador: No errors
+      Extra: coluna Bloco com rowspan ("Já demos" S1–S4, "Esta semana" S5–S7)
+
+7.2 · PARA TREINAR (sem entrega) · exercicios/07-tabelas/ex-7.2-tabela-erros.html
+      5 problemas (4 erros e 1 aviso no validador) e 1 armadilha.
+      Corrijam, acrescentem thead e tbody e validem.
+
+────────────────────────────────────────────────────────
+LEITOR DE ECRÃ · para experimentarem em casa
+────────────────────────────────────────────────────────
+macOS ...... VoiceOver: ⌘F5 para ligar/desligar · ⌃⌥U abre a lista de títulos e de links
+Windows .... Narrador: Ctrl + Win + Enter · H salta de título em título
+Numa tabela bem feita, o leitor de ecrã lê o cabeçalho da linha e o da coluna em cada célula.
+
+────────────────────────────────────────────────────────
+LINKS
+────────────────────────────────────────────────────────
+Validador ................... https://validator.w3.org/nu/
+MDN · elemento table ........ https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/table
+MDN · tabelas (Learn) ....... https://developer.mozilla.org/pt-BR/docs/Learn/HTML/Tables
+MDN · elemento figure ....... https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/figure
+Escrever um bom alt (W3C) .... https://www.w3.org/WAI/tutorials/images/decision-tree/
+Squoosh (converter imagens) .. https://squoosh.app
+Material do curso ........... https://github.com/JoaoGoncalves/flag-frontend-2026
+Dúvidas ..................... chat do Teams · WhatsApp +351 910 346 437
