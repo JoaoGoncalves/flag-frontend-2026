@@ -1,6 +1,6 @@
 # Exercício 7.2 · O plano do módulo numa tabela
 
-> Parte 7 · Tabelas.
+> Parte 7 · Tabelas · **para treinar, sem entrega obrigatória**
 
 Ficheiro `s05/plano.html` (estrutura completa, com `!` + Tab).
 
@@ -16,9 +16,9 @@ Construam esta tabela:
 | S2 | 16 out | Sintaxe, estrutura base e texto |
 | S3 | 19 out | Texto, listas e links |
 | S4 | 21 out | Links e imagens |
-| S5 | 26 out | Tabelas |
-| S6 | 28 out | Multimédia e iframes |
-| S7 | 30 out | Formulários |
+| S5 | 26 out | Tabelas e multimédia |
+| S6 | 28 out | Formulários e semântica |
+| S7 | 30 out | CSS: primeiros passos |
 
 - na coluna **Bloco**, uma só célula "Já demos" que ocupa as linhas S1 a S4 (`rowspan`) e uma só célula "Esta semana" para as linhas S5 a S7; as duas em `th scope="row"`
 - **rodapé** (`tfoot`) com uma única célula que ocupa as quatro colunas (`colspan`): "12 sessões no total, mais a de 23 out, a compensar."
