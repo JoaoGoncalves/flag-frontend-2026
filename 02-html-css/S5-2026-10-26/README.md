@@ -4,6 +4,7 @@
 
 **Nesta pasta:**
 - `video/`: o vídeo do posset (`posset.mp4`, `posset.webm`), as legendas (`posset.pt.vtt`) e a imagem de capa (`posset-poster.jpg`). Vão para `s05/site/video/`; o `posset-poster.jpg` vai para `s05/site/img/`.
+- `audio/`: o som do temporizador (`temporizador.ogg`, `temporizador.mp3`). Vão para `s05/site/audio/`.
 - **No fim da sessão:** o PDF dos slides e os snippets (`sessao-05-snippets.txt`).
 
 **A partir de hoje, os exercícios estão por tema** (ver o [README do módulo](../README.md)):
