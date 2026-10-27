@@ -2,7 +2,7 @@
 
 > Parte 9 · Formulários · sessão 6 (10 min)
 
-Ficheiro `s06/inscricao.html` (estrutura completa, com `!` + Tab), com um `h1` "Inscrição num workshop" e um `form method="get"`:
+Ficheiro `s06/inscricao.html` (estrutura completa, com `!` + Tab), com um `h1` "Inscrição num workshop" e um `form action="https://httpbin.org/anything" method="post"`:
 
 1. **Nome** e **email**: `label` + `input` (`type="text"` e `type="email"`), os dois com `required`.
 2. **Workshop**: um `select` com três `option`: Pastelaria portuguesa, Sobremesas sem forno, Pão caseiro.
@@ -10,7 +10,7 @@ Ficheiro `s06/inscricao.html` (estrutura completa, com `!` + Tab), com um `h1` "
 4. **Regras**: uma `checkbox` obrigatória (`required`) com o label "Li e aceito as regras do workshop".
 5. Um `button` "Inscrever".
 
-**Pronto quando:** clicar no texto de cada etiqueta põe o cursor no campo certo, o browser não deixa enviar sem os campos obrigatórios, depois de enviar o endereço mostra `?nome=…&email=…`, e o validador diz "No errors".
+**Pronto quando:** clicar no texto de cada etiqueta põe o cursor no campo certo, o browser não deixa enviar sem os campos obrigatórios, depois de enviar o httpbin mostra no `"form"` todos os campos que enviaram, e o validador diz "No errors".
 
 ## Extra (para treinar)
 
