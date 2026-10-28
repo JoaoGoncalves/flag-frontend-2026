@@ -12,7 +12,7 @@ Módulo 2 · HTML e CSS · 14 out → 9 nov 2026
 | S4 | 4.ª 21 out | Links e imagens | [S4-2026-10-21](S4-2026-10-21/) |
 | — | 6.ª 23 out | Sem sessão (é compensada numa data a combinar) | — |
 | S5 | 2.ª 26 out | Imagens na prática (6.2 e 6.3) e tabelas | [S5-2026-10-26](S5-2026-10-26/) |
-| S6 | 4.ª 28 out | Multimédia, formulários e semântica | — |
+| S6 | 4.ª 28 out | Multimédia, formulários e semântica (o `s06/site` está completo: é o ponto de partida da S7) | [S6-2026-10-28](S6-2026-10-28/) |
 | S7 | 6.ª 30 out | CSS: primeiros passos | — |
 
 O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
@@ -25,7 +25,7 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 │                        (e ficheiros dessa sessão, como o vídeo da S5)
 ├── exercicios/NN-tema/  os enunciados, uma pasta por parte (06-imagens, 07-tabelas…)
 ├── solucoes/NN-tema/    as soluções, com a mesma organização (publicadas depois da sessão)
-└── s01/, s02/ … s05/    o código que escrevemos em cada sessão
+└── s01/, s02/ … s06/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
 ```
 
 - **Os exercícios são numerados pela parte (o tema):** o 7.1 é o primeiro exercício das tabelas (parte 7), esteja em que sessão estiver.
@@ -44,8 +44,8 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 6 | Imagens | 6.1 · **6.2 posset de limão** ([enunciado](exercicios/06-imagens/ex-6.2-posset-de-limao.md), resolvido na sessão 5) · **6.3 o meu mini-site** ([enunciado](exercicios/06-imagens/ex-6.3-mini-site-tema.md), para treinar, sem entrega obrigatória) |
 | 7 | Tabelas | 7.1 o plano do módulo numa tabela ([enunciado](exercicios/07-tabelas/ex-7.1-plano-tabela.md)) · 7.2 encontrar os erros, para treinar ([enunciado](exercicios/07-tabelas/ex-7.2-tabela-erros.md)) |
 | 8 | Multimédia e iframes | (sem exercício: o stop da sessão 6) |
-| 9 | Formulários | 9.1 inscrição num workshop ([enunciado](exercicios/09-formularios/ex-9.1-inscricao.md)) |
-| 10 | Semântica e acessibilidade | 10.1 que elemento? ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.1-que-elemento.md)) · 10.2 a semântica no resto do mini-site, para treinar ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.2-semantica-mini-site.md)) |
+| 9 | Formulários | 9.1 inscrição num workshop ([enunciado](exercicios/09-formularios/ex-9.1-inscricao.md) · [solução](solucoes/09-formularios/sol-9.1-inscricao.html) · [extra](solucoes/09-formularios/sol-9.1-inscricao-extra.html)) |
+| 10 | Semântica e acessibilidade | 10.1 que elemento? ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.1-que-elemento.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.1-que-elemento.md)) · 10.2 a semântica no resto do mini-site ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.2-semantica-mini-site.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.2-semantica-mini-site.md): o `s06/site`) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 

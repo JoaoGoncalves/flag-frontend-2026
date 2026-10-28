@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição · Workshop de sobremesas (com o extra)</title>
+</head>
+<body>
+  <h1>Inscrição num workshop</h1>
+
+  <form action="https://httpbin.org/anything" method="post">
+    <fieldset>
+      <legend>Os vossos dados</legend>
+      <p>
+        <label for="nome">Nome</label>
+        <input type="text" id="nome" name="nome" required minlength="2">
+      </p>
+      <p>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" required>
+      </p>
+      <p>
+        <label for="telefone">Telefone</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{9}" title="9 algarismos, sem espaços">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>O workshop</legend>
+      <p>
+        <label for="workshop">Workshop</label>
+        <select id="workshop" name="workshop">
+          <option value="pastelaria">Pastelaria portuguesa</option>
+          <option value="sem-forno">Sobremesas sem forno</option>
+          <option value="pao">Pão caseiro</option>
+        </select>
+      </p>
+      <p>
+        <label for="data">Data</label>
+        <input type="date" id="data" name="data" min="2026-11-02" required>
+      </p>
+      <p>
+        <label for="pessoas">Pessoas</label>
+        <input type="number" id="pessoas" name="pessoas" min="1" max="4" value="1">
+      </p>
+    </fieldset>
+
+    <fieldset>
+      <legend>Turno</legend>
+      <input type="radio" id="manha" name="turno" value="manha" checked>
+      <label for="manha">Manhã</label>
+      <input type="radio" id="tarde" name="turno" value="tarde">
+      <label for="tarde">Tarde</label>
+    </fieldset>
+
+    <p>
+      <input type="checkbox" id="regras" name="regras" value="sim" required>
+      <label for="regras">Li e aceito as regras do workshop</label>
+    </p>
+    <p><button type="submit">Inscrever</button></p>
+  </form>
+</body>
+</html>

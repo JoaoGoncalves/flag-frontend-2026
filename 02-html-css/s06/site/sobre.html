@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Quem escreve as receitas e como são testadas.">
+  <title>Sobre · Receitas da Avó</title>
+</head>
+<body>
+  <header>
+    <p><strong>Receitas da Avó</strong></p>
+    <nav>
+      <ul>
+        <li><a href="index.html">Início</a></li>
+        <li><a href="receitas/bolo-de-bolacha.html">Bolo de bolacha</a></li>
+        <li><a href="receitas/doces/pudim.html">Pudim</a></li>
+        <li><a href="receitas/posset-de-limao.html">Posset de limão</a></li>
+        <li><strong>Sobre</strong></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Sobre este site</h1>
+    <p>Este site junta as receitas da família, escritas em <abbr title="HyperText Markup Language">HTML</abbr> durante a formação da FLAG.</p>
+
+    <section>
+      <h2>Como testamos as receitas</h2>
+      <p>Cada receita é feita <strong>pelo menos duas vezes</strong> antes de ser publicada.
+        O forno é sempre pré-aquecido, e a farinha é <em>peneirada</em>, nunca despejada.</p>
+      <p>Quando uma receita leva menos açúcar do que o original, está <mark>assinalada a amarelo</mark>.</p>
+
+      <h3>Medidas</h3>
+      <p>Usamos gramas e mililitros: uma chávena tem cerca de 250&nbsp;ml e o forno vai a 180&nbsp;°C. Uma forma de 20&nbsp;cm tem cerca de 314&nbsp;cm<sup>2</sup>.
+        A água é H<sub>2</sub>O, mas o fermento é que faz o bolo crescer.</p>
+
+      <table>
+        <caption>Conversões para a cozinha</caption>
+        <thead>
+          <tr>
+            <th scope="col">Ingrediente</th>
+            <th scope="col">1 chávena</th>
+            <th scope="col">1 colher de sopa</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><th scope="row">Farinha</th><td>120&nbsp;g</td><td>8&nbsp;g</td></tr>
+          <tr><th scope="row">Açúcar</th><td>200&nbsp;g</td><td>12&nbsp;g</td></tr>
+          <tr><th scope="row">Manteiga</th><td>225&nbsp;g</td><td>14&nbsp;g</td></tr>
+        </tbody>
+        <tfoot>
+          <tr><td colspan="3">Valores aproximados: sempre que puderem, pesem.</td></tr>
+        </tfoot>
+      </table>
+    </section>
+
+    <section>
+      <h2>Uma frase de que gostamos</h2>
+      <blockquote>
+        <p>A cozinha é o sítio onde a química se come.</p>
+      </blockquote>
+    </section>
+
+    <section>
+      <h2>Onde estamos</h2>
+      <p>Morada para provas:<br>
+        Rua das Bolachas, 12<br>
+        1000-001 Lisboa<br>
+        Telefone: <a href="tel:+351123456789">123&nbsp;456&nbsp;789</a></p>
+      <!-- código do Google Maps: Partilhar › Incorporar um mapa (acrescentámos o title) -->
+      <iframe src="https://maps.google.com/maps?q=Rua%20Augusta%2C%20Lisboa&amp;output=embed"
+              width="600" height="450" style="border:0;"
+              title="Mapa: a Rua Augusta, em Lisboa"
+              allowfullscreen loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </section>
+
+    <section>
+      <h2>Escrevam-nos</h2>
+      <!-- 1.º só com method="get": os dados aparecem no endereço -->
+      <!-- depois, para um servidor de teste que devolve o que recebeu: -->
+      <form action="https://httpbin.org/anything" method="post">
+        <p>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" required autocomplete="name">
+        </p>
+        <p>
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required autocomplete="email">
+        </p>
+        <p>
+          <label for="assunto">Assunto</label>
+          <select id="assunto" name="assunto">
+            <option value="receita">Uma receita</option>
+            <option value="erro">Um erro no site</option>
+            <option value="outro">Outro assunto</option>
+          </select>
+        </p>
+        <p>
+          <label for="mensagem">Mensagem</label><br>
+          <textarea id="mensagem" name="mensagem" rows="5" cols="40" required></textarea>
+        </p>
+        <p>
+          <input type="checkbox" id="novidades" name="novidades" value="sim">
+          <label for="novidades">Quero receber as receitas novas por email</label>
+        </p>
+        <!-- radio: o mesmo name faz um grupo (só se escolhe um); cada label aponta para o seu id -->
+        <p>Com que frequência?
+          <input type="radio" id="dia" name="frequencia" value="dia">
+          <label for="dia">Todos os dias</label>
+          <input type="radio" id="semana" name="frequencia" value="semana" checked>
+          <label for="semana">Uma vez por semana</label>
+          <input type="radio" id="mes" name="frequencia" value="mes">
+          <label for="mes">Uma vez por mês</label>
+        </p>
+        <p><button type="submit">Enviar</button></p>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p><small>© 2026 Receitas da Avó</small></p>
+    <address>Escrevam-nos: <a href="mailto:receitas@exemplo.pt">receitas@exemplo.pt</a></address>
+  </footer>
+</body>
+</html>
