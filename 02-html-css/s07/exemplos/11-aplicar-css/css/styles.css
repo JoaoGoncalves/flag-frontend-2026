@@ -1,0 +1,13 @@
+body {
+    font-family: Arial;
+    background-color: bisque;
+}
+
+h1 {
+    color: tomato;
+}
+
+p {
+    color: #333;
+    line-height: 1.6;
+}

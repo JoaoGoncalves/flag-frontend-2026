@@ -1,0 +1,67 @@
+/* Sessão 7 · Parte 12 · os seletores
+   Vamos escrever aqui as regras, uma a uma. */
+
+/* 1- selector universal */
+
+* {
+   font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* 2 - elementos de html */
+body {
+   background-color: bisque;
+}
+
+p {
+   line-height: 1.5;
+}
+
+/* grupo de selectores */
+h1, h2, h3 {
+   color: darkgreen;
+}
+
+/* classes de formatacao, estilos */
+
+/* classe independente, a varios elementos */
+.destaque {
+   color: tomato;
+   letter-spacing: 4px;
+}
+
+
+/* class dependente */
+p.destaque{
+   font-style: italic;
+}
+
+.xpto {
+   background-color: lightblue;
+}
+
+/* id - para evitar */
+#topo{
+   color: tomato;
+}
+
+
+/** selectores combinados */
+
+/* descendentes */
+section.noticias p {
+   color: brown;
+}
+
+/* filhos diretos,  */
+section.noticias > p {
+   color: teal;
+}
+
+article h3{
+   color: navy;
+}
+
+nav a:hover {
+   background-color: aquamarine;
+   text-decoration: none;
+}

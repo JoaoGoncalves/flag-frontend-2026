@@ -10,10 +10,10 @@ Módulo 2 · HTML e CSS · 14 out → 9 nov 2026
 | S2 | 6.ª 16 out | Sintaxe, estrutura base e texto | [S2-2026-10-16](S2-2026-10-16/) |
 | S3 | 2.ª 19 out | Texto, listas e o início dos links | [S3-2026-10-19](S3-2026-10-19/) |
 | S4 | 4.ª 21 out | Links e imagens | [S4-2026-10-21](S4-2026-10-21/) |
-| — | 6.ª 23 out | Sem sessão (é compensada numa data a combinar) | — |
+| — | 6.ª 23 out | Sem sessão (compensada na 3.ª, 10 nov, 9:30–12:30) | — |
 | S5 | 2.ª 26 out | Imagens na prática (6.2 e 6.3) e tabelas | [S5-2026-10-26](S5-2026-10-26/) |
 | S6 | 4.ª 28 out | Multimédia, formulários e semântica (o `s06/site` está completo: é o ponto de partida da S7) | [S6-2026-10-28](S6-2026-10-28/) |
-| S7 | 6.ª 30 out | CSS: a regra, onde se escreve e os seletores (partimos do `s06/site` e dos `exemplos/`) | — |
+| S7 | 6.ª 30 out | CSS: a regra, onde se escreve e os seletores (**para o fim de semana: o 12.2**, a S8 começa por ele) | [S7-2026-10-30](S7-2026-10-30/) |
 
 O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 
@@ -26,7 +26,7 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 ├── exemplos/NN-tema/    (CSS) as páginas de exemplo onde escrevemos o código juntos, sem CSS
 ├── exercicios/NN-tema/  os enunciados, uma pasta por parte (06-imagens, 07-tabelas…)
 ├── solucoes/NN-tema/    as soluções, com a mesma organização (publicadas depois da sessão)
-└── s01/, s02/ … s06/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
+└── s01/, s02/ … s07/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
 ```
 
 - **Os exercícios são numerados pela parte (o tema):** o 7.1 é o primeiro exercício das tabelas (parte 7), esteja em que sessão estiver.
@@ -47,8 +47,8 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 8 | Multimédia e iframes | (sem exercício: o stop da sessão 6) |
 | 9 | Formulários | 9.1 inscrição num workshop ([enunciado](exercicios/09-formularios/ex-9.1-inscricao.md) · [solução](solucoes/09-formularios/sol-9.1-inscricao.html) · [extra](solucoes/09-formularios/sol-9.1-inscricao-extra.html)) |
 | 10 | Semântica e acessibilidade | 10.1 que elemento? ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.1-que-elemento.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.1-que-elemento.md)) · 10.2 a semântica no resto do mini-site ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.2-semantica-mini-site.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.2-semantica-mini-site.md): o `s06/site`) |
-| 11 | CSS: o que é e onde se escreve | 11.1 a folha de estilos do site das receitas ([enunciado](exercicios/11-css-introducao/ex-11.1-folha-de-estilos.md)) · exemplo: [`exemplos/11-aplicar-css/`](exemplos/11-aplicar-css/) |
-| 12 | Seletores | 12.1 que seletor? ([enunciado](exercicios/12-seletores/ex-12.1-que-seletor.md)) · 12.2 seletores no site das receitas ([enunciado](exercicios/12-seletores/ex-12.2-seletores-no-site.md)) · exemplo: [`exemplos/12-seletores/`](exemplos/12-seletores/) |
+| 11 | CSS: o que é e onde se escreve | 11.1 a folha de estilos do site das receitas ([enunciado](exercicios/11-css-introducao/ex-11.1-folha-de-estilos.md) · [solução](solucoes/11-css-introducao/sol-11.1-folha-de-estilos.md)) · exemplo: [`exemplos/11-aplicar-css/`](exemplos/11-aplicar-css/) |
+| 12 | Seletores | 12.1 que seletor? ([enunciado](exercicios/12-seletores/ex-12.1-que-seletor.md) · [solução](solucoes/12-seletores/sol-12.1-que-seletor.md)) · 12.2 seletores no site das receitas ([enunciado](exercicios/12-seletores/ex-12.2-seletores-no-site.md), **para o fim de semana**; para treinar: [CSS Diner](https://flukeout.github.io/)) · exemplo: [`exemplos/12-seletores/`](exemplos/12-seletores/) |
 | 13 | Cores, texto e fontes | (sessão 8) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
