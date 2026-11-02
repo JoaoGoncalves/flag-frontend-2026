@@ -1,0 +1,69 @@
+/* Sessão 8 · Parte 13 · as unidades: px, rem, em e %
+   Vamos escrever aqui as regras, por esta ordem:
+   1 · a caixa   2 · as quatro unidades   3 · listas dentro de listas */
+
+   /* default do browser 16px */
+
+   @font-face {
+      font-family: "Caveat";
+      src: url("../fonts/caveat-400.woff2");
+   }
+
+
+   body {
+      font-size: 16px;
+   }
+
+   h1 {
+     /*  font-size: 32px; */
+      font-size: 2em;
+      font-weight: normal;
+   }
+
+   h2 {
+      /* font-size: 24px; */
+      font-size: 1.5em;
+      /* 
+         1 em --------- 16px
+            (1,5em)  ---------  24px
+      
+      */
+   }
+
+   p {
+      /* font-size: 18px; */
+      font-size: 1.125em;
+      font-style: italic;
+      text-transform: capitalize;
+      line-height: 1.5em;
+      text-align: justify;
+   }
+
+   ul.lista-em li{
+      font-size: 1.2em;
+   }
+   ul.lista-rem li{
+      font-size: 1.2rem;
+   }
+
+   li {
+      text-decoration: line-through;
+   }
+
+   h1, h2, h3 {
+      letter-spacing: .15em;
+      /* text-shadow: 1px 1px 2px tomato; */
+      font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+      font-family: "Merriweather Sans", sans-serif;
+      font-family: "Henny Penny", system-ui;
+
+      /* font-display: swap; → aqui não faz nada: só funciona dentro do @font-face (ver os snippets) */
+   }
+
+   h1 {
+      font-family: "Caveat";
+   }
+
+
+
+  

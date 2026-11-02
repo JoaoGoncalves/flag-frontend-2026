@@ -1,0 +1,397 @@
+# Sessão 8 · Cores, texto e fontes
+
+**HTML e CSS · joaogoncalves.net** · código para seguir a sessão
+
+O que escrevemos fica em `s08/` no GitHub. Escrevam-no vocês: copiar não conta.
+
+> **Para casa: o exercício 13.2** (o aspeto das receitas), no vosso `s08/site/css/estilos.css`, a seguir ao 12.2. A matéria foi toda dada; não houve tempo para o fazer na aula. A solução é publicada depois da sessão 9.
+Em cada tópico: **teoria → código comigo num exemplo → exercício no site das receitas**.
+Exercícios por tema: **12** seletores (o 12.2, em conjunto) · **13** cores, texto e fontes.
+Os números dos slides são os da versão FLAG (entre parênteses, os da versão própria).
+
+---
+
+## Antes de começar · slides 4–5 (própria 2–3)
+
+Na sexta não houve tempo para o 12.2: fazemo-lo agora, em conjunto. No GitHub há uma pasta nova, `02-html-css/exemplos/13-cores-texto/`, com a página de exemplo de hoje.
+
+1. Copiem a **vossa** `s07/site/` para **`s08/site/`** (com o que fizeram do 12.2). Quem não a tiver: `02-html-css/s07/site/` do GitHub.
+2. GitHub › **Code › Download ZIP** (ou `git pull`) e copiem `02-html-css/exemplos/13-cores-texto/` para **`s08/exemplos/13-cores-texto/`**.
+3. Abram o Live Server na pasta `s08/`.
+
+### A pasta s08 no fim do dia
+
+```text
+s08/
+├── exemplos/
+│   └── 13-cores-texto/
+│       ├── horta.html          + os <link> do Google Fonts
+│       ├── unidades.html       px, rem, em e % lado a lado
+│       ├── css/
+│       │   ├── cores-texto.css as cores, o texto e as fontes
+│       │   └── unidades.css    as unidades
+│       └── fonts/              a Caveat (caveat-400.woff2) e a licença (OFL.txt)
+└── site/
+    ├── css/estilos.css         11.1 · 12.2 · 13.2
+    ├── index.html              + class="intro" · class="nova" (extra do 12.2)
+    ├── sobre.html
+    └── receitas/
+```
+
+---
+
+## Revisão · Exercício 12.2 · Seletores no site das receitas (em conjunto) · slides 6–8 (própria 4–6)
+
+Enunciado: `exercicios/12-seletores/ex-12.2-seletores-no-site.md`. Tudo no `s08/site/css/estilos.css`, a seguir à regra do `h1`.
+
+Ler o seletor **da direita para a esquerda**: `nav a` = "os `a` que estão dentro de um `nav`".
+
+1. `nav a`: os links do menu a `#8a5a00`
+2. `nav a:hover`: `#c0392b` com o rato por cima
+3. `body > header, footer`: fundo `#f3e3c3` (experimentem primeiro só `header` e abram o posset)
+4. `class="intro"` no primeiro `p` do index; `.intro` em itálico (`font-style: italic`) e `#555555`
+5. `aside h2`: "Outras receitas" a `#8a5a00`
+6. Validar o CSS
+
+**Extra:** `class="nova"` no `li` do posset (index) e `li.nova` com fundo `#fff3b0`.
+
+Para treinar os seletores, a jogar: **CSS Diner**, https://flukeout.github.io/
+
+---
+
+## Parte 13 · Cores, texto e fontes · slides 9–32 (própria 7–30)
+
+### As cores · slides 10–12 (própria 8–10)
+
+A mesma cor, de quatro formas:
+
+| Forma | Exemplo | O que é |
+|---|---|---|
+| nome | `tomato` | 148 nomes em inglês; bons para testar |
+| hexadecimal | `#ff6347` | `#rrggbb`: vermelho, verde e azul, de `00` a `ff` |
+| rgb | `rgb(255 99 71)` | os mesmos três canais, de 0 a 255 |
+| hsl | `hsl(9 100% 64%)` | matiz (0–360), saturação e luminosidade |
+
+```css
+color: #8a5a00;              /* a cor do texto (herda-se)  */
+background-color: #fffaf0;   /* o fundo (não se herda)     */
+```
+
+- `#8a5a00` → `8a` = 138, `5a` = 90, `00` = 0 → `rgb(138 90 0)`
+- `#000` preto · `#fff` branco · `#ffcc00` abrevia-se `#fc0`
+- `rgb(255, 99, 71)`, com vírgulas, é a forma antiga: também funciona
+- em hsl, mudar só a luminosidade dá tons da mesma cor: `hsl(39 100% 27%)` → `hsl(39 100% 92%)`
+
+### Transparência e contraste · slide 13 (própria 11)
+
+```css
+background-color: rgb(106 131 32 / 60%);   /* só a cor fica transparente */
+background-color: hsl(90 60% 30% / 15%);
+background-color: #6a832099;               /* #rrggbbaa */
+opacity: 0.6;                              /* o elemento todo, texto incluído */
+```
+
+**Contraste (WCAG AA):** texto normal, pelo menos **4,5 : 1**; texto grande, 3 : 1.
+No DevTools: Elements › Styles › clicar no quadrado da cor › **Contrast ratio**.
+`#8a5a00` sobre `#fffaf0` = 5,7 ✓ · `tomato` sobre branco = 2,95 ✗
+
+### Código no exemplo · as cores · `exemplos/13-cores-texto/` · slides 14–15 (própria 12–13)
+
+`s08/exemplos/13-cores-texto/css/cores-texto.css`, secção "1 · as cores":
+
+```css
+/* nome: há 148 (darkgreen, tomato, bisque…) */
+h1 {
+  color: darkgreen;
+}
+
+/* hexadecimal: #rrggbb (00 = nada, ff = tudo) */
+body {
+  color: #2b2b2b;
+  background-color: #f4f9ec;
+}
+
+/* rgb: vermelho, verde e azul, de 0 a 255 */
+.noticias {
+  background-color: rgb(255 255 255);
+}
+
+/* hsl: matiz (0–360), saturação e luminosidade */
+h2 {
+  color: hsl(90 60% 30%);
+}
+
+/* transparência: a seguir à barra, quanto se vê (15%) */
+.nota {
+  background-color: hsl(90 60% 30% / 15%);
+}
+
+/* contraste: tomato sobre o fundo dá 2,75 : 1 (não chega a 4,5);
+   no DevTools escolhemos uma cor mais escura */
+.destaque {
+  color: #b33a1f;
+}
+```
+
+### Exercício 13.1 · Que cor é esta? (no chat, 5 min) · slides 16–17 (própria 14–15)
+
+1. `#ffffff`
+2. `#000`
+3. `rgb(255 0 0)`
+4. `#00f`
+5. Qual é a mais clara: `hsl(39 100% 27%)` ou `hsl(39 100% 85%)`?
+6. `rgb(0 0 0 / 50%)` sobre um fundo branco
+
+### O tamanho do texto · slide 18 (própria 16)
+
+| Unidade | Relativa a | Exemplo (com 16px no `html` e 20px no pai) |
+|---|---|---|
+| `px` | nada: é fixa | `32px` = 32px |
+| `rem` | ao `html` (a raiz) | `2rem` = 32px · **é a que usamos no `font-size`** |
+| `em` | ao pai | `2em` = 40px |
+| `%` | ao pai | `200%` = 40px |
+
+`0.875rem` = 14px · `1rem` = 16px · `1.25rem` = 20px · `1.5rem` = 24px · `2rem` = 32px
+Ponto decimal (`1.5rem`) e sem espaço entre o número e a unidade.
+
+### As unidades: absolutas e relativas · slide 19 (própria 17)
+
+A pergunta a fazer é sempre: **relativo a quê?**
+
+| Unidade | Tipo | Relativa a | Usa-se para |
+|---|---|---|---|
+| `px` | absoluta | nada: é fixa | bordas, sombras |
+| `pt`, `cm`, `mm`, `in` | absolutas | nada | imprimir (no ecrã, não) |
+| `rem` | relativa | a letra do `html` (a raiz) | **`font-size`**; espaços |
+| `em` | relativa | a letra do pai (no `font-size`) | espaços que acompanham a letra (sessão 9) |
+| `%` | relativa | o pai | larguras (sessões 9 a 11) |
+| `vw`, `vh` | relativas | a janela (o viewport): `1vw` = 1% da largura | responsive (sessão 11) |
+| `ch` | relativa | a largura do "0" da fonte | linhas legíveis: `max-width: 65ch` |
+
+**Regra prática:** `font-size` em `rem` · bordas em `px` · `line-height` sem unidade (`1.5`) · larguras em `%` (mais à frente).
+
+### O em multiplica-se; o rem não · slide 20 (própria 18)
+
+Uma lista dentro de uma lista dentro de uma lista, com a mesma regra:
+
+| Nível | `li { font-size: 1.2em; }` | `li { font-size: 1.2rem; }` |
+|---|---|---|
+| 1 · Legumes | 16 × 1.2 = **19.2px** | 16 × 1.2 = **19.2px** |
+| 2 · De folha | 19.2 × 1.2 = **23.04px** | **19.2px** |
+| 3 · Alface | 23.04 × 1.2 = **27.65px** | **19.2px** |
+
+E se a pessoa aumentar a letra no browser? O `rem` acompanha sempre; o `em` só acompanha se nenhum pai estiver em `px`; o `px` nunca.
+
+### Código no exemplo · as unidades · `exemplos/13-cores-texto/unidades.html` · slides 21–22 (própria 19–20)
+
+`s08/exemplos/13-cores-texto/css/unidades.css`:
+
+```css
+/* ---------- 1 · a caixa ---------- */
+
+/* o pai dos quatro parágrafos passa a ter a letra a 20px */
+.caixa {
+  font-size: 20px;
+  background-color: #fff3b0;
+}
+
+
+/* ---------- 2 · as quatro unidades (dentro da caixa) ---------- */
+
+/* px: fixo, 24px sempre */
+.com-px {
+  font-size: 24px;
+}
+
+/* rem: relativo ao html (16px) → 1.5 × 16 = 24px */
+.com-rem {
+  font-size: 1.5rem;
+}
+
+/* em: relativo ao pai (a .caixa, 20px) → 1.5 × 20 = 30px */
+.com-em {
+  font-size: 1.5em;
+}
+
+/* %: também relativo ao pai → 150% de 20 = 30px */
+.com-percent {
+  font-size: 150%;
+}
+
+
+/* ---------- 3 · listas dentro de listas ---------- */
+
+/* em: cada li é 1.2 × o pai, por isso cresce a cada nível
+   (19.2px → 23.04px → 27.65px) */
+.lista-em li {
+  font-size: 1.2em;
+}
+
+/* rem: cada li é 1.2 × o html → 19.2px em todos os níveis */
+.lista-rem li {
+  font-size: 1.2rem;
+}
+```
+
+Para ver os valores em px: DevTools › Elements › o elemento › **Computed** › `font-size`.
+Para testar a letra do browser: Chrome › Definições › Aspeto › Tamanho do tipo de letra › **Muito grande** (24px) e recarregar: o `.com-rem` passa a 36px, o `.com-px` fica nos 24px, e o `.com-em` fica nos 30px (o pai, a `.caixa`, está em `px`). No fim, voltar a **Médio**.
+
+### Pergunta rápida · Quanto dá, em px? · slides 23–24 (própria 21–22)
+
+O `html` tem 16px e uma `section` tem `font-size: 20px`.
+
+1. `1.25rem`
+2. Um `p` dentro da `section`, com `0.8em`
+3. O mesmo `p`, com `0.8rem`
+4. O mesmo `p`, com `150%`
+5. `li { font-size: 1.5em; }`: um `li` dentro de outro `li` (no `body`, 16px)
+6. A pessoa pôs a letra do browser a 20px: quanto dá `2rem`? E `32px`?
+
+**Respostas:** 1 · 20px (1.25 × 16) · 2 · 16px (0.8 × 20, o pai) · 3 · 12.8px (0.8 × 16: a `section` não conta) · 4 · 30px (150% de 20) · 5 · 36px (16 × 1.5 × 1.5: multiplica-se) · 6 · `2rem` = 40px; `32px` fica 32px.
+
+### As propriedades do texto · slide 25 (própria 23)
+
+| Propriedade | Exemplo | Para tirar |
+|---|---|---|
+| `font-size` | `1.25rem` | |
+| `font-weight` | `bold` (ou `700`) | `normal` (`400`) |
+| `font-style` | `italic` | `normal` |
+| `text-decoration` | `underline` | `none` (o sublinhado dos links) |
+| `text-transform` | `uppercase`, `lowercase`, `capitalize` | `none` |
+| `letter-spacing` | `1px` | `normal` |
+| `line-height` | `1.5` (sem unidade) | |
+| `text-align` | `left`, `center`, `right` | |
+| `text-shadow` | `2px 2px 4px gray` | `none` |
+
+### As fontes · slides 26–27 (própria 24–25)
+
+```css
+font-family: "Merriweather", Georgia, serif;
+/*           1.ª escolha     se não houver  a família genérica */
+```
+
+- A primeira que o browser tiver, ganha. Acabar **sempre** numa família genérica: `serif`, `sans-serif` ou `monospace`.
+- Aspas quando o nome tem espaços: `"Trebuchet MS"`, `"Times New Roman"`.
+- No `body`: os filhos herdam.
+
+**Google Fonts** (fonts.google.com › a fonte › Get font › Get embed code). No `head`, **antes** do nosso CSS:
+
+```html
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/cores-texto.css">
+```
+
+### Uma fonte nossa: @font-face · slide 28 (própria 26)
+
+Quando o ficheiro da fonte está **no nosso site** (sem pedir nada ao Google). No exemplo: a **Caveat** (licença OFL), em `fonts/caveat-400.woff2`.
+
+```css
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/caveat-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+.nota {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+```
+
+- `font-family` dentro do `@font-face`: o **nome que damos** à fonte; depois usa-se como qualquer outra, com alternativa e genérica.
+- O `url()` conta **a partir do `.css`**: `../` sobe de `css/` e entra em `fonts/` (os caminhos de sempre).
+- `.woff2`: o formato da web (comprimido, aceite por todos os browsers).
+- `font-display: swap`: mostra logo o texto com a alternativa e troca quando a fonte chega.
+- Só fontes com licença que o permita (as do Google Fonts são OFL e podem descarregar-se).
+
+### Código no exemplo · o texto e as fontes · slides 29–30 (própria 27–28)
+
+`css/cores-texto.css`, secções "2 · o texto" e "3 · as fontes da web" (a seguir às cores):
+
+```css
+/* a letra e a altura da linha no body: os filhos herdam */
+body {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  line-height: 1.5;
+}
+
+/* tamanhos em rem: 1rem = a letra do browser (16px por omissão) */
+h1 {
+  font-size: 2.5rem;
+  letter-spacing: 1px;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+.intro {
+  font-size: 1.25rem;
+  font-style: italic;
+}
+
+nav a {
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.875rem;
+}
+
+/* ---------- 3 · as fontes da web ---------- */
+/* no head do horta.html: os <link> do Google Fonts, antes do link para este ficheiro */
+h1, h2, h3 {
+  font-family: "Merriweather", Georgia, serif;
+}
+
+/* @font-face: uma fonte nossa (a Caveat, na pasta fonts/) */
+@font-face {
+  font-family: "Caveat";
+  src: url("../fonts/caveat-400.woff2") format("woff2");
+  font-weight: 400;
+  font-display: swap;
+}
+
+.nota {
+  font-family: "Caveat", cursive;
+  font-size: 1.5rem;
+}
+```
+
+No DevTools › Network › Font: o `caveat-400.woff2` vem do nosso Live Server; a Merriweather vem do `fonts.gstatic.com`.
+
+No `horta.html`, no `head`, antes do `<link rel="stylesheet" href="css/cores-texto.css">`: os três `<link>` do Google Fonts (acima).
+
+### Exercício 13.2 · O aspeto das receitas · **para casa** · slide 31 (própria 29)
+
+Enunciado: `exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md`. Tudo no `s08/site/css/estilos.css`, a seguir ao 12.2, sem mexer no HTML.
+
+1. `h1, h2` sem serifa: `"Trebuchet MS", Arial, sans-serif`
+2. `h1` a `2.25rem` e `h2` a `1.5rem`
+3. `nav a` sem sublinhado e a negrito; `nav a:hover` sublinhado
+4. `figcaption` centrado, itálico e `hsl(0 0% 36%)`; `time` a negrito
+5. Sobre: `th` com fundo `rgb(243 227 195)`; `tfoot` a `0.875rem`
+6. Contraste do `.intro` no DevTools; validar o CSS
+
+**Extra:** a Merriweather do Google Fonts nos `h1, h2` (os três `<link>` no `head` das cinco páginas).
+
+---
+
+## Links
+
+- CSS Diner (treinar os seletores): https://flukeout.github.io/
+- MDN · Valores de cor: https://developer.mozilla.org/en-US/docs/Web/CSS/color_value
+- MDN · font-family: https://developer.mozilla.org/en-US/docs/Web/CSS/font-family
+- WebAIM · Contrast checker: https://webaim.org/resources/contrastchecker/
+- Google Fonts: https://fonts.google.com
+- Validador de CSS: https://jigsaw.w3.org/css-validator/

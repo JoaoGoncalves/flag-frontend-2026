@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inscrição · Workshop de sobremesas</title>
+</head>
+<body>
+  <h1>Inscrição num workshop</h1>
+
+  <form action="https://httpbin.org/anything" method="post">
+    <p>
+      <label for="nome">Nome</label>
+      <input type="text" id="nome" name="nome" required>
+    </p>
+    <p>
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+    </p>
+    <p>
+      <label for="workshop">Workshop</label>
+      <select id="workshop" name="workshop">
+        <option value="pastelaria">Pastelaria portuguesa</option>
+        <option value="sem-forno">Sobremesas sem forno</option>
+        <option value="pao">Pão caseiro</option>
+      </select>
+    </p>
+    <p>Turno:
+      <input type="radio" id="manha" name="turno" value="manha" checked>
+      <label for="manha">Manhã</label>
+      <input type="radio" id="tarde" name="turno" value="tarde">
+      <label for="tarde">Tarde</label>
+    </p>
+    <p>
+      <input type="checkbox" id="regras" name="regras" value="sim" required>
+      <label for="regras">Li e aceito as regras do workshop</label>
+    </p>
+    <p><button type="submit">Inscrever</button></p>
+  </form>
+</body>
+</html>
