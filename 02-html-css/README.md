@@ -52,6 +52,8 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 11 | CSS: o que é e onde se escreve | 11.1 a folha de estilos do site das receitas ([enunciado](exercicios/11-css-introducao/ex-11.1-folha-de-estilos.md) · [solução](solucoes/11-css-introducao/sol-11.1-folha-de-estilos.md)) · exemplo: [`exemplos/11-aplicar-css/`](exemplos/11-aplicar-css/) |
 | 12 | Seletores | 12.1 que seletor? ([enunciado](exercicios/12-seletores/ex-12.1-que-seletor.md) · [solução](solucoes/12-seletores/sol-12.1-que-seletor.md)) · 12.2 seletores no site das receitas ([enunciado](exercicios/12-seletores/ex-12.2-seletores-no-site.md) · [solução](solucoes/12-seletores/sol-12.2-seletores-no-site.css); para treinar: [CSS Diner](https://flukeout.github.io/)) · exemplo: [`exemplos/12-seletores/`](exemplos/12-seletores/) |
 | 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md), **para casa**; solução depois da sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
+| 14 | O box model | 14.1 quanto mede? ([enunciado](exercicios/14-box-model/ex-14.1-quanto-mede.md)) · 14.2 as caixas do site das receitas ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md)) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
+| 15 | Fundos e sombras | 15.1 os fundos do site das receitas ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md)) · exemplo: o mesmo `exemplos/14-box-model/` |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 

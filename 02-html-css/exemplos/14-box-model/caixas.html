@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Box model e fundos · Cabaz da semana</title>
+  <!-- Sessão 9 · Partes 14 e 15 · o box model e os fundos.
+       Escrevemos as regras em css/caixas.css: -->
+  <link rel="stylesheet" href="css/caixas.css">
+</head>
+<body>
+  <header>
+    <h1>Cabaz da semana</h1>
+    <nav>
+      <ul>
+        <li><a href="#cabazes">Cabazes</a></li>
+        <li><a href="#como">Como funciona</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="intro">Legumes da época, colhidos na véspera e entregues à porta.</p>
+
+    <section id="cabazes">
+      <h2>Os cabazes</h2>
+
+      <article class="cartao">
+        <h3>Pequeno</h3>
+        <p>Para uma ou duas pessoas: 4 kg de legumes e fruta.</p>
+        <p class="preco">12 €</p>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+
+      <article class="cartao">
+        <h3>Médio</h3>
+        <p>Para três ou quatro pessoas: 7 kg de legumes e fruta.</p>
+        <p class="preco">18 €</p>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+
+      <article class="cartao">
+        <h3>Grande</h3>
+        <p>Para a família toda: 10 kg de legumes, fruta e ervas.</p>
+        <p class="preco">25 €</p>
+        <a class="botao" href="#contacto">Encomendar</a>
+      </article>
+    </section>
+
+    <section id="como" class="como">
+      <h2>Como funciona</h2>
+      <p>Encomendam até quarta-feira; colhemos na sexta e entregamos no <span class="destaque">sábado de manhã</span>.</p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>Escrevam para <a href="mailto:cabaz@exemplo.pt">cabaz@exemplo.pt</a>.</p>
+  </footer>
+</body>
+</html>
