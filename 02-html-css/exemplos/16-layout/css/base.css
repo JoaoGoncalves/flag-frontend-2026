@@ -1,0 +1,111 @@
+/* Sessão 10 · base.css
+   O box model e os fundos da sessão 9, já feitos: hoje não mexemos aqui.
+   O que escrevemos hoje vai para o layout.css. */
+
+/* ---------- o box model ---------- */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #f4f9ec;
+  line-height: 1.5;
+}
+
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem 2rem;
+}
+
+h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+.cartao {
+  padding: 1rem 1.5rem;
+  border: 2px solid #6a8320;
+  border-radius: 12px;
+  margin-bottom: 1rem;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgb(0 0 0 / 15%);
+}
+
+.cartao h3 {
+  margin-top: 0.25rem;
+}
+
+.preco {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+/* ---------- o display ---------- */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+.botao {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #6a8320;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.destaque {
+  padding: 0 0.25rem;
+  background-color: #fff3b0;
+}
+
+/* o selo: por agora, só o aspeto (onde fica é com o position) */
+.selo {
+  padding: 0.15rem 0.75rem;
+  background-color: #c0392b;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/* ---------- os fundos e as sombras ---------- */
+header {
+  background-color: #23361a;
+  background-image: url("../img/horta.svg");
+  background-size: cover;
+  background-position: center;
+  color: #ffffff;
+  padding: 1rem 1.5rem;
+}
+
+header a {
+  color: #ffffff;
+}
+
+.como {
+  background-image: url("../img/folhas.svg");
+  padding: 1.5rem;
+  border-radius: 12px;
+}
+
+footer {
+  background-image: linear-gradient(to right, #e4eccb, #f4f9ec);
+  padding: 1rem 1.5rem;
+}
+
+footer p {
+  margin: 0;
+}

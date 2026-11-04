@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Layout · Cabaz da semana</title>
+  <!-- Sessão 10 · Partes 16 e 17 · position e flexbox.
+       base.css: o box model e os fundos da sessão 9 (já feitos, não mexer).
+       layout.css: é aqui que escrevemos hoje. -->
+  <link rel="stylesheet" href="css/base.css">
+  <link rel="stylesheet" href="css/layout.css">
+</head>
+<body>
+  <header>
+    <h1>Cabaz da semana</h1>
+    <nav>
+      <ul>
+        <li><a href="#cabazes">Cabazes</a></li>
+        <li><a href="#como">Como funciona</a></li>
+        <li><a href="#perguntas">Perguntas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <p class="intro">Legumes da época, colhidos na véspera e entregues à porta.</p>
+
+    <section id="cabazes">
+      <h2>Os cabazes</h2>
+
+      <!-- novo: uma caixa à volta dos três cartões (o flexbox trabalha com os filhos diretos) -->
+      <div class="cartoes">
+        <article class="cartao">
+          <h3>Pequeno</h3>
+          <p>Para uma ou duas pessoas: 4 kg de legumes e fruta.</p>
+          <p class="preco">12 €</p>
+          <a class="botao" href="#contacto">Encomendar</a>
+        </article>
+
+        <article class="cartao">
+          <!-- novo: o selo, para o position -->
+          <span class="selo">Mais pedido</span>
+          <h3>Médio</h3>
+          <p>Para três ou quatro pessoas: 7 kg de legumes e fruta, com uma dúzia de ovos do campo.</p>
+          <p class="preco">18 €</p>
+          <a class="botao" href="#contacto">Encomendar</a>
+        </article>
+
+        <article class="cartao">
+          <h3>Grande</h3>
+          <p>Para a família toda: 10 kg de legumes, fruta e ervas aromáticas.</p>
+          <p class="preco">25 €</p>
+          <a class="botao" href="#contacto">Encomendar</a>
+        </article>
+      </div>
+    </section>
+
+    <section id="como" class="como">
+      <h2>Como funciona</h2>
+      <p>Encomendam até quarta-feira; colhemos na sexta e entregamos no <span class="destaque">sábado de manhã</span>.</p>
+    </section>
+
+    <section id="perguntas">
+      <h2>Perguntas frequentes</h2>
+      <h3>Posso escolher os legumes?</h3>
+      <p>Não: o cabaz traz o que a horta dá nessa semana. É essa a graça.</p>
+      <h3>E se não estiver em casa?</h3>
+      <p>Deixamos o cabaz com um vizinho ou num sítio combinado, à sombra.</p>
+      <h3>Posso parar as entregas nas férias?</h3>
+      <p>Pode. Basta avisar até à quarta-feira da semana anterior.</p>
+      <h3>Os legumes são biológicos?</h3>
+      <p>Sim, com certificação. Sem adubos químicos nem pesticidas de síntese.</p>
+    </section>
+  </main>
+
+  <footer id="contacto">
+    <p>Escrevam para <a href="mailto:cabaz@exemplo.pt">cabaz@exemplo.pt</a>.</p>
+    <p>Horta do Vale · Mafra</p>
+  </footer>
+</body>
+</html>
