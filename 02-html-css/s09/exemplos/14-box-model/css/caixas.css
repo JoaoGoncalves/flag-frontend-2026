@@ -1,0 +1,81 @@
+/* Sessão 9 · Partes 14 e 15 · o box model e os fundos
+   Vamos escrever aqui as regras, por esta ordem:
+   1 · o box model   2 · o display   3 · os fundos e as sombras */
+
+   /* 1  */
+   * {
+      box-sizing: border-box;
+   }
+
+   body {
+      margin: 0;
+
+      font-size: 16px; /* default */
+      font-family: 'Trebuchet MS', Arial, sans-serif;
+      color: #2b2b2b;
+      background-color: #f4f9ec;
+      line-height: 1.5;
+
+   }
+
+   main {
+      max-width: 48rem;
+      margin: 0 auto;
+      padding: 0 1rem;
+   }
+
+   header, footer, body > header {
+      padding: 0.5rem 1rem;
+      background-color: #c1d38d;
+   }
+
+
+   nav ul {
+      list-style-type: none;
+      margin: 0;
+      padding: 0;
+   }
+
+   nav li {
+      display: inline-block;
+      
+
+      background-color: #a9b681;
+      padding: .2rem .5rem;
+      margin-right:1rem ;
+   }
+
+   .cartao {
+      padding: 1rem 1.5rem;
+      margin: 1rem 0;
+
+      background-color: white;
+      border: 2px solid darkslategrey;
+      border-radius: 12px;
+   }
+
+   .preco {
+      font-size: 1.5rem;
+      font-weight: bold;
+   }
+
+   .botao {
+      display: inline-block;
+      background-color: rgb(120, 162, 46);
+      color: white;
+      text-decoration: none;
+      padding: 0.5rem 1rem;
+      border-radius: 6px;
+   }
+
+   .btn-cancelar {
+      background-color: tomato;
+   }
+
+   /* .um {
+      margin: 100px 0;
+   }
+   .dois {
+      margin: 100px 0;
+   }
+ */

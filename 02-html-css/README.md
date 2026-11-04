@@ -15,7 +15,8 @@ Módulo 2 · HTML e CSS · 14 out → 9 nov 2026
 | S6 | 4.ª 28 out | Multimédia, formulários e semântica (o `s06/site` está completo: é o ponto de partida da S7) | [S6-2026-10-28](S6-2026-10-28/) |
 | S7 | 6.ª 30 out | CSS: a regra, onde se escreve e os seletores (o 12.2 foi resolvido na S8) | [S7-2026-10-30](S7-2026-10-30/) |
 | S8 | 2.ª 2 nov | O 12.2 em conjunto (revisão dos seletores); cores, unidades, texto e fontes (Google Fonts e `@font-face`) · **para casa: o 13.2** | [S8-2026-11-02](S8-2026-11-02/) |
-| S9 | 4.ª 4 nov | O box model e os fundos (partimos da vossa `s08/site`, com o 13.2) | — |
+| S9 | 4.ª 4 nov | O 13.2 em conjunto; o box model, o reset CSS e o display; o 14.1 (Analog Specialist) começado | [S9-2026-11-04](S9-2026-11-04/) |
+| S10 | 6.ª 6 nov | O 14.1 em conjunto; fundos e sombras; position; flexbox (partimos da vossa `s09`) | — |
 
 O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 
@@ -28,7 +29,7 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 ├── exemplos/NN-tema/    (CSS) as páginas de exemplo onde escrevemos o código juntos, sem CSS
 ├── exercicios/NN-tema/  os enunciados, uma pasta por parte (06-imagens, 07-tabelas…)
 ├── solucoes/NN-tema/    as soluções, com a mesma organização (publicadas depois da sessão)
-└── s01/, s02/ … s08/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
+└── s01/, s02/ … s09/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
 ```
 
 - **Os exercícios são numerados pela parte (o tema):** o 7.1 é o primeiro exercício das tabelas (parte 7), esteja em que sessão estiver.
@@ -51,9 +52,11 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 10 | Semântica e acessibilidade | 10.1 que elemento? ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.1-que-elemento.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.1-que-elemento.md)) · 10.2 a semântica no resto do mini-site ([enunciado](exercicios/10-semantica-acessibilidade/ex-10.2-semantica-mini-site.md) · [solução](solucoes/10-semantica-acessibilidade/sol-10.2-semantica-mini-site.md): o `s06/site`) |
 | 11 | CSS: o que é e onde se escreve | 11.1 a folha de estilos do site das receitas ([enunciado](exercicios/11-css-introducao/ex-11.1-folha-de-estilos.md) · [solução](solucoes/11-css-introducao/sol-11.1-folha-de-estilos.md)) · exemplo: [`exemplos/11-aplicar-css/`](exemplos/11-aplicar-css/) |
 | 12 | Seletores | 12.1 que seletor? ([enunciado](exercicios/12-seletores/ex-12.1-que-seletor.md) · [solução](solucoes/12-seletores/sol-12.1-que-seletor.md)) · 12.2 seletores no site das receitas ([enunciado](exercicios/12-seletores/ex-12.2-seletores-no-site.md) · [solução](solucoes/12-seletores/sol-12.2-seletores-no-site.css); para treinar: [CSS Diner](https://flukeout.github.io/)) · exemplo: [`exemplos/12-seletores/`](exemplos/12-seletores/) |
-| 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md), **para casa**; solução depois da sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
-| 14 | O box model | 14.1 The Analog Specialist, sozinhos ([enunciado, imagens e propostas](exercicios/14-box-model/ex-14.1-analog-specialist/)) · 14.2 as caixas do site das receitas, para casa ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md)) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
+| 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md) · [solução](solucoes/13-cores-texto/sol-13.2-aspeto-das-receitas.css), resolvido na sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
+| 14 | O box model | 14.1 The Analog Specialist ([enunciado, imagens e propostas](exercicios/14-box-model/ex-14.1-analog-specialist/), acabado em conjunto na sessão 10) · 14.2 as caixas do site das receitas, para casa depois da sessão 10 ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md)) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
 | 15 | Fundos e sombras | 15.1 os fundos do site das receitas ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md)) · exemplo: o mesmo `exemplos/14-box-model/` |
+| 16 | Position | 16.1 o position no site das receitas, para casa ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) · exemplo: [`exemplos/16-layout/`](exemplos/16-layout/) |
+| 17 | Flexbox | 17.1 The Analog com flexbox, sozinhos ([enunciado](exercicios/17-flexbox/ex-17.1-analog-com-flexbox/)) · 17.2 o flexbox no site das receitas, para casa ([enunciado](exercicios/17-flexbox/ex-17.2-flexbox-nas-receitas.md)) · exemplo: [`exemplos/16-layout/`](exemplos/16-layout/) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 

@@ -1,0 +1,115 @@
+/* aplicar reset css aos estilos */
+/* @import url("reset.css"); */
+/* @import url("normalize.css"); */
+
+/* mini reset a la joao */
+/*  {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+} */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2b2b2b;
+  background-color: #fffaf0;
+  line-height: 1.6;
+
+  
+}
+
+h1 {
+  color: #8a5a00;
+}
+
+/* Solução 12.2 · Seletores no site das receitas
+   No s07/site/css/estilos.css, a seguir à regra do h1 */
+
+/* descendente: só os links que estão dentro do nav */
+nav a {
+  color: #8a5a00;
+}
+
+/* pseudo-classe: o rato por cima */
+nav a:hover {
+  color: #c0392b;
+}
+
+/* grupo + filho direto: o header do site e o footer.
+   Só "header" apanhava também o header da receita, que está dentro do
+   article (é descendente do body, mas não é filho direto). */
+body > header,
+footer {
+  background-color: #f3e3c3;
+}
+
+/* classe: no index, <p class="intro"> (o primeiro p a seguir ao h1) */
+.intro {
+  font-style: italic;
+  color: #555555;
+}
+
+/* descendente: o título "Outras receitas" das três receitas */
+aside h2 {
+  color: #8a5a00;
+}
+
+/* ---------- extra ----------
+   classe dependente: no index, <li class="nova"> no item do posset.
+   O fundo vai até à margem direita porque o li é uma caixa com a
+   largura toda (box model, sessão 9). */
+li.nova {
+  background-color: #fff3b0;
+}
+
+/* *************+++ <css exercicio 13.2> *********** */
+/* ************************************************** */
+/* 1 */
+h1, h2 {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+/* 2 */
+h1 {
+  font-size: 2.25rem;
+}
+h2 {
+  font-size: 1.5rem;
+}
+
+/* 3 */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+nav a:hover{
+  text-decoration: underline;
+  background-color: #8a5a00;
+  color: #f3e3c3;
+}
+
+/* 4 */
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: hsl(0 0% 36%);
+}
+
+time {
+  font-weight: bold;
+}
+
+th {
+  background-color: rgb(243 227 195);
+}
+
+tfoot{
+  font-size: .875rem;
+  background-color: rgb(236, 233, 225);
+}
+
+
+
+
+/* ********************* </css exercicio 13.2>******* */
+/* ************************************************** */

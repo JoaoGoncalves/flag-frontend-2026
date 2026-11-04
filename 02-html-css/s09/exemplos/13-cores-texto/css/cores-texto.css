@@ -1,0 +1,31 @@
+/* Sessão 8 · Parte 13 · cores, texto e fontes
+   Vamos escrever aqui as regras, por esta ordem:
+   1 · as cores   2 · o texto   3 · as fontes da web */
+
+   h1 {
+      color:darkgreen;
+   }
+
+   body {
+    /*   color: #222222; */
+      color: #222;
+      background-color: #f4f9ec;
+   }
+
+   .noticias {
+      background-color: rgb(255 255 255);
+   }
+
+   h2 {
+      /* color: hsl(90, 60%, 30%) */
+      color: hsl(17, 67%, 52%)
+   }
+
+   .nota {
+      background-color: hsl(90 60% 30% / 15%);
+   }
+
+  .feira {
+   background-color: rgb(255 228 196 / 30%);
+   /* opacity: 0.3; */
+  }
