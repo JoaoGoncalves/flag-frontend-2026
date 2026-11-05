@@ -1,0 +1,182 @@
+/* Site das receitas · ponto de partida da sessão 10 (exercício 15.1)
+   Já feitos: 11.1 (a folha de estilos), 12.2 (seletores), 13.2 (cores e texto) e 14.2 (as caixas).
+   O 15.1 escreve-se no fim deste ficheiro. */
+
+body {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2b2b2b;
+  background-color: #fffaf0;
+  line-height: 1.6;
+}
+
+h1 {
+  color: #8a5a00;
+}
+
+/* Solução 12.2 · Seletores no site das receitas
+   No s07/site/css/estilos.css, a seguir à regra do h1 */
+
+/* descendente: só os links que estão dentro do nav */
+nav a {
+  color: #8a5a00;
+}
+
+/* pseudo-classe: o rato por cima */
+nav a:hover {
+  color: #c0392b;
+}
+
+/* grupo + filho direto: o header do site e o footer.
+   Só "header" apanhava também o header da receita, que está dentro do
+   article (é descendente do body, mas não é filho direto). */
+body > header,
+footer {
+  background-color: #f3e3c3;
+}
+
+/* classe: no index, <p class="intro"> (o primeiro p a seguir ao h1) */
+.intro {
+  font-style: italic;
+  color: #555555;
+}
+
+/* descendente: o título "Outras receitas" das três receitas */
+aside h2 {
+  color: #8a5a00;
+}
+
+/* ---------- extra ----------
+   classe dependente: no index, <li class="nova"> no item do posset.
+   O fundo vai até à margem direita porque o li é uma caixa com a
+   largura toda (box model, sessão 9). */
+li.nova {
+  background-color: #fff3b0;
+}
+
+
+/* ---------- 13.2 · o aspeto das receitas ---------- */
+
+/* 1 · os títulos sem serifa; o resto do texto herda a Georgia do body */
+h1, h2 {
+  font-family: "Trebuchet MS", Arial, sans-serif;
+}
+
+/* 2 · tamanhos em rem (1rem = a letra do browser, 16px por omissão) */
+h1 {
+  font-size: 2.25rem;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+/* 3 · o menu: acrescenta-se ao nav a e ao nav a:hover do 12.2
+   (também podia ir para dentro dessas regras: vale o mesmo) */
+nav a {
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+/* 4 · as legendas (bolo, posset, index) e as datas das receitas
+   hsl(0 0% 36%) é um cinzento: sem saturação, 36% de luz (#5c5c5c) */
+figcaption {
+  text-align: center;
+  font-style: italic;
+  color: hsl(0 0% 36%);
+}
+
+time {
+  font-weight: bold;
+}
+
+/* 5 · a tabela do Sobre: rgb(243 227 195) é o #f3e3c3 do header.
+   Apanha os th das colunas e os das linhas (Farinha, Açúcar…) */
+th {
+  background-color: rgb(243 227 195);
+}
+
+tfoot {
+  font-size: 0.875rem;
+}
+
+/* 6 · o .intro (#555555 sobre #fffaf0) dá 7,17 : 1 no DevTools: passa (AA pede 4,5) */
+
+
+/* ---------- extra · Google Fonts ----------
+   No head das cinco páginas, antes do link para o estilos.css:
+
+   <link rel="preconnect" href="https://fonts.googleapis.com">
+   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+   <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&display=swap" rel="stylesheet">
+
+   O endereço é absoluto (começa por https://): é igual em todas as páginas,
+   ao contrário do href do estilos.css (css/, ../css/, ../../css/).
+   E aqui, em vez da regra 1:
+
+h1, h2 {
+  font-family: "Merriweather", Georgia, serif;
+}
+*/
+
+
+/* ---------- 14.2 · as caixas ---------- */
+
+/* 1 · a largura passa a incluir o padding e a border */
+* {
+  box-sizing: border-box;
+}
+
+/* 2 · o site com largura máxima e centrado
+   (acrescenta-se à regra do body; aqui numa regra nova, vale o mesmo) */
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 3 · espaço dentro do topo e do rodapé */
+body > header,
+footer {
+  padding: 0.5rem 1rem;
+}
+
+/* 4 · o menu na horizontal */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* 5 · as imagens com moldura: inline-block para a caixa ficar do tamanho da imagem */
+figure {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #e0cfa8;
+  border-radius: 8px;
+}
+
+/* 6 · a receita nova com uma barra à esquerda */
+li.nova {
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #8a5a00;
+}
+
+/* ---------- extra ----------
+   a tabela do Sobre com espaço nas células */
+th,
+td {
+  padding: 0.25rem 0.75rem;
+}
+
+
+/* ---------- 15.1 · os fundos ---------- */
+/* (exercício 15.1, sessão 10: escrevam aqui) */
