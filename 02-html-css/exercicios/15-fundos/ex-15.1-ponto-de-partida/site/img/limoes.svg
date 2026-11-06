@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="240" height="120" viewBox="0 0 240 120">
+  <!-- três limões e duas folhas, para pôr num canto, sem repetir -->
+  <path d="M150 30 C 170 5, 205 10, 215 25 C 195 35, 170 38, 150 30 Z" fill="#7d9a3c"/>
+  <path d="M95 40 C 80 15, 50 15, 40 30 C 58 42, 80 46, 95 40 Z" fill="#8fae47"/>
+  <ellipse cx="80" cy="75" rx="38" ry="30" fill="#f2c94c"/>
+  <ellipse cx="140" cy="70" rx="42" ry="33" fill="#f5d565"/>
+  <ellipse cx="195" cy="82" rx="34" ry="27" fill="#f2c94c"/>
+  <ellipse cx="128" cy="58" rx="12" ry="6" fill="#fff6c9" opacity="0.7"/>
+</svg>

@@ -1,0 +1,35 @@
+/* basic.css · o aspeto dos exemplos de flexbox (não mexer)
+   Exemplos do curso FLAG Fullstack (nov 2022), revistos para a sessão 10 */
+
+.container > div {
+  padding: 10px;
+  text-align: center;
+  font-size: 2em;
+  color: #e8faf0;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #dafffe;
+}
+
+/* cada item com a sua cor */
+.container > div:nth-child(1) {
+  background-color: #57e2a1;
+}
+
+.container > div:nth-child(2) {
+  background-color: #f7807b;
+}
+
+.container > div:nth-child(3) {
+  background-color: #57e2a1;
+}

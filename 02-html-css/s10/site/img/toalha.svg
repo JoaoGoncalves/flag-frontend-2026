@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 40 40">
+  <!-- um "azulejo" de toalha axadrezada, discreto: repete-se para encher o fundo -->
+  <rect width="40" height="40" fill="#f3e3c3"/>
+  <rect width="20" height="40" fill="#efd9ae" opacity="0.6"/>
+  <rect width="40" height="20" fill="#efd9ae" opacity="0.6"/>
+</svg>

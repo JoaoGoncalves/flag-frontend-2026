@@ -71,8 +71,10 @@ nav li {
   background-color: #fff3b0;
 }
 
-/* o selo: por agora, só o aspeto (onde fica é com o position) */
+/* o selo: só o aspeto (pô-lo no canto do cartão, com position, fica para mais tarde).
+   width: fit-content para não esticar quando o cartão passar a flex em coluna */
 .selo {
+  width: fit-content;
   padding: 0.15rem 0.75rem;
   background-color: #c0392b;
   color: #ffffff;
@@ -102,7 +104,7 @@ header a {
 }
 
 footer {
-  background-image: linear-gradient(to right, #e4eccb, #f4f9ec);
+  background-color: #e4eccb;
   padding: 1rem 1.5rem;
 }
 

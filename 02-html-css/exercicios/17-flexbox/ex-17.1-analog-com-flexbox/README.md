@@ -1,6 +1,6 @@
 # Exercício 17.1 · The Analog Specialist com flexbox
 
-> Parte 17 · Flexbox · sessão 10 · **sozinhos** (~25 min; o que faltar, em casa)
+> Parte 17 · Flexbox · sessão 10 · **opcional, para treinar** (o exercício principal é o 17.3, a newsletter EDP)
 
 Partam do vosso Analog Specialist (o 14.1, como ficou na sessão 10, com a solução que fizemos juntos). Copiem `s09/analog/` para **`s10/analog/`** e trabalhem aí.
 

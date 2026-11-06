@@ -16,7 +16,7 @@ Módulo 2 · HTML e CSS · 14 out → 9 nov 2026
 | S7 | 6.ª 30 out | CSS: a regra, onde se escreve e os seletores (o 12.2 foi resolvido na S8) | [S7-2026-10-30](S7-2026-10-30/) |
 | S8 | 2.ª 2 nov | O 12.2 em conjunto (revisão dos seletores); cores, unidades, texto e fontes (Google Fonts e `@font-face`) · **para casa: o 13.2** | [S8-2026-11-02](S8-2026-11-02/) |
 | S9 | 4.ª 4 nov | O 13.2 em conjunto; o box model, o reset CSS e o display; o 14.1 (Analog Specialist) começado | [S9-2026-11-04](S9-2026-11-04/) |
-| S10 | 6.ª 6 nov | O 14.1 em conjunto; fundos e sombras; position; flexbox (partimos da vossa `s09`) | — |
+| S10 | 6.ª 6 nov | A solução do 14.1; imagens de fundo e sombras; flexbox (nove exemplos) e a newsletter EDP (17.3) · **a pasta [`s10/`](s10/) já vem pronta: copiem-na inteira** | — |
 
 O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 
@@ -54,9 +54,9 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 12 | Seletores | 12.1 que seletor? ([enunciado](exercicios/12-seletores/ex-12.1-que-seletor.md) · [solução](solucoes/12-seletores/sol-12.1-que-seletor.md)) · 12.2 seletores no site das receitas ([enunciado](exercicios/12-seletores/ex-12.2-seletores-no-site.md) · [solução](solucoes/12-seletores/sol-12.2-seletores-no-site.css); para treinar: [CSS Diner](https://flukeout.github.io/)) · exemplo: [`exemplos/12-seletores/`](exemplos/12-seletores/) |
 | 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md) · [solução](solucoes/13-cores-texto/sol-13.2-aspeto-das-receitas.css), resolvido na sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
 | 14 | O box model | 14.1 The Analog Specialist ([enunciado, imagens e propostas](exercicios/14-box-model/ex-14.1-analog-specialist/), acabado em conjunto na sessão 10) · 14.2 as caixas do site das receitas, para treinar ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md); já vem feito no ponto de partida do 15.1) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
-| 15 | Fundos e sombras | 15.1 os fundos do site das receitas ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md) · [ponto de partida: o site com o 13.2 e o 14.2](exercicios/15-fundos/ex-15.1-ponto-de-partida/site/)) · exemplo: o mesmo `exemplos/14-box-model/` |
-| 16 | Position | 16.1 o position no site das receitas, para casa ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) · exemplo: [`exemplos/16-layout/`](exemplos/16-layout/) |
-| 17 | Flexbox | 17.1 The Analog com flexbox, sozinhos ([enunciado](exercicios/17-flexbox/ex-17.1-analog-com-flexbox/)) · 17.2 o flexbox no site das receitas, para casa ([enunciado](exercicios/17-flexbox/ex-17.2-flexbox-nas-receitas.md)) · exemplo: [`exemplos/16-layout/`](exemplos/16-layout/) |
+| 15 | Fundos e sombras | 15.1 os fundos do site das receitas, opcional ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md) · [site de partida](exercicios/15-fundos/ex-15.1-ponto-de-partida/site/)) · exemplo: o mesmo `exemplos/14-box-model/` |
+| 16 | Position | (fica para o fim do módulo) 16.1 o position no site das receitas, para mais tarde ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) |
+| 17 | Flexbox | **17.3 a newsletter EDP** ([enunciado, textos e imagens](exercicios/17-flexbox/ex-17.3-newsletter-edp/)) · opcionais: 17.1 o Analog com flexbox ([enunciado](exercicios/17-flexbox/ex-17.1-analog-com-flexbox/)) e 17.2 o flexbox no site das receitas ([enunciado](exercicios/17-flexbox/ex-17.2-flexbox-nas-receitas.md)) · exemplos: [`exemplos/17-flexbox/`](exemplos/17-flexbox/) (flex1 a flex9) · para treinar: [Flexbox Froggy](https://flexboxfroggy.com/) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 

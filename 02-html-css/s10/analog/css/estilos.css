@@ -1,0 +1,133 @@
+/* Exercício 14.1 · The Analog Specialist · solução */
+
+/* ---------- 1 · o mini reset "à la João" ---------- */
+* {
+  padding: 0;
+  margin: 0;
+  border: none;
+  box-sizing: border-box;
+}
+
+/* ---------- 2 · a página ---------- */
+body {
+  font-family: "Inconsolata", monospace;
+  font-size: 1.125rem;
+  color: #222222;
+  background-color: lightgray;
+}
+
+/* ---------- 3 · a caixa exterior: 80%, nunca menos de 800px, centrada ---------- */
+.caixa {
+  width: 80%;
+  min-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem 2rem 3rem;
+  background-color: #ffffff;
+  border: 4px double gray;        /* double só se vê a partir de 3px */
+  border-radius: 12px;
+}
+
+/* ---------- 4 · o título, em três linhas ---------- */
+header {
+  text-align: center;
+}
+
+header h1 {
+  font-weight: 400;
+  line-height: 0.95;
+  text-transform: uppercase;
+}
+
+header span {
+  display: block;                 /* cada span na sua linha */
+}
+
+.the {
+  font-size: 1.5rem;
+}
+
+.analog {
+  font-size: 2.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+}
+
+.specialist {
+  font-size: 2rem;
+}
+
+/* ---------- 5 · o menu, entre duas linhas ---------- */
+nav ul {
+  list-style: none;
+  max-width: 37.5rem;             /* 600px: a largura das três imagens */
+  margin: 1rem auto 1.5rem;
+  padding: 0.6rem 0;
+  border-top: 2px solid black;
+  border-bottom: 1px solid black;
+}
+
+nav li {
+  display: inline-block;
+  width: 20%;                     /* cinco links: 5 × 20% */
+  text-align: center;
+}
+
+nav a {
+  color: darkslategray;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: tomato;
+  text-decoration: underline;
+}
+
+nav a.atual {                     /* a página onde estamos */
+  color: tomato;
+}
+
+/* ---------- 6 · as imagens e o texto ---------- */
+.galeria,
+.texto {
+  max-width: 37.5rem;
+  margin: 0 auto 1.5rem;
+  text-align: center;
+}
+
+.texto h2 {
+  font-size: 1.5rem;
+  text-transform: uppercase;
+}
+
+.texto h3 {
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: italic;
+  margin-bottom: 0.75rem;
+}
+
+.texto a {
+  color: tomato;
+}
+
+.texto a:hover {
+  color: darkslategray;
+}
+
+/* ---------- 7 · o rodapé ---------- */
+footer {
+  max-width: 37.5rem;
+  margin: 0 auto;
+  padding-top: 1.25rem;
+  border-top: 1px solid black;
+  text-align: center;
+}
+
+/* ---------- extra · preto e branco, com cor no hover ---------- */
+.galeria img {
+  filter: grayscale(1);
+}
+
+.galeria img:hover {
+  filter: none;
+}

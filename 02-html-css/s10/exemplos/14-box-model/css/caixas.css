@@ -1,0 +1,80 @@
+/* Sessão 9 · Partes 14 e 15 · o box model e os fundos
+   Vamos escrever aqui as regras, por esta ordem:
+   1 · o box model   2 · o display   3 · os fundos e as sombras */
+
+
+/* ---------- 1 · o box model ---------- */
+
+/* a largura passa a incluir o padding e a border (em todos os elementos) */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;                    /* o browser põe 8px: tiramos */
+  font-family: "Trebuchet MS", Arial, sans-serif;
+  color: #2b2b2b;
+  background-color: #f4f9ec;
+  line-height: 1.5;
+}
+
+/* largura máxima e centrado: margin auto à esquerda e à direita */
+main {
+  max-width: 48rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+header,
+footer {
+  padding: 1rem;
+}
+
+/* o cartão: conteúdo → padding → border → margin */
+.cartao {
+  padding: 1rem 1.5rem;         /* cima e baixo · esquerda e direita */
+  border: 2px solid #6a8320;    /* largura · estilo · cor */
+  border-radius: 12px;
+  margin-bottom: 1rem;
+}
+
+.preco {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+
+/* ---------- 2 · o display ---------- */
+
+/* o menu na horizontal: os li deixam de ser block */
+nav ul {
+  list-style: none;             /* sem as bolinhas */
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* um link com ar de botão: inline-block aceita padding e margin a sério */
+.botao {
+  display: inline-block;
+  padding: 0.5rem 1rem;
+  background-color: #6a8320;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+/* inline: fica na linha; o padding de cima e de baixo não afasta as linhas */
+.destaque {
+  padding: 0 0.25rem;
+  background-color: #fff3b0;
+}
+
+
+/* ---------- 3 · os fundos e as sombras ---------- */
+

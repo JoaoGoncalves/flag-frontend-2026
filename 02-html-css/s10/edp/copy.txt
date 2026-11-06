@@ -1,0 +1,92 @@
+NEWSLETTER EDP ZERO · OS TEXTOS (copiar daqui para o HTML)
+As imagens estão na pasta images/ (os nomes estão entre parênteses).
+
+---------------------------------------------------------------
+TOPO
+---------------------------------------------------------------
+(pt.edp.image.logo.png)  EDP ZERO
+                         Planeta Zero
+(à direita)              edp comercial   (pt.edp.image.header.png)
+
+(fotografia grande: foto-top.jpg)
+
+---------------------------------------------------------------
+DESTAQUE
+---------------------------------------------------------------
+EXPERIÊNCIA EXCLUSIVA
+A energia que se gera da natureza
+O segredo da sustentabilidade e da eficiência energética está no mundo natural que nos rodeia. Inscreva-se na masterclass Energia e Sustentabilidade da Biovilla e descubra como tirar partido das fontes renováveis.
+[INSCREVER]
+
+---------------------------------------------------------------
+BLOCO 1 · texto à esquerda, imagem à direita (carro.png)
+---------------------------------------------------------------
+SORTEIO
+Participe até dia 2 de maio
+Não deixe escapar esta oportunidade de ganhar o Renault ZOE e conduzir um elétrico. Inscreva-se já!
+[INSCREVER]
+
+---------------------------------------------------------------
+BLOCO 2 · imagem à esquerda (legumes.png), texto à direita
+---------------------------------------------------------------
+SORTEIO
+Uma cabazada de frescura
+O cabaz da Semear é feito de hortícolas frescos e biológicos, escolhidos e preparados promovendo a inclusão social. Habilite-se ao melhor que a natureza tem para lhe dar!
+[INSCREVER]
+
+---------------------------------------------------------------
+BLOCO 3 · texto à esquerda, imagem à direita (casa.png)
+---------------------------------------------------------------
+SORTEIO
+Faça uma pausa, ligue-se à terra
+Saudades de sair de casa e mergulhar na natureza? Inscreva-se no sorteio do fim de semana para 2 pessoas na Eco Life Experience… e sonhe.
+[INSCREVER]
+
+---------------------------------------------------------------
+BLOCO 4 · fundo cinzento claro · texto à esquerda, imagem à direita (ctrlz.png)
+---------------------------------------------------------------
+BENEFÍCIO
+Coisas que duram para sempre
+Agora que tem 10% de desconto na Infinitebook, só lhe falta ter o seu próprio caderno reutilizável. Escreva esta ideia!
+[OBTER OFERTA]
+
+---------------------------------------------------------------
+BLOCO 5 · texto à esquerda, imagem à direita (bike.png)
+---------------------------------------------------------------
+MOBILIDADE ELÉTRICA
+Está a pensar comprar uma bicicleta?
+Descubra tudo o que precisa de saber sobre as comparticipações do Fundo Ambiental na compra de bicicletas 100% elétricas, de carga e convencionais.
+[VER CONDIÇÕES]
+
+---------------------------------------------------------------
+A APP · fundo verde-água, folhas dos lados (folha1.png, folhadrt.png)
+---------------------------------------------------------------
+A cuidar do planeta é que a gente se entende.
+#GeracaoZero
+Faça download da app EDP Zero e poupe o planeta todos os dias
+(app-store.png)  (google-play.png)
+
+---------------------------------------------------------------
+RODAPÉ 1 · fundo cinzento escuro
+---------------------------------------------------------------
+edp comercial   (pt.edp.image.header.png)
+
+---------------------------------------------------------------
+RODAPÉ 2 · fundo quase preto, texto pequeno e centrado
+---------------------------------------------------------------
+Esta mensagem foi enviada automaticamente.
+Agradecemos que não responda para este endereço.
+Pode contactar-nos através do formulário online ou da sua área de cliente, onde poderá acompanhar o estado do seu pedido.
+Se pretende deixar de receber estes emails, clique aqui.
+EDP Comercial - www.edp.pt - Portugal
+
+---------------------------------------------------------------
+CORES (aproximadas, da proposta)
+---------------------------------------------------------------
+verde-água (títulos):        #4fbfa5
+vermelho (etiquetas, botões): #f43c4e
+fundo verde-água claro:      #c9ebe5
+fundo cinzento claro:        #f6f6f6
+rodapé 1:                    #3a3a3a
+rodapé 2:                    #222222
+texto:                       #333333
