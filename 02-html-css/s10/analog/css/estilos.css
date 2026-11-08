@@ -21,7 +21,7 @@ body {
   width: 80%;
   min-width: 800px;
   margin: 2rem auto;
-  padding: 2.5rem 2rem 3rem;
+  padding: 2.5rem 2rem 3rem 2rem;
   background-color: #ffffff;
   border: 4px double gray;        /* double só se vê a partir de 3px */
   border-radius: 12px;
@@ -39,7 +39,8 @@ header h1 {
 }
 
 header span {
-  display: block;                 /* cada span na sua linha */
+  display: block; 
+  line-height: 1.7rem;                /* cada span na sua linha */
 }
 
 .the {
@@ -130,4 +131,5 @@ footer {
 
 .galeria img:hover {
   filter: none;
+  /* cursor: pointer; */
 }

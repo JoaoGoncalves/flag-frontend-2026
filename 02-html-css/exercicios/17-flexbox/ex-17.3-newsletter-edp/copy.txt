@@ -1,14 +1,13 @@
 NEWSLETTER EDP ZERO · OS TEXTOS (copiar daqui para o HTML)
 As imagens estão na pasta images/ (os nomes estão entre parênteses).
+As imagens redondas já trazem os anéis e o ícone verde: usem-nas tal como estão.
 
 ---------------------------------------------------------------
 TOPO
 ---------------------------------------------------------------
-(pt.edp.image.logo.png)  EDP ZERO
-                         Planeta Zero
-(à direita)              edp comercial   (pt.edp.image.header.png)
-
-(fotografia grande: foto-top.jpg)
+(pt.edp.image.header.png)  a barra do topo, numa só imagem: já traz o
+                           EDP Zero · Planeta Zero e o "edp comercial"
+(foto-top.jpg)             a fotografia grande (já tem a onda em baixo)
 
 ---------------------------------------------------------------
 DESTAQUE
@@ -69,7 +68,7 @@ Faça download da app EDP Zero e poupe o planeta todos os dias
 ---------------------------------------------------------------
 RODAPÉ 1 · fundo cinzento escuro
 ---------------------------------------------------------------
-edp comercial   (pt.edp.image.header.png)
+(pt.edp.image.logo.png)  o logótipo "edp comercial" a branco, centrado
 
 ---------------------------------------------------------------
 RODAPÉ 2 · fundo quase preto, texto pequeno e centrado

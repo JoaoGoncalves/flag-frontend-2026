@@ -1,0 +1,21 @@
+/* exampleGrid.css · o layout do exemplo 1 com CSS Grid */
+.wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);     /* 12 colunas iguais, como no Bootstrap */
+    grid-template-rows: 40px 100px 40px;
+}
+
+.header { grid-column: span 12; }
+.menu { grid-column: span 4; }
+.content { grid-column: span 8; }
+.footer { grid-column: span 12; }
+
+/* espreitar o RWD (sessão 12): em ecrãs pequenos, o layout muda só no CSS */
+@media screen and (max-width: 480px) {
+    .header { grid-column: span 6; }
+    .menu {
+        grid-row: 1;
+        grid-column: span 6;
+    }
+    .content { grid-column: span 12; }
+}

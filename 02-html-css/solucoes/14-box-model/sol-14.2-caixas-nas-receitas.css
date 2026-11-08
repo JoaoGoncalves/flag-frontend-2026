@@ -1,0 +1,54 @@
+/* Solução 14.2 · As caixas do site das receitas
+   No s10/site/css/estilos.css, a seguir ao 13.2 */
+
+/* 1 · a largura passa a incluir o padding e a border */
+* {
+  box-sizing: border-box;
+}
+
+/* 2 · o site com largura máxima e centrado
+   (acrescenta-se à regra do body; aqui numa regra nova, vale o mesmo) */
+body {
+  max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* 3 · espaço dentro do topo e do rodapé */
+body > header,
+footer {
+  padding: 0.5rem 1rem;
+}
+
+/* 4 · o menu na horizontal */
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  display: inline-block;
+  margin-right: 1rem;
+}
+
+/* 5 · as imagens com moldura: inline-block para a caixa ficar do tamanho da imagem */
+figure {
+  display: inline-block;
+  padding: 0.5rem;
+  border: 1px solid #e0cfa8;
+  border-radius: 8px;
+}
+
+/* 6 · a receita nova com uma barra à esquerda */
+li.nova {
+  padding: 0.5rem 1rem;
+  border-left: 4px solid #8a5a00;
+}
+
+/* ---------- extra ----------
+   a tabela do Sobre com espaço nas células */
+th,
+td {
+  padding: 0.25rem 0.75rem;
+}

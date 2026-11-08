@@ -1,0 +1,41 @@
+/* basic.css · o aspeto dos exemplos de grid (não mexer)
+   Exemplos do curso FLAG Fullstack (nov 2022), revistos para a sessão 11 */
+
+/* cada item com o número ao centro (sim: com flexbox!) */
+.container > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 2em;
+  color: #ffeead;
+  font-family: Arial, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 10px;
+  background-color: #ffeead;
+}
+
+/* as cores alternam */
+.container > div:nth-child(1n) {
+  background-color: #96ceb4;
+}
+
+.container > div:nth-child(3n) {
+  background-color: #88d8b0;
+}
+
+.container > div:nth-child(2n) {
+  background-color: #ff6f69;
+}
+
+.container > div:nth-child(4n) {
+  background-color: #ffcc5c;
+}

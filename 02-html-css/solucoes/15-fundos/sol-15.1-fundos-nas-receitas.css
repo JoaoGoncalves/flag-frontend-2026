@@ -1,0 +1,33 @@
+/* Solução 15.1 · Os fundos do site das receitas
+   No s10/site/css/estilos.css, no fim (o ponto de partida já tem o 13.2 e o 14.2) */
+
+/* 1 · o topo com a toalha a repetir (repeat é o valor por omissão);
+   a cor do 12.2 continua por baixo, para o caso de a imagem falhar */
+body > header {
+  background-color: #f3e3c3;
+  background-image: url("../img/toalha.svg");   /* o url() conta a partir de css/ */
+}
+
+/* 2 · os limões no rodapé: uma vez, à direita, ao centro na vertical, com altura limitada */
+footer {
+  background-image: url("../img/limoes.svg");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: auto 80%;                      /* largura automática, 80% da altura do footer */
+  padding-right: 9rem;                            /* o texto não passa por baixo dos limões */
+}
+
+/* 3 · as imagens com fundo branco e sombra */
+figure {
+  background-color: #ffffff;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}
+
+/* ---------- extra ----------
+   o "Outras receitas" num cartão: a família de tons do castanho (hsl da sessão 8) */
+aside {
+  background-color: hsl(39 100% 94%);
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  box-shadow: 0 2px 6px rgb(0 0 0 / 15%);
+}

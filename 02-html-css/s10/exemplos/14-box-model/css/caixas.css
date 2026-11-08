@@ -78,3 +78,33 @@ nav li {
 
 /* ---------- 3 · os fundos e as sombras ---------- */
 
+header {
+  color: white;
+
+  height: 20rem;
+  background-image: url('../img/horta.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center ;
+}
+
+header a {
+  color: #f4f9ec;
+}
+
+footer {
+ /*  height: 15rem; */
+  background-image: url(../img/folhas.svg);
+  background-repeat: repeat;
+}
+
+.cartao {
+  transition: all .3s;
+}
+
+/* animation */
+
+.cartao:hover {
+  box-shadow: 1rem .5rem 10px grey;
+  transform: rotate(2deg);
+}

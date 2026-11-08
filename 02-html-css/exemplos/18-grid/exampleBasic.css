@@ -1,0 +1,33 @@
+/* exampleBasic.css · as cores e os tamanhos do exemplo 1 (não mexer) */
+.header { background-color: #96ceb4; }
+.menu { background-color: #ff6f69; }
+.content { background-color: #ffcc5c; }
+.footer { background-color: #88d8b0; }
+
+.title {
+    color: #ff6f69;
+    background-color: #ffeead;
+    text-align: center;
+    padding: 30px 0 10px;
+    margin: 0;
+}
+
+.wrapper > div,
+.row > div {
+    padding-left: 20px;
+    color: #ffeead;
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.row > .header,
+.row > .footer { height: 40px; }
+.row > .menu,
+.row > .content { height: 100px; }
+
+html,
+body {
+    background: #ffeead;
+    padding: 0 10px;
+}
