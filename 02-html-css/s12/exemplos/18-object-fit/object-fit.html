@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit · uma imagem maior do que a caixa</title>
+    <style>
+        /* Exemplo · object-fit
+           A caixa tem 600 × 400. A fotografia tem 1200 × 1200 (é maior e é quadrada).
+           Quem cede: a caixa ou a fotografia? */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 2rem;
+        }
+
+        h1 {
+            margin-bottom: 1rem;
+            font-size: 1.4rem;
+        }
+
+        /* a caixa: tamanho fixo e um contorno, para se ver onde acaba */
+        .caixa {
+            width: 600px;
+            height: 400px;
+            outline: 4px dashed tomato;
+            background-color: #eeeeee;
+        }
+
+        /* ---------- a imagem: escrevam aqui ---------- */
+        /* 1 · sem nada: a fotografia aparece no tamanho natural e sai da caixa
+           2 · width: 100% e height: 100%
+           3 · object-fit: cover (experimentem também contain e fill)
+           4 · display: block
+           extra · object-position */
+
+    </style>
+</head>
+<body>
+    <h1>Uma caixa de 600 × 400 e uma fotografia de 1200 × 1200</h1>
+
+    <div class="caixa">
+        <img src="https://picsum.photos/id/237/1200/1200" alt="Cachorro preto a olhar para cima">
+    </div>
+</body>
+</html>
