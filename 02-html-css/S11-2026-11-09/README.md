@@ -2,6 +2,7 @@
 
 - `S11-Grid.pdf`: os slides da sessão: a newsletter EDP (17.3) montada em conjunto, a teoria do grid (flexbox ou grid, colunas e linhas, `fr`, `span` e áreas, `auto-fit`), os sete exemplos e a galeria (18.1)
 - `sessao-11-snippets.txt` (e `.md`, com o código a cores): o CSS da EDP em 7 passos, a teoria do grid, o CSS final de cada um dos sete exemplos, o enunciado do 18.1 e os links
+- links da sessão (também nos snippets): [Grid Garden](https://cssgridgarden.com/), [MDN · CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout), [CSS-Tricks · A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/), [Grid by Example](https://gridbyexample.com/), [Chrome DevTools · grid](https://developer.chrome.com/docs/devtools/css/grid), [Picsum Photos](https://picsum.photos/) e [Can I use](https://caniuse.com/)
 - o código está em [`../s11/`](../s11/), como ficou na aula: a EDP (`edp/`), os sete exemplos de grid (`exemplos/18-grid/`; o 7 traz o `grid-auto-rows` que faltava) e a galeria **ainda sem a grelha** (`galeria/`)
 
 **Para casa: acabar a galeria (18.1)** ([enunciado](../exercicios/18-grid/ex-18.1-galeria/)), na vossa `s11/galeria/`. Quem fez só o Grid Garden hoje, faz a galeria em casa. **A solução não é publicada antes da sessão 12:** amanhã (3.ª, 10 nov) começamos por ela, em conjunto, e depois tornamo-la responsiva. E o [Grid Garden](https://cssgridgarden.com/), para treinar as linhas e o `span`.

@@ -542,3 +542,7 @@ Enunciado: `exercicios/18-grid/ex-18.1-galeria/README.md`. Em `s11/galeria/`: o 
 - CSS-Tricks · A Complete Guide to CSS Grid: https://css-tricks.com/snippets/css/complete-guide-grid/
 - Grid Garden (para treinar): https://cssgridgarden.com/
 - Flexbox Froggy (para rever): https://flexboxfroggy.com/
+- Grid by Example (Rachel Andrew): exemplos e padrões de grid: https://gridbyexample.com/
+- Chrome DevTools · inspecionar o grid (a etiqueta grid): https://developer.chrome.com/docs/devtools/css/grid
+- Picsum Photos (as fotografias da galeria): https://picsum.photos/
+- Can I use (o suporte de CSS nos browsers): https://caniuse.com/
