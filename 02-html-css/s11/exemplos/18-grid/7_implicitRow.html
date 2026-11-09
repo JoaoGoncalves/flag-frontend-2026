@@ -6,12 +6,15 @@
     <title>As linhas que sobram: grid-auto-rows</title>
     <link rel="stylesheet" href="basic.css">
     <style>
-        /* As linhas que sobram: grid-auto-rows · escrevemos aqui */
         .container {
             display: grid;
             gap: 5px;
             grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
             grid-template-rows: repeat(2, 100px);       /* só duas linhas definidas */
+
+            /* as linhas a mais (implícitas) ficavam com a altura do conteúdo:
+               grid-auto-rows dá-lhes uma altura */
+            grid-auto-rows: 100px;
         }
     </style>
 </head>

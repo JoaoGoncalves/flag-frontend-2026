@@ -11,7 +11,32 @@
             height: 100%;
             display: grid;
             gap: 3px;
+
+            grid-template-columns: repeat(12, 1fr);
+            grid-template-rows: 50px 250px 50px;
+
+            grid-template-areas: 
+            ". . h h h h h h h h h m"
+            ". c c c c c c c c c c m"
+            ". f f f f f f f f f f ."
+            ;
         }
+
+        .header{
+            grid-area: h;
+        }
+        .menu{
+            grid-area: m;
+        }
+        .content{
+            grid-area: c;
+        }
+        .footer{
+            grid-area: f;
+        }
+
+
+
     </style>
 </head>
 <body>
