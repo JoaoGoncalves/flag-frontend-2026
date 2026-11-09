@@ -1,0 +1,25 @@
+/* Sessão 12 · Parte 16 · o position
+   Vamos escrever aqui, por esta ordem:
+   1 · o selo no canto do cartão (relative + absolute)
+   2 · o topo preso ao cimo da janela (sticky) e o z-index
+   3 · o link "↑ topo" sempre no canto da janela (fixed) */
+
+/* o link "↑ topo": só o aspeto (o sítio é com position) */
+.topo {
+  padding: 0.5rem 0.9rem;
+  background-color: #6a8320;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+
+/* ---------- 1 · o selo no canto do cartão ---------- */
+
+
+/* ---------- 2 · o topo sempre visível ---------- */
+
+
+/* ---------- 3 · o link "↑ topo" ---------- */
+

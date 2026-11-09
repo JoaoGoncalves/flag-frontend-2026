@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2 · O layout com flexbox e media queries</title>
+    <style>
+        /* Exemplo 2 · o layout de uma página com flexbox (do NOV-22, flex10)
+           Telemóvel: tudo empilhado. Vamos acrescentar dois breakpoints. */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            padding: 10px;
+        }
+
+        .container > * {
+            padding: 10px;
+            font-weight: bold;
+            text-align: center;
+            color: white;
+        }
+
+        .main {
+            text-align: left;
+            background-color: rgb(67, 67, 68);
+        }
+
+        .main p {
+            margin-top: 0.5rem;
+            font-weight: normal;
+        }
+
+        .header, .footer { background-color: #ed5e2f; }
+        .aside1 { background-color: rgb(178, 51, 72); }
+        .aside2 { background-color: rgb(170, 64, 219); }
+
+        /* a base (telemóvel): os itens com 100% de largura, um por linha */
+        .container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+        }
+
+        .container > * {
+            flex: 1 1 100%;
+        }
+
+        /* ---------- a partir de 40rem: os dois asides lado a lado · escrevam aqui ---------- */
+
+
+        /* ---------- a partir de 64rem: aside | main | aside · escrevam aqui ---------- */
+
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <header class="header">Header</header>
+        <article class="main">
+            <h2>Main</h2>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque sed ex turpis. Cras luctus nibh lectus, in ullamcorper ex tempor eleifend. Nulla bibendum, eros a consequat vestibulum, orci massa fermentum quam, sed commodo nunc ex vitae nisl. Aliquam ullamcorper interdum est nec tincidunt.</p>
+        </article>
+        <aside class="aside aside1">Aside 1</aside>
+        <aside class="aside aside2">Aside 2</aside>
+        <footer class="footer">Footer</footer>
+    </div>
+</body>
+</html>

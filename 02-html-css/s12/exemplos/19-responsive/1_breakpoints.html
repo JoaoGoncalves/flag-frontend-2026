@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- sem esta linha, o telemóvel finge ter 980px e encolhe a página toda -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>1 · Os breakpoints</title>
+    <style>
+        /* Exemplo 1 · os breakpoints (mobile-first)
+           O CSS de base é o do telemóvel: uma coluna. Abram o DevTools
+           (modo dispositivo, Ctrl/Cmd+Shift+M) e encolham/alarguem a janela. */
+
+        * {
+            margin: 0;
+            padding: 0;
+            border: none;
+            box-sizing: border-box;
+        }
+
+        body {
+            width: 85%;
+            margin: 0 auto;
+            font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+            font-size: 1rem;
+            line-height: 1.5;
+            background-color: aquamarine;       /* telemóvel */
+            transition: background-color 1s;    /* para vermos a mudança */
+        }
+
+        h2 {
+            margin-top: 1.25rem;
+        }
+
+        p {
+            margin: 0.6rem 0;
+        }
+
+        /* ---------- 1 · as imagens flexíveis: escrevam aqui ---------- */
+
+
+        /* ---------- 2 · o primeiro breakpoint (40rem = 640px): escrevam aqui ---------- */
+
+
+        /* ---------- 3 · o segundo breakpoint (64rem = 1024px): escrevam aqui ---------- */
+
+    </style>
+</head>
+
+<body>
+    <section class="col1">
+        <h1>Determining Breakpoints</h1>
+        <img src="rwd.jpg" alt="O mesmo site num computador, num tablet e num telemóvel">
+        <p>In many cases, I've seen people give specific values as a recommendation on where to set the breakpoints in responsive layouts. Most of the time these breakpoints will correspond to specific screen sizes, in particular the screen sizes of iOS devices. While this will often result in highly effective responsive sites, it misses the larger point that responsive design isn't about any one particular device, or even set of devices. It&rsquo;s about having your content respond appropriately given the screen size, whatever it may be. The ever-increasing range of devices and screen sizes makes targeting them a futile exercise.</p>
+        <p>A better approach is to let the content itself dictate the breakpoints. It works like this. Start looking at your content at the largest size you can. Now start resizing the browser. At what point does the layout fall apart or the content no longer work at the current size? When you&rsquo;ve hit that, you&rsquo;ve hit your first breakpoint. After adding a breakpoint through media queries, start resizing the browser again. Does it work all the way down to smaller sizes, or does the content again fail at a smaller size? If it does, add another breakpoint.</p>
+        <p>Of course, this strategy requires you to act with some restraint. If you end up with more than four breakpoints the problem is likely to be your layouts, and not your content. You should work to achieve the proper presentation within the smallest amount of breakpoints. </p>
+        <p>Following this workflow will free you from wondering about a specific device, or having to redesign your sites as devices are updated or gain popularity. You can simply focus on layout and breakpoints, confident that your layouts will look great regardless of screen size.</p>
+    </section>
+    <section class="col2">
+        <h2>Column Two</h2>
+        <p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts. Separated they live in Bookmarksgrove right at the coast of the Semantics, a large language ocean.</p>
+        <p>A small river named Duden flows by their place and supplies it with the necessary regelialia. It is a paradisematic country, in which roasted parts of sentences fly into your mouth.</p>
+        <p>Even the all-powerful Pointing has no control about the blind texts it is an almost unorthographic life One day however a small line of blind text by the name of Lorem Ipsum decided to leave for the far World of Grammar.</p>
+        <p>The Big Oxmox advised her not to do so, because there were thousands of bad Commas, wild Question Marks and devious Semikoli, but the Little Blind Text didn’t listen. She packed her seven versalia, put her initial into the belt and made herself on the way.</p>
+        <p>When she reached the first hills of the Italic Mountains, she had a last view back on the skyline of her hometown Bookmarksgrove, the headline of Alphabet Village and the subline of her own road, the Line Lane. Pityful a rethoric question ran over her cheek, then she continued her way.</p>
+    </section>
+    <section class="col3">
+        <h2>Column Three	</h2>
+        <p>But I must explain to you how all this mistaken idea of denouncing pleasure and praising pain was born and I will give you a complete account of the system, and expound the actual teachings of the great explorer of the truth, the master-builder of human happiness.</p>
+        <p>No one rejects, dislikes, or avoids pleasure itself, because it is pleasure, but because those who do not know how to pursue pleasure rationally encounter consequences that are extremely painful.</p>
+        <p>Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.</p>
+        <p>To take a trivial example, which of us ever undertakes laborious physical exercise, except to obtain some advantage from it? But who has any right to find fault with a man who chooses to enjoy a pleasure that has no annoying consequences, or one who avoids a pain that produces no resultant pleasure?</p>
+    </section>
+    
+</body>
+
+</html>

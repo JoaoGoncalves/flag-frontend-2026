@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galeria com CSS Grid</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+    <header>
+        <h1>&hearts; Galeria com CSS Grid &hearts;</h1>
+    </header>
+
+    <!-- o main é o contentor da grelha; as classes dizem o tamanho de cada peça:
+         c2xr2 = 2 colunas × 2 linhas · c3xr1 = 3 colunas × 1 linha · sem classe = 1 × 1 -->
+    <main>
+        <section class="c2xr2">
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">mais...</a>
+        </section>
+
+        <figure class="c3xr2">
+            <img src="https://picsum.photos/id/10/900/600" alt="Floresta junto a um lago">
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/11/600/600" alt="Paisagem com montanhas">
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/13/600/600" alt="Praia com rochas">
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/14/600/600" alt="Mar e céu">
+        </figure>
+
+        <figure>
+            <img src="https://picsum.photos/id/15/600/600" alt="Rio entre rochas">
+        </figure>
+
+        <figure class="c2xr1">
+            <img src="https://picsum.photos/id/16/900/400" alt="Prado e montanhas">
+        </figure>
+
+        <section class="c2xr1">
+            <h2>Título</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <a href="#">mais...</a>
+        </section>
+
+        <figure class="c3xr1">
+            <img src="https://picsum.photos/id/17/1200/400" alt="Estrada no campo">
+        </figure>
+
+        <figure class="c3xr1">
+            <img src="https://picsum.photos/id/18/1200/400" alt="Campo verde">
+        </figure>
+    </main>
+</body>
+</html>

@@ -18,7 +18,7 @@ Módulo 2 · HTML e CSS · 14 out → 10 nov 2026
 | S9 | 4.ª 4 nov | O 13.2 em conjunto; o box model, o reset CSS e o display; o 14.1 (Analog Specialist) começado | [S9-2026-11-04](S9-2026-11-04/) |
 | S10 | 6.ª 6 nov | A solução do 14.1; imagens de fundo e sombras; flexbox (nove exemplos) e a newsletter EDP (17.3, para casa) | [S10-2026-11-06](S10-2026-11-06/) |
 | S11 | 2.ª 9 nov | A solução da EDP (17.3) em conjunto; CSS Grid (sete exemplos), o Grid Garden e a galeria (18.1, **para casa**) | [S11-2026-11-09](S11-2026-11-09/) |
-| S12 | 3.ª 10 nov | A galeria (18.1) em conjunto; responsive e media queries (mobile-first); o position; o fecho do módulo | — |
+| S12 | 3.ª 10 nov | A galeria (18.1) em conjunto; responsive e media queries (mobile-first) e a galeria responsiva (19.1); o position; o fecho do módulo · **a pasta [`s12/`](s12/) já vem pronta: copiem-na inteira** | — |
 
 O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 
@@ -57,9 +57,10 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md) · [solução](solucoes/13-cores-texto/sol-13.2-aspeto-das-receitas.css), resolvido na sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
 | 14 | O box model | 14.1 The Analog Specialist ([enunciado, imagens e propostas](exercicios/14-box-model/ex-14.1-analog-specialist/), resolvido na sessão 10 · [solução](solucoes/14-box-model/sol-14.1-analog-specialist/)) · 14.2 as caixas do site das receitas, para treinar ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md); já vem feito no ponto de partida do 15.1 · [solução](solucoes/14-box-model/sol-14.2-caixas-nas-receitas.css)) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
 | 15 | Fundos e sombras | 15.1 os fundos do site das receitas, opcional ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md) · [site de partida](exercicios/15-fundos/ex-15.1-ponto-de-partida/site/) · [solução](solucoes/15-fundos/sol-15.1-fundos-nas-receitas.css)) · exemplo: o mesmo `exemplos/14-box-model/` |
-| 16 | Position | (fica para o fim do módulo) 16.1 o position no site das receitas, para mais tarde ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) |
+| 16 | Position | 16.1 o position no site das receitas, para casa depois da sessão 12 ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) · exemplo: [`exemplos/16-position/`](exemplos/16-position/) (o Cabaz) |
 | 17 | Flexbox | **17.3 a newsletter EDP** ([enunciado, textos e imagens](exercicios/17-flexbox/ex-17.3-newsletter-edp/) · [solução](solucoes/17-flexbox/sol-17.3-newsletter-edp/), montada em conjunto na sessão 11) · opcionais: 17.1 o Analog com flexbox ([enunciado](exercicios/17-flexbox/ex-17.1-analog-com-flexbox/)) e 17.2 o flexbox no site das receitas ([enunciado](exercicios/17-flexbox/ex-17.2-flexbox-nas-receitas.md)) · exemplos: [`exemplos/17-flexbox/`](exemplos/17-flexbox/) (flex1 a flex9) · para treinar: [Flexbox Froggy](https://flexboxfroggy.com/) |
 | 18 | CSS Grid | **18.1 a galeria** ([enunciado, HTML e proposta](exercicios/18-grid/ex-18.1-galeria/); para casa, a solução faz-se em conjunto na sessão 12) · exemplos: [`exemplos/18-grid/`](exemplos/18-grid/) (1 a 7) · para treinar: [Grid Garden](https://cssgridgarden.com/) |
+| 19 | Responsive | **19.1 a galeria responsiva** ([enunciado e proposta](exercicios/19-responsive/ex-19.1-galeria-responsiva/)) · 19.2 as receitas no telemóvel, opcional ([enunciado](exercicios/19-responsive/ex-19.2-receitas-no-telemovel.md)) · exemplos: [`exemplos/19-responsive/`](exemplos/19-responsive/) (1 a 3) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 
