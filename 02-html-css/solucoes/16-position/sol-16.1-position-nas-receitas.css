@@ -1,0 +1,45 @@
+/* Solução 16.1 · O position no site das receitas
+   No s10/site/css/estilos.css, a seguir ao 15.1.
+   No index.html, dentro do <li class="nova">:  <span class="selo">Nova</span> */
+
+/* 1 · o topo preso ao cimo da janela quando se faz scroll */
+body > header {
+  position: sticky;
+  top: 0;
+  z-index: 10;                  /* por cima do resto da página */
+}
+
+/* 2 · o selo da receita nova, no canto do li */
+li.nova {
+  position: relative;           /* a referência do selo */
+}
+
+.selo {
+  position: absolute;
+  top: 0.5rem;
+  right: 0.5rem;
+  padding: 0.1rem 0.6rem;
+  background-color: #8a5a00;
+  color: #ffffff;
+  border-radius: 999px;
+  font-size: 0.75rem;
+  font-weight: bold;
+}
+
+/* nota: o header precisa de um fundo (o background do 15.1, a toalha).
+   Sem fundo, era transparente e o texto passava por trás das letras do menu. */
+
+/* ---------- extra ---------- */
+/* extra · o link "↑ topo" sempre no canto da janela
+   (no index.html, antes do </body>: <a class="topo" href="#topo">↑ topo</a>) */
+.topo {
+  position: fixed;
+  right: 1rem;
+  bottom: 1rem;
+  padding: 0.5rem 0.9rem;
+  background-color: #8a5a00;
+  color: #ffffff;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+}

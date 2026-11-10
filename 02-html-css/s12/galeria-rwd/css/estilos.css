@@ -1,0 +1,121 @@
+/* Solução 19.1 · A galeria responsiva (mobile-first)
+   O aspeto é o do 18.1. A grelha do 18.1 passou para dentro da última media query. */
+
+/* o mini reset "à la João" */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* o título ao centro, com flexbox */
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+}
+
+/* as caixas de texto: em coluna, centradas na vertical */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+}
+
+section p {
+    font-size: 0.8rem;
+}
+
+section a {
+    font-size: 0.8rem;
+    color: orangered;
+    text-decoration: none;
+}
+
+/* as imagens enchem a célula e cortam o que sobra (object-fit, como o background-size: cover) */
+figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------- 19.1 · a galeria responsiva ---------- */
+
+/* telemóvel (a base, sem media query): uma coluna.
+   As classes c2xr1, c3xr2… ainda não fazem nada: com uma só coluna,
+   um span 2 criava colunas a mais (implícitas) e a página rebentava para o lado. */
+main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: 1fr;
+    grid-auto-rows: 15rem;
+}
+
+/* tablet: a partir de 40rem (640px), duas colunas */
+@media (min-width: 40rem) {
+    main {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: 12rem;
+    }
+
+    /* todas as peças largas ocupam as duas colunas */
+    .c2xr1,
+    .c2xr2,
+    .c3xr1,
+    .c3xr2 {
+        grid-column: span 2;
+    }
+
+    /* e as altas, duas linhas */
+    .c2xr2,
+    .c3xr2 {
+        grid-row: span 2;
+    }
+}
+
+/* ecrã grande: a partir de 64rem (1024px), a grelha do 18.1 */
+@media (min-width: 64rem) {
+    main {
+        grid-template-columns: repeat(6, 1fr);
+        grid-auto-rows: 20vh;
+    }
+
+    /* as de 3 colunas passam a 3 (as de 2 e as linhas já vêm do tablet) */
+    .c3xr1,
+    .c3xr2 {
+        grid-column: span 3;
+    }
+}
+
+/* ---------- extra · o título encolhe no telemóvel ---------- */
+/* clamp(mínimo, ideal, máximo): o tamanho acompanha a largura da janela, sem media query */
+h1 {
+    font-size: clamp(1.1rem, 4vw, 2rem);
+    text-align: center;
+}
+
+/* ---------- extra do 18.1 · o zoom suave ---------- */
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    transition: transform 0.4s;
+}
+
+figure img:hover {
+    transform: scale(1.08);
+}

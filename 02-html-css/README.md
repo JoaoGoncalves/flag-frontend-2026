@@ -1,6 +1,6 @@
 # 02-html-css
 
-Módulo 2 · HTML e CSS · 14 out → 10 nov 2026
+Módulo 2 · HTML e CSS · 14 out → 10 nov 2026 · **módulo fechado**
 
 ## Sessões
 
@@ -18,9 +18,9 @@ Módulo 2 · HTML e CSS · 14 out → 10 nov 2026
 | S9 | 4.ª 4 nov | O 13.2 em conjunto; o box model, o reset CSS e o display; o 14.1 (Analog Specialist) começado | [S9-2026-11-04](S9-2026-11-04/) |
 | S10 | 6.ª 6 nov | A solução do 14.1; imagens de fundo e sombras; flexbox (nove exemplos) e a newsletter EDP (17.3, para casa) | [S10-2026-11-06](S10-2026-11-06/) |
 | S11 | 2.ª 9 nov | A solução da EDP (17.3) em conjunto; CSS Grid (sete exemplos), o Grid Garden e a galeria (18.1, **para casa**) | [S11-2026-11-09](S11-2026-11-09/) |
-| S12 | 3.ª 10 nov | A galeria (18.1) em conjunto; responsive e media queries (mobile-first) e a galeria responsiva (19.1); o position; o fecho do módulo · **a pasta [`s12/`](s12/) já vem pronta: copiem-na inteira** | — |
+| S12 | 3.ª 10 nov | A galeria (18.1) em conjunto e o `object-fit`; responsive e media queries (mobile-first, breakpoints, `clamp()`) e a galeria responsiva (19.1); o fecho do módulo (o position fica nos slides, para consulta) | [S12-2026-11-10](S12-2026-11-10/) |
 
-O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
+O código escrito em cada sessão está em `s01/`, `s02/` … `s12/`.
 
 ## Como está organizado (a partir da S5)
 
@@ -31,7 +31,7 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 ├── exemplos/NN-tema/    (CSS) as páginas de exemplo onde escrevemos o código juntos, sem CSS
 ├── exercicios/NN-tema/  os enunciados, uma pasta por parte (06-imagens, 07-tabelas…)
 ├── solucoes/NN-tema/    as soluções, com a mesma organização (publicadas depois da sessão)
-└── s01/, s02/ … s11/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
+└── s01/, s02/ … s12/    o código de cada sessão (o site como ficou, ou devia ter ficado, no fim)
 ```
 
 - **Os exercícios são numerados pela parte (o tema):** o 7.1 é o primeiro exercício das tabelas (parte 7), esteja em que sessão estiver.
@@ -57,10 +57,10 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | 13 | Cores, texto e fontes | 13.1 que cor é esta? ([enunciado](exercicios/13-cores-texto/ex-13.1-que-cor.md) · [solução](solucoes/13-cores-texto/sol-13.1-que-cor.md)) · 13.2 o aspeto das receitas ([enunciado](exercicios/13-cores-texto/ex-13.2-aspeto-das-receitas.md) · [solução](solucoes/13-cores-texto/sol-13.2-aspeto-das-receitas.css), resolvido na sessão 9) · exemplo: [`exemplos/13-cores-texto/`](exemplos/13-cores-texto/) |
 | 14 | O box model | 14.1 The Analog Specialist ([enunciado, imagens e propostas](exercicios/14-box-model/ex-14.1-analog-specialist/), resolvido na sessão 10 · [solução](solucoes/14-box-model/sol-14.1-analog-specialist/)) · 14.2 as caixas do site das receitas, para treinar ([enunciado](exercicios/14-box-model/ex-14.2-caixas-nas-receitas.md); já vem feito no ponto de partida do 15.1 · [solução](solucoes/14-box-model/sol-14.2-caixas-nas-receitas.css)) · exemplo: [`exemplos/14-box-model/`](exemplos/14-box-model/) |
 | 15 | Fundos e sombras | 15.1 os fundos do site das receitas, opcional ([enunciado](exercicios/15-fundos/ex-15.1-fundos-nas-receitas.md) · [site de partida](exercicios/15-fundos/ex-15.1-ponto-de-partida/site/) · [solução](solucoes/15-fundos/sol-15.1-fundos-nas-receitas.css)) · exemplo: o mesmo `exemplos/14-box-model/` |
-| 16 | Position | 16.1 o position no site das receitas, para casa depois da sessão 12 ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md)) · exemplo: [`exemplos/16-position/`](exemplos/16-position/) (o Cabaz) |
+| 16 | Position | 16.1 o position no site das receitas, opcional ([enunciado](exercicios/16-position/ex-16.1-position-nas-receitas.md) · [solução](solucoes/16-position/sol-16.1-position-nas-receitas.css)) · exemplo: [`exemplos/16-position/`](exemplos/16-position/) (o Cabaz) |
 | 17 | Flexbox | **17.3 a newsletter EDP** ([enunciado, textos e imagens](exercicios/17-flexbox/ex-17.3-newsletter-edp/) · [solução](solucoes/17-flexbox/sol-17.3-newsletter-edp/), montada em conjunto na sessão 11) · opcionais: 17.1 o Analog com flexbox ([enunciado](exercicios/17-flexbox/ex-17.1-analog-com-flexbox/)) e 17.2 o flexbox no site das receitas ([enunciado](exercicios/17-flexbox/ex-17.2-flexbox-nas-receitas.md)) · exemplos: [`exemplos/17-flexbox/`](exemplos/17-flexbox/) (flex1 a flex9) · para treinar: [Flexbox Froggy](https://flexboxfroggy.com/) |
-| 18 | CSS Grid | **18.1 a galeria** ([enunciado, HTML e proposta](exercicios/18-grid/ex-18.1-galeria/); para casa, a solução faz-se em conjunto na sessão 12) · exemplos: [`exemplos/18-grid/`](exemplos/18-grid/) (1 a 7) · para treinar: [Grid Garden](https://cssgridgarden.com/) |
-| 19 | Responsive | **19.1 a galeria responsiva** ([enunciado e proposta](exercicios/19-responsive/ex-19.1-galeria-responsiva/)) · 19.2 as receitas no telemóvel, opcional ([enunciado](exercicios/19-responsive/ex-19.2-receitas-no-telemovel.md)) · exemplos: [`exemplos/19-responsive/`](exemplos/19-responsive/) (1 a 3) |
+| 18 | CSS Grid | **18.1 a galeria** ([enunciado, HTML e proposta](exercicios/18-grid/ex-18.1-galeria/) · [solução](solucoes/18-grid/sol-18.1-galeria/), resolvido em conjunto na sessão 12) · exemplos: [`exemplos/18-grid/`](exemplos/18-grid/) (1 a 7) · para treinar: [Grid Garden](https://cssgridgarden.com/) |
+| 19 | Responsive | **19.1 a galeria responsiva** ([enunciado e proposta](exercicios/19-responsive/ex-19.1-galeria-responsiva/) · [solução](solucoes/19-responsive/sol-19.1-galeria-responsiva/)) · 19.2 as receitas no telemóvel, opcional ([enunciado](exercicios/19-responsive/ex-19.2-receitas-no-telemovel.md)) · exemplos: [`exemplos/19-responsive/`](exemplos/19-responsive/) (1 a 3) |
 
 **O que já fizemos, com o número novo** (os ficheiros já publicados mantêm o nome antigo):
 
@@ -73,3 +73,47 @@ O código escrito em cada sessão está em `s01/`, `s02/`, `s03/`, `s04/`…
 | S2/S3 · 2.1, 2.2, 2.3 | 4.1, 4.2, 4.3 | Erros nas listas · plano numa lista · cartão com listas |
 | S4 · 3.1, 3.2 | 5.1, 5.2 | Caminhos relativos · link ou botão? |
 | S4 · 4.1, 4.2 | 6.1, **6.2** | Escrever o alt · **posset de limão** |
+
+## Referências do módulo
+
+Os links que usámos nas 12 sessões, por tema (cada sessão tem os seus no README e nos snippets).
+
+**Para consultar e estudar**
+- [MDN Web Docs](https://developer.mozilla.org/): a referência de HTML, CSS e JavaScript · [MDN · CSS styling basics](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics)
+- [web.dev · Learn CSS](https://web.dev/learn/css) · [web.dev · Learn Responsive Design](https://web.dev/learn/design)
+- [Can I use](https://caniuse.com/): o que cada browser suporta
+
+**HTML**
+- [Validador W3C (HTML)](https://validator.w3.org/) · [Validador W3C (CSS)](https://jigsaw.w3.org/css-validator/)
+- MDN: [formulários](https://developer.mozilla.org/pt-BR/docs/Learn/Forms) · [`<input>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/input) · [`<video>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/video) · [`<iframe>`](https://developer.mozilla.org/pt-BR/docs/Web/HTML/Element/iframe) · [semântica](https://developer.mozilla.org/pt-BR/docs/Glossary/Semantics)
+- Para testar formulários: [httpbin](https://httpbin.org/anything) · [Postman Echo](https://postman-echo.com/post)
+
+**CSS: seletores, cores, texto e fontes**
+- [CSS Zen Garden](https://csszengarden.com): o mesmo HTML, centenas de CSS
+- [MDN · seletores](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_selectors) · para treinar: [CSS Diner](https://flukeout.github.io/)
+- [MDN · cores](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value) · [WebAIM · Contrast Checker](https://webaim.org/resources/contrastchecker/)
+- [Google Fonts](https://fonts.google.com/) · [MDN · `font-family`](https://developer.mozilla.org/en-US/docs/Web/CSS/font-family)
+
+**O box model, o reset e os fundos**
+- [MDN · The box model](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/Styling_basics/Box_model)
+- Resets: [Eric Meyer](https://meyerweb.com/eric/tools/css/reset/) · [normalize.css](https://necolas.github.io/normalize.css/) · [modern-normalize](https://github.com/sindresorhus/modern-normalize) · [Josh Comeau · custom CSS reset](https://www.joshwcomeau.com/css/custom-css-reset/)
+- MDN: [`background`](https://developer.mozilla.org/en-US/docs/Web/CSS/background) · [`box-shadow`](https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow) · [`filter`](https://developer.mozilla.org/en-US/docs/Web/CSS/filter)
+
+**Layout: flexbox, grid, position**
+- [MDN · Flexbox](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Flexbox) · [CSS-Tricks · A Complete Guide to Flexbox](https://css-tricks.com/snippets/css/a-guide-to-flexbox/) · para treinar: [Flexbox Froggy](https://flexboxfroggy.com/#pt-pt)
+- [MDN · CSS Grid](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_grid_layout) · [CSS-Tricks · A Complete Guide to CSS Grid](https://css-tricks.com/snippets/css/complete-guide-grid/) · [Grid by Example](https://gridbyexample.com/) · [Chrome DevTools · grid](https://developer.chrome.com/docs/devtools/css/grid) · para treinar: [Grid Garden](https://cssgridgarden.com/#pt-pt)
+- [MDN · `position`](https://developer.mozilla.org/en-US/docs/Web/CSS/position)
+
+**Responsive**
+- [Ethan Marcotte · Responsive Web Design (2010)](https://alistapart.com/article/responsive-web-design/): o artigo que deu o nome
+- [MDN · Responsive design](https://developer.mozilla.org/en-US/docs/Learn_web_development/Core/CSS_layout/Responsive_Design) · [MDN · media queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_media_queries/Using_media_queries) · [web.dev · a sintaxe `width >= 40rem`](https://web.dev/articles/media-query-range-syntax)
+- [MDN · `clamp()`](https://developer.mozilla.org/en-US/docs/Web/CSS/clamp) · [MDN · container queries](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_containment/Container_queries)
+- [Chrome DevTools · Device Mode](https://developer.chrome.com/docs/devtools/device-mode)
+
+**Newsletters (email HTML)**
+- [MJML](https://mjml.io/) · [Foundation for Emails](https://get.foundation/emails.html) · [Can I email](https://www.caniemail.com/) · [Really Good Emails](https://reallygoodemails.com/)
+
+**Ferramentas e para continuar a praticar**
+- [Fira Code](https://github.com/tonsky/FiraCode): a fonte com os símbolos ≥ ≤ ≠ → no VS Code ([como configurar](https://github.com/tonsky/FiraCode/wiki/VS-Code-Instructions))
+- [Picsum Photos](https://picsum.photos/): fotografias para testar
+- [Frontend Mentor](https://www.frontendmentor.io/): desafios com designs reais

@@ -11,7 +11,7 @@ Formador: **João Gonçalves** · [joaogoncalves.net](https://joaogoncalves.net)
 | # | Módulo | Datas | Pasta |
 |---|---|---|---|
 | 01 | Introdução à Programação e Desenvolvimento Web | 28 set – 12 out | [01-intro-programacao](01-intro-programacao/) |
-| 02 | HTML e CSS | 14 out – 9 nov | [02-html-css](02-html-css/) |
+| 02 | HTML e CSS | 14 out – 10 nov ✓ | [02-html-css](02-html-css/) |
 | 03 | Workshop: Versões de Código com GitHub | 11 – 16 nov | [03-git-github](03-git-github/) |
 | 04 | JavaScript para Frontend | 18 nov – 22 jan | [04-javascript](04-javascript/) |
 | 05 | React Foundations | 25 jan – 15 fev | [05-react-foundations](05-react-foundations/) |

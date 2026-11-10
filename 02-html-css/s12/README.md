@@ -1,12 +1,11 @@
-# s12 · a pasta da sessão 12 (3.ª, 10 nov)
-
-Já vem pronta: copiem esta pasta inteira para a vossa `s12/` e abram o Live Server aqui.
+# s12 · o código da sessão 12 (3.ª, 10 nov), como ficou
 
 | Pasta | O que tem |
 |---|---|
-| `galeria/` | A galeria do 18.1, **ainda sem a grelha**: começamos a sessão a escrevê-la juntos. Depois, é aqui que fazem o 19.1 (a galeria responsiva). As fotografias vêm de picsum.photos (é preciso estar online) |
-| `exemplos/18-object-fit/` | Uma caixa de 600 × 400 com uma fotografia maior: para perceber o `object-fit` (a regra das imagens da galeria) |
-| `exemplos/19-responsive/` | Três exemplos de responsive (os breakpoints; um layout com flexbox; o mesmo layout com grid). O CSS de base já está; as media queries escrevemos juntos |
-| `exemplos/16-position/` | O Cabaz da semana: o selo, o topo e o link "↑ topo" com `position` |
+| `galeria/` | A galeria do 18.1 com a grelha escrita em conjunto (6 colunas, `grid-auto-rows`, os `span`) e o extra do zoom |
+| `galeria-rwd/` | A galeria responsiva (19.1), mobile-first: 1 coluna, 2 a partir de 40rem, a grelha do 18.1 a partir de 64rem; o título com `clamp()` |
+| `exemplos/18-object-fit/` | A caixa de 600 × 400 com uma fotografia maior: `width`/`height` a 100%, `object-fit: cover` e `display: block` |
+| `exemplos/19-responsive/` | O exemplo 1 (as imagens flexíveis e os dois breakpoints) feito na aula. O 2 (layout com flexbox) e o 3 (o mesmo com `grid-template-areas`) ficam para treinar: o CSS final está nos snippets da sessão |
+| `exemplos/16-position/` | O Cabaz da semana, para consulta com os slides do position |
 
-No fim da sessão, esta pasta é atualizada com o código que escrevermos.
+As fotografias vêm de picsum.photos (é preciso estar online).

@@ -1,0 +1,94 @@
+/* Exercício 18.1 · A galeria com CSS Grid · solução */
+
+/* o mini reset "à la João" */
+* {
+    margin: 0;
+    padding: 0;
+    border: none;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #333333;
+    color: #ffffff;
+    font-family: "Courier New", Courier, monospace;
+}
+
+/* o título ao centro, com flexbox */
+header {
+    height: 20vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #2b2b2b;
+}
+
+/* as caixas de texto: em coluna, centradas na vertical */
+section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem;
+    background-color: #1e1e1e;
+}
+
+section p {
+    font-size: 0.8rem;
+}
+
+section a {
+    font-size: 0.8rem;
+    color: orangered;
+    text-decoration: none;
+}
+
+/* as imagens enchem a célula e cortam o que sobra (object-fit, como o background-size: cover) */
+figure img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+/* ---------- 18.1 · a grelha ---------- */
+
+/* o main é o contentor: 6 colunas iguais, linhas de 20vh */
+main {
+    display: grid;
+    gap: 5px;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 20vh;           /* todas as linhas (implícitas) com a mesma altura */
+}
+
+/* as peças maiores: span nas colunas e nas linhas */
+.c2xr1 {
+    grid-column: span 2;
+}
+
+.c2xr2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.c3xr1 {
+    grid-column: span 3;
+}
+
+.c3xr2 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+/* ---------- extra · as imagens com um zoom suave ---------- */
+figure {
+    overflow: hidden;               /* o zoom não sai da célula */
+}
+
+figure img {
+    transition: transform 0.4s;
+}
+
+figure img:hover {
+    transform: scale(1.08);
+}

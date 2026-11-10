@@ -53,5 +53,46 @@ figure img {
 
 /* ---------- 18.1 · a grelha: escrevam aqui ---------- */
 
+main {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-auto-rows: 20vh;
+}
+
 
 /* ---------- 19.1 · a galeria responsiva: escrevam aqui ---------- */
+
+.c2xr1 {
+    grid-column: span 2;
+}
+
+.c2xr2 {
+    grid-column: span 2;
+    grid-row: span 2;
+}
+
+.c3xr1 {
+    grid-column: span 3;
+}
+
+.c3xr2 {
+    grid-column: span 3;
+    grid-row: span 2;
+}
+
+
+/* ***** extra **** */
+figure {
+    overflow: hidden;
+}
+
+figure img {
+    transition: all 0.4s;
+    filter: sepia(0)
+    
+}
+
+figure img:hover {
+    transform: scale(1.1);
+    filter: sepia(1)
+}

@@ -36,12 +36,45 @@
         }
 
         /* ---------- 1 · as imagens flexíveis: escrevam aqui ---------- */
+        img, video {
+            max-width: 100%;
+        }
 
 
         /* ---------- 2 · o primeiro breakpoint (40rem = 640px): escrevam aqui ---------- */
+        @media (min-width: 40rem) {
+            
+            body {
+                background-color: tomato;
+
+                /* 
+                por lado a lado as 2 primeiras colunas
+                a terceira a ocupar 100% por baixo das dias
+                */
+                display: flex;
+                gap: 0 1.5rem;
+
+                flex-wrap: wrap;
+
+            }
+
+            .col1 {flex: 3}
+            .col2 {flex: 2}
+            .col3 {flex-basis: 100%;}
+
+        }
 
 
         /* ---------- 3 · o segundo breakpoint (64rem = 1024px): escrevam aqui ---------- */
+        @media (width >= 64rem) { /* depois 2023 */
+            body {
+                background-color: lightblue;
+
+
+            }
+
+            .col3{ flex: 2}
+        }
 
     </style>
 </head>
