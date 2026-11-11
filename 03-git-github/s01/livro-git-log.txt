@@ -1,0 +1,36 @@
+29d9e19 · 11 Nov 2026 11:50 · Joao goncalves
+    eliminado ficheiro de notas
+
+ notas.txt | 1 -
+ 1 file changed, 1 deletion(-)
+c320f6d · 11 Nov 2026 11:48 · Joao goncalves
+    ficheiro de notas acrescentado
+
+ notas.txt | 1 +
+ 1 file changed, 1 insertion(+)
+20aa48b · 11 Nov 2026 11:43 · Joao goncalves
+    acrescado  capitulo 1 e prefacio alterado
+
+ capitulos/capitulo1.txt | 3 ++-
+ prefacio.txt            | 3 ++-
+ 2 files changed, 4 insertions(+), 2 deletions(-)
+f0ac6ef · 11 Nov 2026 11:28 · Joao goncalves
+    alteracao do titulo do livro
+
+ livro.txt | 2 ++
+ 1 file changed, 2 insertions(+)
+dcc8e77 · 11 Nov 2026 11:25 · Joao goncalves
+    inicio do 1 capitulo do livro
+
+ capitulos/capitulo1.txt | 1 +
+ 1 file changed, 1 insertion(+)
+35e1019 · 11 Nov 2026 11:20 · Joao goncalves
+    criado o prefacio do livro
+
+ prefacio.txt | 1 +
+ 1 file changed, 1 insertion(+)
+fd8aa59 · 11 Nov 2026 11:09 · Joao goncalves
+    criado o livro
+
+ livro.txt | 1 +
+ 1 file changed, 1 insertion(+)
