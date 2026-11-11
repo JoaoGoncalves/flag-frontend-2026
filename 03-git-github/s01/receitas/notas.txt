@@ -1,0 +1,4 @@
+Notas de rascunho (já não são precisas: apagar com o Git no exercício 3.1)
+- trocar a foto do posset
+- ver as cores do cabeçalho
+- acrescentar mais receitas de doces
