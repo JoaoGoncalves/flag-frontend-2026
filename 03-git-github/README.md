@@ -6,7 +6,7 @@ Módulo 3 · Workshop: Versões de Código com GitHub · 11 → 16 nov 2026
 
 | Sessão | Data | Tema | Pasta |
 |---|---|---|---|
-| S1 | 4.ª 11 nov | Git: o controlo de versões. Instalar e configurar o Git; os primeiros commits (`init`, `status`, `add`, `commit`, `log`); ver e desfazer (`diff`, `restore`) · slides, snippets e links | [S1-2026-11-11](S1-2026-11-11/) · código: [s01](s01/) |
+| S1 | 4.ª 11 nov | Git: o controlo de versões. Instalar e configurar o Git; os primeiros commits (`init`, `status`, `add`, `commit`, `log`); ver e desfazer (`diff`, `restore`) · slides, snippets e links | [S1-2026-11-11](S1-2026-11-11/) · código: [s01](s01/) · com o Git: [livro-s01.zip](s01/livro-s01.zip), [receitas-s01.zip](s01/receitas-s01.zip) |
 | S2 | 6.ª 13 nov | Branches, merge e conflitos, o `.gitignore` e voltar atrás (`amend`, `revert`, `reset`) | — |
 | S3 | 2.ª 16 nov | O GitHub: enviar, partilhar, trabalhar em equipa e publicar | — |
 

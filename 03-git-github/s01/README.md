@@ -4,7 +4,12 @@
 |---|---|
 | `receitas/` | O site das receitas como ficou no módulo 2 (a versão da sessão 10), mais um `notas.txt` de rascunho. É o ponto de partida do **exercício 3.1** para quem não tiver o seu. |
 | `livro/` | O livro como ficou na aula, **sem** a pasta `.git` (um repositório não pode ir dentro de outro). O histórico, os 7 commits, está em `livro-git-log.txt`. |
+| `livro-s01.zip` | O livro como ficou na aula, **com** o repositório e o histórico (os 7 commits). Para quem não tem o seu: descompactem na vossa `flag-frontend/03-git-github/s01/` e `git log --oneline`. |
+| `receitas-s01.zip` | O site das receitas **com** o repositório e o primeiro commit (o fim do exercício 3.1). Para quem não tem o seu: descompactem na vossa `flag-frontend/03-git-github/s01/` e `git log --oneline`. |
 
 **Copiem a pasta `receitas/` para a vossa `flag-frontend/03-git-github/s01/`** e trabalhem nessa cópia. Não façam `git init` dentro da pasta dos materiais do curso: se a descarregaram com `git clone`, essa pasta já é um repositório.
 
 O livro fez-se juntos, a partir do zero. O vosso, com o vosso histórico, continua na sessão 2: guardem-no.
+
+
+**Os zip:** no GitHub, abram o ficheiro e carreguem em **Download raw file** (também vêm no Download ZIP do repositório). Lá dentro está a pasta escondida `.git`, que é o repositório: por isso o histórico vem junto. Descompactem-nos sempre **fora** da pasta dos materiais do curso.

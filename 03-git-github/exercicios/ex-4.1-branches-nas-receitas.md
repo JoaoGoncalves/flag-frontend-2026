@@ -8,7 +8,7 @@ Vão fazer no site das receitas o que fizemos no livro: duas mudanças, cada uma
 
 O repositório das receitas do exercício 3.1 (a vossa `flag-frontend/03-git-github/s01/receitas`). O `git status` tem de estar limpo.
 
-Não o têm? Copiem `03-git-github/s01/receitas` do GitHub para a vossa `s01/receitas` e, lá dentro: `git init`, `git add .` e `git commit -m "Primeira versão do site das receitas"`.
+Não o têm? Descarreguem o `03-git-github/s01/receitas-s01.zip` do GitHub (abram o ficheiro e carreguem em **Download raw file**) e descompactem-no na vossa `flag-frontend/03-git-github/s01/`: a pasta `receitas` já traz o repositório e o primeiro commit. Confirmem com `git log --oneline`.
 
 ## O que fazer
 
