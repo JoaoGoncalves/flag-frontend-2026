@@ -1,0 +1,36 @@
+* ea8fcac · 13 Nov 2026 12:12 · Joao goncalves (HEAD -> main)
+|   Revert "apaga capitulo1"
+* d002221 · 13 Nov 2026 12:12 · Joao goncalves
+|   apaga capitulo1
+* 5401b5b · 13 Nov 2026 12:06 · Joao goncalves
+|   Acrescenta o GitIgnore ao REp
+*   0d668c5 · 13 Nov 2026 11:35 · Joao goncalves
+|\    prefacio novo
+| * 1e1fc3c · 13 Nov 2026 11:31 · Joao goncalves (prefacio-novo)
+| |   prefacio atualiza
+* | 5c0ade3 · 13 Nov 2026 11:31 · Joao goncalves
+|/    atualizado prefacio na main
+* 447a511 · 13 Nov 2026 11:27 · Joao goncalves
+|   Muda o prefacio
+*   e06a01c · 13 Nov 2026 10:20 · Joao goncalves
+|\    Merge branch 'titulo'
+| * a2dbc41 · 13 Nov 2026 10:14 · Joao goncalves
+| |   Muda o Titulo
+* | fd25794 · 13 Nov 2026 10:17 · Joao goncalves
+|/    continado o capitulo1
+* 06b7f1b · 13 Nov 2026 10:01 · Joao goncalves (rodape)
+|   acrescenta rodape
+* 29d9e19 · 11 Nov 2026 11:50 · Joao goncalves
+|   eliminado ficheiro de notas
+* c320f6d · 11 Nov 2026 11:48 · Joao goncalves
+|   ficheiro de notas acrescentado
+* 20aa48b · 11 Nov 2026 11:43 · Joao goncalves
+|   acrescado  capitulo 1 e prefacio alterado
+* f0ac6ef · 11 Nov 2026 11:28 · Joao goncalves
+|   alteracao do titulo do livro
+* dcc8e77 · 11 Nov 2026 11:25 · Joao goncalves
+|   inicio do 1 capitulo do livro
+* 35e1019 · 11 Nov 2026 11:20 · Joao goncalves
+|   criado o prefacio do livro
+* fd8aa59 · 11 Nov 2026 11:09 · Joao goncalves
+    criado o livro

@@ -7,7 +7,7 @@ Módulo 3 · Workshop: Versões de Código com GitHub · 11 → 16 nov 2026
 | Sessão | Data | Tema | Pasta |
 |---|---|---|---|
 | S1 | 4.ª 11 nov | Git: o controlo de versões. Instalar e configurar o Git; os primeiros commits (`init`, `status`, `add`, `commit`, `log`); ver e desfazer (`diff`, `restore`) · slides, snippets e links | [S1-2026-11-11](S1-2026-11-11/) · código: [s01](s01/) · com o Git: [livro-s01.zip](s01/livro-s01.zip), [receitas-s01.zip](s01/receitas-s01.zip) |
-| S2 | 6.ª 13 nov | Branches, merge e conflitos, o `.gitignore` e voltar atrás (`amend`, `revert`, `reset`) | — |
+| S2 | 6.ª 13 nov | Branches, merge e conflitos, o `.gitignore` e voltar atrás (`amend`, `revert`, `reset`), boas práticas (nomes de branches, Conventional Commits) · slides, snippets e links | [S2-2026-11-13](S2-2026-11-13/) · código: [s02](s02/) · com o Git: [livro-s02.zip](s02/livro-s02.zip) |
 | S3 | 2.ª 16 nov | O GitHub: enviar, partilhar, trabalhar em equipa e publicar | — |
 
 ## Exercícios
@@ -15,7 +15,7 @@ Módulo 3 · Workshop: Versões de Código com GitHub · 11 → 16 nov 2026
 | Parte | Tema | Exercícios |
 |---|---|---|
 | 3 | O repositório local | **3.1 o site das receitas no Git** ([enunciado](exercicios/ex-3.1-receitas-no-git.md), na sessão 1 · ponto de partida: [`s01/receitas/`](s01/receitas/)) · 3.2 a galeria no Git, opcional ([enunciado](exercicios/ex-3.2-galeria-no-git.md)) · solução: [3.1](solucoes/sol-3.1-receitas-no-git.md) |
-| 4 | Branches, merge e conflitos | 4.1 branches nas receitas ([enunciado](exercicios/ex-4.1-branches-nas-receitas.md)) · 4.2 um conflito nas receitas ([enunciado](exercicios/ex-4.2-conflito-nas-receitas.md)) · 4.3 o .gitignore e voltar atrás, para casa ([enunciado](exercicios/ex-4.3-gitignore-e-voltar-atras.md)) |
+| 4 | Branches, merge e conflitos | 4.1 branches nas receitas ([enunciado](exercicios/ex-4.1-branches-nas-receitas.md)) · 4.2 um conflito nas receitas ([enunciado](exercicios/ex-4.2-conflito-nas-receitas.md)) · 4.3 o .gitignore e voltar atrás, para casa ([enunciado](exercicios/ex-4.3-gitignore-e-voltar-atras.md)) · soluções: [4.1](solucoes/sol-4.1-branches-nas-receitas.md), [4.2](solucoes/sol-4.2-conflito-nas-receitas.md) |
 
 ## Para começar
 
