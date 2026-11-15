@@ -16,7 +16,7 @@ Módulo 3 · Workshop: Versões de Código com GitHub · 11 → 16 nov 2026
 |---|---|---|
 | 3 | O repositório local | **3.1 o site das receitas no Git** ([enunciado](exercicios/ex-3.1-receitas-no-git.md), na sessão 1 · ponto de partida: [`s01/receitas/`](s01/receitas/)) · 3.2 a galeria no Git, opcional ([enunciado](exercicios/ex-3.2-galeria-no-git.md)) · solução: [3.1](solucoes/sol-3.1-receitas-no-git.md) |
 | 4 | Branches, merge e conflitos | 4.1 branches nas receitas ([enunciado](exercicios/ex-4.1-branches-nas-receitas.md)) · 4.2 um conflito nas receitas ([enunciado](exercicios/ex-4.2-conflito-nas-receitas.md)) · 4.3 o .gitignore e voltar atrás, para casa ([enunciado](exercicios/ex-4.3-gitignore-e-voltar-atras.md)) · soluções: [4.1](solucoes/sol-4.1-branches-nas-receitas.md), [4.2](solucoes/sol-4.2-conflito-nas-receitas.md) |
-| 5 | O GitHub | 5.1 as receitas no GitHub (e online) ([enunciado](exercicios/ex-5.1-receitas-no-github.md)) · 5.2 uma Issue e um Pull Request nas receitas ([enunciado](exercicios/ex-5.2-issue-e-pull-request.md)) · 5.3 um README para as receitas, para casa ([enunciado](exercicios/ex-5.3-readme-e-portefolio.md)) |
+| 5 | O GitHub | 5.1 as receitas no GitHub (e online) ([enunciado](exercicios/ex-5.1-receitas-no-github.md) · ponto de partida: [`s03/`](s03/)) · 5.2 uma Issue e um Pull Request nas receitas ([enunciado](exercicios/ex-5.2-issue-e-pull-request.md)) · 5.3 um README para as receitas, para casa ([enunciado](exercicios/ex-5.3-readme-e-portefolio.md)) |
 
 ## Para começar
 

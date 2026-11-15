@@ -1,0 +1,7 @@
+*   98d9520 Merge branch 'nova-receita' into cores
+|\  
+| * ef3c6f7 acrescenta receita arroz doce
+| * 378f2a9 acrescenta arroz doce a lista
+* | 33fae5a cores cabecalu muda
+|/  
+* 1b66304 Primeira versão do site das receitas

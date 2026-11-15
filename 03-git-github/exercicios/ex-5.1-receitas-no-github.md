@@ -8,7 +8,7 @@ Vão fazer com as receitas o que fizemos com o livro: criar o repositório no Gi
 
 O vosso repositório das receitas, como ficou nos exercícios 4.1 e 4.2. O `git status` tem de estar limpo.
 
-Não o têm? Descarreguem o `03-git-github/s01/receitas-s01.zip` do repositório do curso (agora já o têm clonado: está na vossa `flag-frontend-2026`). Copiem o zip para a vossa `flag-frontend/03-git-github/s03/` e descompactem-no lá: a pasta `receitas` já traz o repositório e o primeiro commit.
+Não o têm? Está no repositório do curso (já o têm clonado: a vossa `flag-frontend-2026`), em `03-git-github/s03/receitas-s03.zip`. Copiem o zip para a vossa `flag-frontend/03-git-github/s03/` e descompactem-no lá: a pasta `receitas` já traz o repositório e o histórico dos exercícios 3.1, 4.1 e 4.2.
 
 ## O que fazer
 

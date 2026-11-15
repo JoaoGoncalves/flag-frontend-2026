@@ -1,0 +1,22 @@
+* ea8fcac Revert "apaga capitulo1"
+* d002221 apaga capitulo1
+* 5401b5b Acrescenta o GitIgnore ao REp
+*   0d668c5 prefacio novo
+|\  
+| * 1e1fc3c prefacio atualiza
+* | 5c0ade3 atualizado prefacio na main
+|/  
+* 447a511 Muda o prefacio
+*   e06a01c Merge branch 'titulo'
+|\  
+| * a2dbc41 Muda o Titulo
+* | fd25794 continado o capitulo1
+|/  
+* 06b7f1b acrescenta rodape
+* 29d9e19 eliminado ficheiro de notas
+* c320f6d ficheiro de notas acrescentado
+* 20aa48b acrescado  capitulo 1 e prefacio alterado
+* f0ac6ef alteracao do titulo do livro
+* dcc8e77 inicio do 1 capitulo do livro
+* 35e1019 criado o prefacio do livro
+* fd8aa59 criado o livro
