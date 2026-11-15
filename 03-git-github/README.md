@@ -22,3 +22,4 @@ Módulo 3 · Workshop: Versões de Código com GitHub · 11 → 16 nov 2026
 
 - Instalar o Git: https://git-scm.com/downloads (no Windows fica também o **Git Bash**). Para confirmar, escrevam `git --version` no terminal.
 - Criar uma conta no GitHub: https://github.com/ (vai ser precisa na sessão 3).
+- **Extra: ligar ao GitHub com SSH** (em vez do HTTPS e do browser), uma vez por computador: [tutorial passo a passo](recursos/tutorial-ssh-github.md), para Mac e Windows.
