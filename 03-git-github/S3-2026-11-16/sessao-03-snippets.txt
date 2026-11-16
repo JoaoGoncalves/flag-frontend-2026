@@ -1,0 +1,451 @@
+SESSÃO 3 · O GITHUB
+
+Git e GitHub · joaogoncalves.net · os comandos para seguir a sessão
+
+Hoje o Git vai para a nuvem: o repositório do curso clonado, o livro e as receitas no GitHub, o site das receitas online e um Pull Request no repositório da turma. Escrevam vocês os comandos, porque copiar não conta. Usem esta folha só se encravarem.
+Os números dos slides são os da versão FLAG (entre parênteses, os da versão própria). Onde aparece <username>, é o vosso nome de utilizador no GitHub.
+
+Como ler esta folha. Cada secção diz o que fazemos com ela:
+
+- 📖 TEORIA: os comandos para consulta. Não é para escrever ainda.
+- ✍️ STOP · ESCREVER JUNTOS: aqui escrevemos todos, passo a passo. Eu partilho o ecrã.
+- 📋 RESUMO: o que acabámos de escrever.
+- 🧑‍💻 SOZINHOS: o vosso exercício. ✅ SOLUÇÃO: faço-a convosco a seguir.
+
+A ordem é sempre: teoria → escrever juntos → resumo → (às vezes) exercício sozinhos → solução.
+- Parte 1 · O GitHub: teoria 6 e 7 → juntos 8 → resumo 9
+- Parte 2 · O livro no GitHub: teoria 11, 12, 13 e 14 → juntos 15 → resumo 16 → 5.1 sozinhos 17 → solução 18
+- Parte 3 · Em equipa: teoria 20, 21, 22 e 23 → juntos 24 → resumo 25 → 5.2 sozinhos 26 → solução 27
+- Parte 4 · Boas práticas: teoria 28 → 5.3 para casa 29
+
+────────────────────────────────────────────────────────
+
+ANTES DE COMEÇAR · SLIDE 4 (PRÓPRIA 2)
+
+Quem sou eu no Git? O email tem de ser o da vossa conta do GitHub (é assim que os commits aparecem com a vossa cara):
+
+    git config --global user.name
+    git config --global user.email
+
+Não é o da conta? Mudem-no:
+
+    git config --global user.email "o.email@da.conta"
+
+Têm duas contas no GitHub (a pessoal e a do trabalho)? Não mexam no --global (fica a do trabalho). Digam ao Git para usar a conta pessoal só dentro da pasta do curso (uma vez por computador):
+
+    git config --global includeIf."gitdir:~/Documents/flag-frontend/".path ~/.gitconfig-flag
+    git config --file ~/.gitconfig-flag user.name "O Vosso Nome"
+    git config --file ~/.gitconfig-flag user.email "o.email@da.conta.pessoal"
+
+- Windows: gitdir/i: em vez de gitdir:. O caminho é o da vossa flag-frontend e acaba em /.
+- Para confirmar, dentro de um repositório do curso (o livro, por exemplo): git config --show-origin user.email mostra o .gitconfig-flag e o email pessoal. Fora de um repositório aparece o global: é normal.
+- No browser, antes do Authorize do primeiro push, confirmem a conta no canto superior direito do GitHub.
+- Tudo explicado: 03-git-github/recursos/duas-contas-github.md (no repositório do curso).
+
+- Ainda não têm conta? github.com › Sign up, com esse mesmo email. O GitHub pede 2FA: uma app de autenticação no telemóvel. Guardem os recovery codes.
+- No chat: o vosso username do GitHub (é para vos convidar para o repositório da turma).
+
+────────────────────────────────────────────────────────
+
+PARTE 1 · O GITHUB
+
+› [TEORIA] O local e o remoto · slide 6 (própria 4)
+
+  → Só para consulta: não é para escrever agora. Escrevemos juntos no slide 8.
+
+- O Git é o programa: guarda as versões no vosso computador. O GitHub é um serviço: guarda uma cópia do repositório na nuvem, com uma página web, a equipa e as revisões.
+- O repositório do GitHub é o remoto; o vosso é o local. O histórico é o mesmo: os commits viajam de um para o outro.
+
+› [TEORIA] Os quatro verbos · slide 7 (própria 5)
+
+  → Só para consulta: não é para escrever agora. Escrevemos juntos no slide 8.
+
+    git clone <endereço>    # a primeira vez: copia o repositório todo (e fica ligado ao remoto, o origin)
+    git push                # envia os meus commits
+    git fetch               # traz os commits novos, sem mexer nos meus ficheiros
+    git pull                # traz e junta (fetch + merge)
+
+⚠️ Pull quando começo, push quando acabo.
+
+› [STOP · ESCREVER JUNTOS] O clone do curso, juntos · slide 8 (própria 6)
+
+  → Agora escrevemos todos, passo a passo, no terminal do VS Code. Eu partilho o ecrã.
+
+    # 1 · para a pasta onde está a vossa flag-frontend (NÃO para dentro dela)
+    cd ~/Documents
+    
+    # 2 · o clone
+    git clone https://github.com/JoaoGoncalves/flag-frontend-2026.git
+    
+    # 3 · o histórico do curso
+    cd flag-frontend-2026
+    git log --oneline -5
+    
+    # 4 · de onde veio, e o que tem
+    git remote -v
+    ls 03-git-github
+    
+    # 5 · é isto no fim de cada sessão
+    git pull                            # Already up to date.
+
+- Esta pasta é só para ler. O vosso trabalho continua na flag-frontend.
+- destination path 'flag-frontend-2026' already exists? Já têm uma pasta com esse nome (de um Download ZIP antigo): mudem-lhe o nome e clonem outra vez.
+- No Windows, no PowerShell (em vez do Git Bash): cd $HOME\Documents.
+
+› [RESUMO] Resumo · slide 9 (própria 7)
+
+  → O que acabámos de escrever no slide 8.
+
+    git clone https://github.com/JoaoGoncalves/flag-frontend-2026.git
+    cd flag-frontend-2026
+    git log --oneline -5
+    git remote -v
+    git pull
+
+────────────────────────────────────────────────────────
+
+PARTE 2 · O LIVRO NO GITHUB
+
+› [TEORIA] A autenticação · slide 11 (própria 9)
+
+  → Só para consulta: não é para escrever agora. Hoje a autenticação acontece sozinha no slide 15, no terminal do VS Code.
+
+- A password da conta não serve no terminal (desde 2021).
+- Hoje, no VS Code: no primeiro git push, o VS Code pergunta "The extension 'GitHub' wants to sign in" › Allow › o browser abre › Authorize Visual Studio Code. Fica guardado.
+- Fora do VS Code, no Windows: o Git Credential Manager (vem com o Git) abre o browser do mesmo modo.
+- Plano B, no Mac (ou se o VS Code não pedir): a GitHub CLI.
+
+    brew install gh                     # Mac (no Windows: winget install GitHub.cli)
+    gh auth login                       # GitHub.com › HTTPS › Yes › Login with a web browser
+    gh auth status
+
+- Mais tarde: SSH. Uma chave no computador e a outra no GitHub:
+
+    ssh-keygen -t ed25519 -C "o.email@da.conta"   # Enter, Enter, Enter
+    cat ~/.ssh/id_ed25519.pub                     # copiar para GitHub › Settings › SSH and GPG keys › New SSH key
+    ssh -T git@github.com                         # Hi <username>! You've successfully authenticated…
+
+(Com SSH, os endereços passam a ser git@github.com:<username>/livro.git. Os passos todos: o Extra · SSH, no fim destes snippets, e o tutorial 03-git-github/recursos/tutorial-ssh-github.md.)
+
+› [TEORIA] Criar o repositório · slide 12 (própria 10)
+
+  → Só para consulta: não é para escrever agora. Criamos o do livro juntos no slide 15.
+
+- No GitHub: o + no canto superior direito › New repository › o nome (curto, minúsculas, hífenes).
+- Public: todos veem e clonam; só escreve quem vocês deixarem. Private: só vocês e quem convidarem.
+- ⚠️ Já têm histórico? Criem-no vazio: sem README, sem .gitignore, sem licença. Senão o push é recusado.
+- Muda-se depois: Settings › General › Danger Zone › Change visibility.
+
+› [TEORIA] remote e push · slide 13 (própria 11)
+
+  → Só para consulta: não é para escrever agora. Escrevemos juntos no slide 15.
+
+    git remote add origin https://github.com/<username>/livro.git   # dar nome e endereço ao remoto
+    git remote -v                                                   # para onde aponta
+    git push -u origin main                                         # a primeira vez (o -u liga o main ao origin/main)
+    git push                                                        # daí em diante
+
+› [TEORIA] O histórico no GitHub e o GitHub Pages · slide 14 (própria 12)
+
+  → Só para consulta. O histórico vemos juntos no slide 15; o Pages fazem vocês no 5.1.
+
+- Commits (o relógio por cima dos ficheiros): a lista. Um clique num commit: o que mudou (verde entrou, vermelho saiu).
+- Num ficheiro: History (só os commits dele) e Blame (quem mudou cada linha).
+- Insights › Network: o desenho dos branches, como o --graph.
+- GitHub Pages: Settings › Pages › Build and deployment › Deploy from a branch › main / (root) › Save. O site fica em https://<username>.github.io/<repositório>/.
+
+› [STOP · ESCREVER JUNTOS] O livro no GitHub, juntos · slide 15 (própria 13)
+
+  → Agora escrevemos todos, passo a passo, no livro. Eu partilho o ecrã.
+
+1 · No GitHub: + › New repository › livro › Public › sem README › Create repository. Copiar o endereço HTTPS.
+
+    # 2 · no terminal do VS Code, na pasta do livro (a da 6.ª)
+    cd …/livro
+    git status                          # nothing to commit, working tree clean
+    git log --oneline --graph --all
+    
+    # 3 · ligar ao GitHub
+    git remote add origin https://github.com/<username>/livro.git
+    git remote -v
+    
+    # 4 · enviar (a primeira vez, o VS Code pede para entrar: Allow › Authorize)
+    git push -u origin main
+
+5 · Atualizar a página do repositório: os ficheiros, o número de commits, um commit aberto (o Revert!), o History do livro.txt, Insights › Network.
+
+    # 6 · uma mudança, e enviar (já sem o -u)
+    # … mudar uma frase no livro.txt …
+    git commit -am "Muda o prefácio"
+    git push
+
+- Não têm o livro? O livro-s03.zip está no clone do curso (flag-frontend-2026/03-git-github/s03): copiem-no para a flag-frontend/03-git-github/s03/ e descompactem-no lá.
+- Permission to <username>/livro.git denied to <outra-conta> (403): o computador guardou a credencial da outra conta (a do trabalho). Ponham o username no endereço e voltem a enviar (pede a conta certa): git remote set-url origin https://<username>@github.com/<username>/livro.git e git push -u origin main.
+- Support for password authentication was removed: estão num terminal fora do VS Code. Usem o do VS Code (ou o plano B, gh auth login).
+- ! [rejected] main -> main (fetch first): criaram o repositório com README. Apaguem-no (Settings › Danger Zone) e criem-no vazio.
+- error: remote origin already exists: git remote -v; se estiver errado, git remote set-url origin <endereço certo>.
+
+› [RESUMO] Resumo · slide 16 (própria 14)
+
+  → O que acabámos de escrever no slide 15.
+
+    git remote add origin https://github.com/<username>/livro.git
+    git remote -v
+    git push -u origin main
+    git commit -am "Muda o prefácio"
+    git push
+
+› [SOZINHOS] Exercício 5.1 · as receitas no GitHub (e online) · slide 17 (própria 15)
+
+  → Agora vocês, sozinhos, no repositório das receitas. Os slides de resumo só se encravarem.
+
+O enunciado está em 03-git-github/exercicios/ex-5.1-receitas-no-github.md. Em resumo: um repositório receitas no GitHub (público e vazio), remote add, push -u, o histórico na web, uma mudança e push, e o site online com o GitHub Pages. O link do site no chat.
+
+Sem as receitas com Git? O receitas-s03.zip está no clone do curso (flag-frontend-2026/03-git-github/s03): copiem-no para a flag-frontend/03-git-github/s03/ e descompactem-no lá.
+
+› [SOLUÇÃO] Solução 5.1 · slide 18 (própria 16)
+
+  → Faço-a convosco, depois da pausa.
+
+    cd …/receitas
+    git status
+    git remote add origin https://github.com/<username>/receitas.git
+    git remote -v
+    git push -u origin main
+    
+    # … mudar o texto do rodapé no index.html …
+    git commit -am "Muda o texto do rodapé"
+    git push
+
+GitHub: Settings › Pages › Deploy from a branch › main / (root) › Save · ao fim de um minuto: https://<username>.github.io/receitas/ (o separador Actions mostra a publicação).
+
+────────────────────────────────────────────────────────
+
+PARTE 3 · EM EQUIPA
+
+› [TEORIA] Pull e fetch · slide 20 (própria 18)
+
+  → Só para consulta: não é para escrever agora. O pull fazemos juntos no fim do slide 24.
+
+    git pull                            # no início: trazer o que os outros fizeram (fetch + merge)
+    git push                            # no fim: enviar o que eu fiz
+    
+    # o aviso de um dia destes:
+    #  ! [rejected]  main -> main (fetch first)
+    git pull                            # primeiro trazer (se houver conflito, resolve-se como na 6.ª)
+    git push                            # depois enviar
+
+› [TEORIA] Colaboradores e equipas · slide 21 (própria 19)
+
+  → Só para consulta.
+
+- Num repositório pessoal: Settings › Collaborators › Add people. O convidado aceita (email ou github.com/notifications) e passa a poder escrever.
+- Numa organização: as pessoas entram em equipas, e cada equipa tem uma permissão por repositório: Read (ver e clonar) · Triage (+ gerir Issues) · Write (+ push) · Maintain (+ configurações) · Admin (tudo).
+
+› [TEORIA] Pull Requests · slide 22 (própria 20)
+
+  → Só para consulta: não é para escrever agora. Fazemos um juntos no slide 24.
+
+O fluxo: branch → commits → push → Pull Request → revisão → merge (e depois, todos fazem pull).
+
+- A revisão: no separador Files changed, comentários linha a linha. No fim: Comment, Approve ou Request changes.
+- Os checks: o GitHub Actions pode correr testes a cada push (✓ ou ✗).
+- As regras do main (branch protection): ninguém faz push direto; só com PR aprovado.
+- Num projeto onde não têm permissão de escrita: Fork (uma cópia na vossa conta) e o PR de lá.
+
+› [TEORIA] Issues e Projects · slide 23 (própria 21)
+
+  → Só para consulta: vão usá-las no exercício 5.2.
+
+- Issues: uma tarefa ou um erro, com número (#1), labels e a quem está atribuída.
+- Closes #1 na descrição de um PR: quando o PR é juntado ao main, a Issue fecha-se sozinha.
+- Projects: um quadro (Todo › In Progress › Done) com as Issues da equipa.
+
+› [STOP · ESCREVER JUNTOS] O repositório da turma, juntos · slide 24 (própria 22)
+
+  → Agora escrevemos todos, passo a passo. Eu revejo os vossos Pull Requests ao vivo.
+
+1 · Aceitar o convite: github.com/JoaoGoncalves/flag-git-2026/invitations (ou o email do GitHub).
+
+    # 2 · o clone, na vossa pasta desta sessão
+    mkdir -p …/flag-frontend/03-git-github/s03
+    cd …/flag-frontend/03-git-github/s03
+    git clone https://github.com/JoaoGoncalves/flag-git-2026.git
+    
+    # 3 · um branch com o vosso nome
+    cd flag-git-2026
+    git switch -c feat/<username>
+
+4 · Criar o ficheiro formandos/<username>.md, com este modelo:
+
+    # O vosso nome
+    
+    - **De onde:** a vossa cidade
+    - **O que faço:** a vossa profissão ou área
+    - **O que quero fazer com Front-End:** uma frase
+
+    git add formandos
+    git commit -m "feat: acrescenta a apresentação de <o vosso nome>"
+    
+    # 5 · enviar o branch
+    git push -u origin feat/<username>
+
+5 · No GitHub: a faixa amarela Compare & pull request › um título e uma frase › Create pull request.
+
+6 · Eu revejo: comentário, Approve, Merge. Se pedir alterações (Request changes): mudem o ficheiro, git commit -am "…" e git push. O PR atualiza-se sozinho.
+
+    # 7 · depois de todos juntados
+    git switch main
+    git pull                            # os ficheiros de todos
+    git log --oneline --graph
+
+- O push dá 403 ou Permission denied: ainda não aceitaram o convite (passo 1). Se diz denied to <outra-conta>, é a credencial da conta do trabalho: o set-url com o username, como no livro.
+
+› [RESUMO] Resumo · slide 25 (própria 23)
+
+  → O que acabámos de escrever no slide 24.
+
+    git clone https://github.com/JoaoGoncalves/flag-git-2026.git
+    cd flag-git-2026
+    git switch -c feat/<username>
+    git add formandos
+    git commit -m "feat: acrescenta a apresentação de …"
+    git push -u origin feat/<username>
+    # GitHub: Compare & pull request › revisão › Merge
+    git switch main
+    git pull
+
+› [SOZINHOS] Exercício 5.2 · uma Issue e um Pull Request · slide 26 (própria 24)
+
+  → Agora vocês, sozinhos, no repositório das receitas. Os slides de resumo só se encravarem.
+
+O enunciado está em 03-git-github/exercicios/ex-5.2-issue-e-pull-request.md. Em resumo: uma Issue nas receitas, um branch feat/… com uma receita nova, push, um Pull Request com Closes #1, merge no GitHub, e git pull no fim.
+
+› [SOLUÇÃO] Solução 5.2 · slide 27 (própria 25)
+
+  → Faço-a convosco, a seguir ao exercício.
+
+    # GitHub: Issues › New issue › "Acrescentar a receita de gaspacho" (#1)
+    git switch main
+    git pull
+    git switch -c feat/receita-gaspacho
+    # … receitas/gaspacho.html e o link no index.html …
+    git add receitas/gaspacho.html index.html
+    git commit -m "feat: acrescenta a receita de gaspacho"
+    git push -u origin feat/receita-gaspacho
+    # GitHub: Compare & pull request · descrição: Closes #1 · Create
+    # Files changed: um comentário · Merge pull request · Delete branch
+    
+    git switch main
+    git pull
+    git branch -d feat/receita-gaspacho
+    git log --oneline --graph
+
+────────────────────────────────────────────────────────
+
+PARTE 4 · BOAS PRÁTICAS
+
+› [TEORIA] Um repositório a sério · slide 28 (própria 26)
+
+  → Só para consulta: vão usá-las no exercício 5.3.
+
+- O README.md: o que é, como se usa. Em Markdown: # título · ## subtítulo · - lista · negrito · [texto](link) · ![texto](imagem).
+- O .gitignore, e nunca segredos no Git (.env, passwords, chaves), nem em repositórios privados.
+- A caixa About: descrição, o link do site, topics.
+- O main protegido, branches e PRs pequenos, mensagens que dizem o quê.
+- Uma licença, se for aberto: choosealicense.com (https://choosealicense.com/) (a MIT é a mais comum).
+
+› [SOZINHOS] Exercício 5.3 · um README para as receitas · para casa · slide 29 (própria 27)
+
+  → Para casa, sozinhos, no repositório das receitas.
+
+O enunciado está em 03-git-github/exercicios/ex-5.3-readme-e-portefolio.md. Em resumo: um README.md com o link do site e a lista das receitas, o .gitignore, docs: … e push, a caixa About, e os links no fórum do módulo 3 no Moodle.
+
+────────────────────────────────────────────────────────
+
+EXTRA · SSH: ENTRAR SEM BROWSER · SLIDES 30–32 (PRÓPRIA 28–30)
+
+> Só se houver tempo (a decisão é às 12:07). Se não houver: o tutorial completo está no repositório do curso, em 03-git-github/recursos/tutorial-ssh-github.md (Mac e Windows, o ssh-agent, os problemas comuns). Uns 10 minutos, uma vez por computador.
+
+📖 TEORIA · HTTPS OU SSH? · SLIDE 31 (PRÓPRIA 29)
+
+  HTTPS (o que usámos)  ·  SSH
+  O endereço  ·  https://github.com/<username>/livro.git  ·  git@github.com:<username>/livro.git
+  Como entra  ·  o browser autoriza; o computador guarda  ·  um par de chaves: a privada no computador, a pública no GitHub
+  Configurar  ·  nada  ·  uma vez por computador
+
+A chave privada (id_ed25519) nunca sai do computador. A pública (id_ed25519.pub) vai para o GitHub.
+
+✍️ STOP · MOSTRO EU · CONFIGURAR O SSH · SLIDE 32 (PRÓPRIA 30)
+
+> Mostro eu (num repositório meu: já tenho chave). Vocês fazem em casa, com o tutorial. Windows: tudo no Git Bash.
+
+    ls -al ~/.ssh                                    # já há chaves? (id_ed25519 e id_ed25519.pub)
+    ssh-keygen -t ed25519 -C "o.vosso@email.pt"      # Enter (o sítio) e uma passphrase (2 vezes)
+
+    # copiar a PÚBLICA (o .pub!)
+    pbcopy < ~/.ssh/id_ed25519.pub                   # Mac
+    clip < ~/.ssh/id_ed25519.pub                     # Windows (Git Bash)
+
+    # GitHub › Settings › SSH and GPG keys › New SSH key › colar › Add SSH key
+
+    ssh -T git@github.com                            # à primeira pergunta: yes
+    # Hi <username>! You've successfully authenticated, but GitHub does not provide shell access.
+
+    git remote -v                                    # https://github.com/…
+    git remote set-url origin git@github.com:<username>/livro.git
+    git remote -v                                    # git@github.com:…
+    git push                                         # já não abre o browser
+
+Para não escrever a passphrase sempre (o ssh-agent):
+
+    # Mac: no ficheiro ~/.ssh/config
+    #   Host github.com
+    #     AddKeysToAgent yes
+    #     UseKeychain yes
+    #     IdentityFile ~/.ssh/id_ed25519
+    eval "$(ssh-agent -s)"
+    ssh-add --apple-use-keychain ~/.ssh/id_ed25519   # Mac
+    ssh-add ~/.ssh/id_ed25519                        # Windows (Git Bash)
+
+Clonar com SSH: no GitHub, Code › SSH › copiar: git clone git@github.com:<username>/receitas.git.
+
+────────────────────────────────────────────────────────
+
+RESUMO DO MÓDULO · SLIDE 33 (PRÓPRIA 31)
+
+  Sessão  ·  O que fica
+  1 · o Git  ·  init, status, add, commit, log · as três áreas · diff, restore
+  2 · os branches  ·  switch, merge, conflitos · .gitignore · amend, revert, reset
+  3 · o GitHub  ·  clone, remote, push, pull · Pull Requests e revisão · Issues · GitHub Pages
+
+O ciclo: init → commit → branch → merge → push → PR → pull.
+
+ATÉ 4.ª FEIRA · SLIDE 34 (PRÓPRIA 32)
+
+- Módulo 4 · JavaScript para Frontend, 4.ª 18 nov, 9:30.
+- No fim de cada sessão, na vossa flag-frontend-2026: git pull.
+- Para casa: o 5.2 (uma Issue e um Pull Request nas receitas: a solução já está no repositório) e o 5.3 (um README para as receitas: a solução sai na 4.ª). As Issues e os Projects (slide 23), as boas práticas (slide 28) e o SSH (slides 30–32) estão no PDF dos slides. Para treinar: o Learn Git Branching › Remote.
+
+────────────────────────────────────────────────────────
+
+LINKS
+
+- GitHub Docs (em português): https://docs.github.com/pt
+- GitHub Docs, a autenticação no GitHub: https://docs.github.com/pt/authentication
+- GitHub Docs, o GitHub Pages: https://docs.github.com/pt/pages
+- GitHub Docs, sobre os Pull Requests: https://docs.github.com/pt/pull-requests
+- O tutorial do SSH (no repositório do curso): 03-git-github/recursos/tutorial-ssh-github.md
+- Duas contas do GitHub no mesmo computador (no repositório do curso): 03-git-github/recursos/duas-contas-github.md
+- GitHub Docs, ligar ao GitHub com SSH: https://docs.github.com/pt/authentication/connecting-to-github-with-ssh
+
+- GitHub CLI: https://cli.github.com/
+- GitHub Skills, cursos interativos gratuitos (Introduction to GitHub): https://skills.github.com/
+- Learn Git Branching (o separador Remote): https://learngitbranching.js.org/?locale=pt_BR
+- Pro Git, o livro oficial (capítulos 2.5 e 6, os remotos e o GitHub; em português do Brasil): https://git-scm.com/book/pt-br/v2
+- O guia de Markdown do GitHub: https://docs.github.com/pt/get-started/writing-on-github
+- Escolher uma licença: https://choosealicense.com/
+- Cábula oficial do GitHub (PDF): https://education.github.com/git-cheat-sheet-education.pdf
+- GitHub Flow, o fluxo do Pull Request numa página: https://docs.github.com/pt/get-started/using-github/github-flow
+- Sobre as Issues (para o 5.2): https://docs.github.com/pt/issues/tracking-your-work-with-issues/about-issues
+- Criar uma organização (para uma empresa ou equipa): https://docs.github.com/pt/organizations/collaborating-with-groups-in-organizations/creating-a-new-organization-from-scratch
